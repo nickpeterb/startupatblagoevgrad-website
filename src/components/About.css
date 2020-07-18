@@ -1,0 +1,26 @@
+.about {
+    border-bottom: 2px solid grey;
+}
+
+.about-title{
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+p {
+    margin-top: 1em;
+    text-indent:40px;
+    font-size: 1.3em;
+}
+
+.about-pic {
+    max-width: 100%;
+    width: 25em;
+    height: auto;
+
+    margin: 1rem auto;    
+    display: block;
+
+    border-radius: 10px;
+}

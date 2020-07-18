@@ -1,0 +1,37 @@
+.masthead {
+    height: 100vh;
+    background-image: url("../assets/stock-speaker.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+/* for the original layover design
+.layover {
+    height: 200px;
+    width: 300px;
+    color: white;
+    background-color: #0074d9;
+    margin: auto;
+}
+*/
+.masthead-title {
+    font-weight: bold;
+    font-size: 8vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .masthead-title{
+        font-size: 11vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead-title{
+        font-size: 13vw;
+    }
+
+    .masthead{
+        background-position: right;
+    }
+}

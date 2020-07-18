@@ -1,0 +1,56 @@
+.bg-light {
+  background: #f8f9fa !important;
+}
+
+.nav-link {
+  color: black !important;
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: black !important;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.nav-link > .active {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+.navbar{
+  text-align: right;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand > img {
+    height: 25px;
+    width: 25px;
+  }
+  .navbar-brand {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .navbar-brand > img {
+    height: 25px;
+    width: 25px;
+  }
+  .navbar-brand {
+    font-size: 15px;
+  }
+}
+
+.atsign {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

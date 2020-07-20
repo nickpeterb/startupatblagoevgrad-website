@@ -31,7 +31,7 @@ export default function StartUPNav(){
           alt=""
           style={{ marginRight: '0.2em' }}
         />
-        STARTUP<span className="atsign">@</span>BLAGOEVGRAD
+        STARTUP@BLAGOEVGRAD
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

@@ -1,17 +1,28 @@
 .about {
-    border-bottom: 2px solid grey;
+    /*border-bottom: 2px solid grey;*/
 }
 
 .about-title{
+    margin-bottom: 1em;
     border-bottom: 4px solid transparent;
-    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
     border-image-slice: 1;
 }
 
-p {
+.about-body {
     margin-top: 1em;
     text-indent:40px;
     font-size: 1.3em;
+}
+
+.about h3 {
+    font-weight: 400;
+}
+
+.about h1 span {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
+    border-image-slice: 1;
 }
 
 .about-pic {
@@ -22,5 +33,9 @@ p {
     margin: 1rem auto;    
     display: block;
 
-    border-radius: 10px;
+    border: double 7px transparent;
+    border-radius: 10%;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }

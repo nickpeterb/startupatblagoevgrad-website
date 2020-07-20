@@ -1,12 +1,13 @@
 import React from 'react';
-import './Masthead.css';
+
+import './styles/Masthead.css';
 
 import { Link } from "react-scroll";
 
 export default function Masthead() {
     return (
         <div className="masthead">
-        <div className="container" style={{height:"100vh"}}>
+        <div className="masthead container" style={{height:"100vh"}}>
           <div className="row h-100 align-items-center">
             <div className="col text-center title-wrapper">
               <h1 className="masthead-title">
@@ -18,12 +19,11 @@ export default function Masthead() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-80}
                 duration={500}
               >
                 Learn More
               </Link>
-                
               </button>
             </div>
           </div>

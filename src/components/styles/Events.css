@@ -7,7 +7,8 @@
 }
 
 .events-title span{
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
     border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
     border-image-slice: 1;
 }
@@ -26,10 +27,10 @@
     margin: 1rem auto;    
 
     border: double 7px transparent;
-  border-radius: 20px;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 .events-slides img {

@@ -1,9 +1,9 @@
 .bg-light {
   background: #f8f9fa !important;
   
-  border-bottom: 4px solid transparent;
-    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
-    border-image-slice: 1;
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; /*for safari and iphones*/
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
 .nav-link {
@@ -29,10 +29,9 @@
 }
 
 .nav-link > .active {
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%,#731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
-  border-image-slice: 1;
-  
+  border-bottom: 3px solid;
+  border-width: 0px 0px 3px 0px; 
+  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%,#731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
 .navbar{

@@ -46,7 +46,7 @@ export default function Events() {
 
                 <div className="row align-items-center mb-5">
                     <div className="col-md">
-                        <h2>StartUP Conference</h2>
+                        <h2>StartUP <span style={{color:"#ec7510"}}>Conference</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                     <div className="col-md">
@@ -65,14 +65,14 @@ export default function Events() {
                         </div>
                     </div>
                     <div className="col-md order-1 order-md-2">
-                        <h2>StartUP Weekend</h2>
+                        <h2>StartUP <span style={{color:"#ce1c63"}}>Weekend</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                 </div>
 
                 <div className="row align-items-center mb-5">
                     <div className="col-md">
-                        <h2>Още Нещо Яко</h2>
+                        <h2>Още Нещо <span style={{color:"#2cb3ab"}}>Яко</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                     <div className="col-md">

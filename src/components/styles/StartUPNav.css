@@ -1,11 +1,18 @@
 .bg-light {
   background: #f8f9fa !important;
+  
+  border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
+    border-image-slice: 1;
 }
 
 .nav-link {
   color: black !important;
   font-family: 'Cabin', sans-serif;
   font-weight: bold;
+
+  /*padding-top:0 !important;
+  padding-bottom: 0 !important;*/
 }
 
 .navbar-brand {
@@ -22,9 +29,10 @@
 }
 
 .nav-link > .active {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%,#731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%);
   border-image-slice: 1;
+  
 }
 
 .navbar{

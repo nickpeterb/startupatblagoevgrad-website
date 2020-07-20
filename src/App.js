@@ -6,6 +6,7 @@ import Masthead from './components/Masthead.js';
 import About from './components/About.js';
 import Testimonials from './components/Testimonials.js';
 import Events from './components/Events.js';
+import Speakers from './components/Speakers.js';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
     <Testimonials />  
 
     <Events />
+
+    <Speakers />
 
     <div className="extra-space" style={{height:"60vh"}}></div>
 

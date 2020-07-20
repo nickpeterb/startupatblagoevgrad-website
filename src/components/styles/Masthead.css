@@ -1,6 +1,6 @@
 .masthead {
     height: 100vh;
-    background-image: url("../assets/stock-speaker.jpg");
+    background-image: url("../../assets/speaker.jpg");
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,8 @@
         font-size: 13vw;
     }
 
-    .masthead{
+    /*. needed in case image seems off on mobile
+    masthead{
         background-position: right;
-    }
+    }*/
 }

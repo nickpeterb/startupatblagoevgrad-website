@@ -45,7 +45,7 @@ export default function StartUPNav(){
                 offset={-80}
                 duration={500}
               >
-                About Us
+                Who We Are
               </Link>
           </Nav.Link>
 

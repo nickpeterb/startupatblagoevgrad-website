@@ -2,11 +2,12 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+
 import logo from '../assets/logo.png';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import './StartUPNav.css';
+import './styles/StartUPNav.css';
 
 export default function StartUPNav(){
   const scrollToTop = () => {
@@ -54,7 +55,7 @@ export default function StartUPNav(){
               to="events"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-90}
               duration={500}
             >
               Events

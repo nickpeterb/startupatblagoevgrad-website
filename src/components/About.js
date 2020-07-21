@@ -9,7 +9,7 @@ const aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morb
 export default function About() {
     return (
         <div className="about" >
-            <div className="container" style={{marginTop:"2em", marginBottom:"2em"}}>
+            <div className="container" style={{paddingTop:"2em", paddingBottom:"2em"}}>
                 <div className="row align-items-center">
                     <div className="col-md">
                         <h2><span className="about-title">Who We Are</span></h2>

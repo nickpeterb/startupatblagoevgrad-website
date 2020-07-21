@@ -40,7 +40,7 @@ function Slides(props) {
 export default function Events() {
     return (
         <div className="events">
-            <div className="container" style={{marginTop:"2em", marginBottom:"2em"}}>
+            <div className="container" style={{paddingTop:"2em", paddingBottom:"2em"}}>
 
                 <h2 className="events-title"><span>Events</span></h2>
 

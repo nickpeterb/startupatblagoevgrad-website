@@ -1,3 +1,4 @@
+/* These styles are not in use, this is just a place to collect all the diffrent kinds of rainbow borders */
 .test {
     /* Standard Rainbow Gradient*/
     border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);

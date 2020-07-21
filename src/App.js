@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import StartUPNav from './components/StartUPNav.js';
+import NavBar from './components/NavBar.js';
 import Masthead from './components/Masthead.js';
 import About from './components/About.js';
 import Testimonials from './components/Testimonials.js';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       
-    <StartUPNav />
+    <NavBar />
 
     <Masthead />
 

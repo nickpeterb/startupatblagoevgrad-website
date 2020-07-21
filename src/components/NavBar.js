@@ -7,9 +7,9 @@ import logo from '../assets/logo.png';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import './styles/StartUPNav.css';
+import './styles/NavBar.css';
 
-export default function StartUPNav(){
+export default function NavBar(){
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -68,7 +68,7 @@ export default function StartUPNav(){
               to="speakers"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-60}
               duration={500}
             >
               Speakers

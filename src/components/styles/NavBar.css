@@ -1,4 +1,4 @@
-.bg-light {
+.navbar {
   background: #f8f9fa !important;
   
     border-bottom: 4px solid;
@@ -54,6 +54,6 @@
     width: 25px;
   }
   .navbar-brand {
-    font-size: 15px;
+    font-size: 14px;
   }
 }

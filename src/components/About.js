@@ -18,17 +18,17 @@ export default function About() {
 
                         <div className="row m-auto" >
                             <div className="col">
-                                <h1><span>15</span></h1>
+                                <h1><span style={{color:"#ec7510"}}>15</span></h1>
                                 <h3>events</h3>
                             </div>
 
                             <div className="col">
-                                <h1><span>40</span></h1>
+                                <h1><span style={{color:"#ce1c63"}}>40</span></h1>
                                 <h3>bla bla</h3>
                             </div>
 
                             <div className="col">
-                                <h1><span>150</span></h1>
+                                <h1><span style={{color:"#2cb3ab"}}>150</span></h1>
                                 <h3>bla bla</h3>
                             </div>
                         </div>

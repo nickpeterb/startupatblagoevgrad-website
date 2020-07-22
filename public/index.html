@@ -15,6 +15,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <title>StartUP@Blagoevgrad</title>
+
+  <!-- Collapse navbar by clicking outside it -->
+  <script>
+    $(document).ready(function () {
+        $(document).click(function (event) {
+            var click = $(event.target);
+            var _open = $(".navbar-collapse").hasClass("show");
+            if (_open === true && !click.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+    });
+    </script>
 </head>
 
 <body>

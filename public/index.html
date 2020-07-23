@@ -9,14 +9,19 @@
   <meta name="description" content="StartUP@Blagoevgrad Website" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Font Awesome CDN-->
   <script src="https://use.fontawesome.com/9f85a4054a.js"></script>
+  <!-- jQuery CDN-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    
   <title>StartUP@Blagoevgrad</title>
 
-  <!-- Collapse navbar by clicking outside it -->
+  <!-- collapse navbar by clicking outside it -->
   <script>
     $(document).ready(function () {
         $(document).click(function (event) {
@@ -34,10 +39,5 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
-<script>
-  $(window).scroll(function () {
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 10);
-  });
-</script>
 
 </html>

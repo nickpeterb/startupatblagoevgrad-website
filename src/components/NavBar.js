@@ -42,7 +42,7 @@ export default function NavBar(){
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
                 duration={500}
               >
                 Who We Are
@@ -55,7 +55,7 @@ export default function NavBar(){
               to="events"
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={-60}
               duration={500}
             >
               Events

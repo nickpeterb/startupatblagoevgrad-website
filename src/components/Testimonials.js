@@ -3,9 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import './styles/Testimonials.css';
 
-import tesimonialsImg1 from '../assets/velko.jpg';
-import tesimonialsImg2 from '../assets/fatma.jpg';
-import tesimonialsImg3 from '../assets/jacobs.png';
+import tesimonialsImg1 from '../images/velko.jpg';
+import tesimonialsImg2 from '../images/fatma.jpg';
+import tesimonialsImg3 from '../images/jacobs.png';
 
 const testimonialsText1 =
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis. In egestas est eu dui finibus porttitor.';

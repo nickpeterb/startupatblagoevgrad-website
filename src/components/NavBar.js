@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
-import logo from '../assets/logo.png';
+import logo from '../images/logo.png';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 

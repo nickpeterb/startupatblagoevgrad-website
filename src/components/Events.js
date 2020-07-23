@@ -50,7 +50,6 @@ export default function Events() {
                         <p className="events-body">{eventsText1}</p>
                     </div>
                     <div className="col-md">
-                        {/*<img className="events-pic" src={confImg1} alt=""></img>*/}
                         <div className="events-slides">
                             <Slides img1={confImg1} img2={confImg2} img3={confImg3}/>
                         </div>

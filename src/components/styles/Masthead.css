@@ -4,6 +4,7 @@
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color:white;
 }
 /* for the original layover design

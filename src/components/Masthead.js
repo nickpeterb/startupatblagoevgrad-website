@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 export default function Masthead() {
     return (
         <div className="masthead">
-        <div className="masthead container" style={{height:"100vh"}}>
+        <div className="container" style={{height:"100vh"}}>
           <div className="row h-100 align-items-center">
             <div className="col text-center title-wrapper">
               <h1 className="masthead-title">

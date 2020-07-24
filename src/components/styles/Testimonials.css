@@ -1,5 +1,4 @@
 .testimonials {
-    /*border-bottom: 2px solid grey;*/
     background-color: #d6d3d3;
 }
 
@@ -34,19 +33,3 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
-
-/*
-.carousel-control-next-icon {
-    height: 4rem;
-    width: 4rem;
-  
-    background-image: url('../../assets/logo.png');
-}
-
-.carousel-control-prev-icon {
-    height: 4rem;
-    width: 4rem;
-  
-    background-image: url('../../assets/logo.png');
-    transform: scaleX(-1);
-}*/

@@ -135,6 +135,9 @@
     background-clip: content-box, border-box;
 }
 
-.modal-body{
-    margin: 1em;
+/* Vertically centers bio on larger screens. Should be changed if text is longer. */
+@media (min-width: 991px) { 
+    .speaker-bio {
+        margin-top: 2em;
+    }
 }

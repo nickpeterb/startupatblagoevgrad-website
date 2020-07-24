@@ -1,5 +1,5 @@
 .speakers {
-    background-color: #d6d3d3;
+    background-color: #F3F3F3; /*#d6d3d3*/
     overflow-x: hidden; /* hides the overflow on mobile caused by the rotation for some reason */
 }
 

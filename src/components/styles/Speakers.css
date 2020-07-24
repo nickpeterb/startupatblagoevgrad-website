@@ -115,3 +115,20 @@
       transform: rotate(0deg);
     }
 }
+
+.modal-title span{
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.modal-img {
+    border-radius: 50%;
+    width: 15em;
+    float:left;
+    margin: 0 1em 1em 1em;
+}
+
+.modal-body{
+    margin: 1em;
+}

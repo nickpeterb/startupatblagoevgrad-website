@@ -4,7 +4,7 @@
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed; doesnt work on ios */
     color:white;
 }
 /* for the original layover design

@@ -24,10 +24,10 @@
 
 @media (max-width: 576px) { 
     .speaker-card .card-title {
-        font-size: 2em;
+        font-size: 1.4em;
     }
     .speaker-card .card-text {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
@@ -80,16 +80,15 @@
 
 @media (max-width: 576px) { 
     .arrow-overlay {
-        height: 4em;
-        width: 4em;
+        height: 2em;
+        width: 2em;
 
-        margin-top: 71%;
-        margin-left: 61%;
+        margin-top: 65%;
+        margin-left: 57%;
     }
     .fa-arrow-right {
-        font-size: 1.6em;
-        margin-top: 29%;
-        margin-left: 35%;
+        font-size: 0.9em;
+       
     }
 }
 

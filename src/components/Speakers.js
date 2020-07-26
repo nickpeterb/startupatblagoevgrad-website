@@ -74,7 +74,7 @@ export default function Speakers() {
 						<span>Speakers</span>
 					</h2>
 
-					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+					<div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 						{speakersList.map((speaker, index) => (
 							<>
 								<div class="col mb-4">

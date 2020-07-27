@@ -7,7 +7,7 @@ import confImg1 from '../images/speaker.jpg';
 import confImg2 from '../images/stock-speaker.jpg';
 import confImg3 from '../images/stock-speaker2.jpg';
 
-const eventsText1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis. In egestas est eu dui finibus porttitor.";
+const eventsText1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis.";
 
 function Slides(props) {
     return (
@@ -46,7 +46,7 @@ export default function Events() {
 
                 <div className="row align-items-center mb-5">
                     <div className="col-md">
-                        <h2>StartUP <span style={{color:"#ec7510"}}>Conference</span></h2>
+                        <h2 style={{fontWeight:"400"}}>StartUP <span style={{color:"#ec7510"}}>Conference</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                     <div className="col-md">
@@ -64,14 +64,14 @@ export default function Events() {
                         </div>
                     </div>
                     <div className="col-md order-1 order-md-2">
-                        <h2>StartUP <span style={{color:"#ce1c63"}}>Weekend</span></h2>
+                        <h2 style={{fontWeight:"400"}}>StartUP <span style={{color:"#ce1c63"}}>Weekend</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                 </div>
 
                 <div className="row align-items-center mb-5">
                     <div className="col-md">
-                        <h2>Още Нещо <span style={{color:"#2cb3ab"}}>Яко</span></h2>
+                        <h2 style={{fontWeight:"400"}}>Още Нещо <span style={{color:"#2cb3ab"}}>Яко</span></h2>
                         <p className="events-body">{eventsText1}</p>
                     </div>
                     <div className="col-md">

@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Testimonials from './components/Testimonials.js';
 import Events from './components/Events.js';
 import Speakers from './components/Speakers.js';
+import Sponsors from './components/Sponsors.js';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
 
     <Speakers />
 
-    <div className="extra-space" style={{height:"60vh"}}></div>
+    <Sponsors />
 
     </div>
   );

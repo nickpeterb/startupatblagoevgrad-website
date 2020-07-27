@@ -26,6 +26,7 @@ export default function Speakers() {
 		{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
 	];
 
+	/* keeps track of which speaker to display in the modal */
 	const [activeSpeaker, setActiveSpeaker] = useState({
 		name: String,
 		tagline: String,
@@ -33,6 +34,7 @@ export default function Speakers() {
         bio: String
 	});
 
+	/* handles opening and closing the modal */
 	const [show, setShow] = useState(false);
 	const handleClose = () => setShow(false);
 	const handleShow = (item) => {

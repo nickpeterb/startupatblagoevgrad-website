@@ -22,4 +22,34 @@
     .sponsor-img {
         height: 3em;
     }
+    .musala-soft {
+        height: 4em;
+    }
+    .ahmad-tea {
+        height: 4em;
+    }
 }
+
+@media (min-width: 768px) { 
+    .musala-soft {
+        height: 7em;
+        padding-left: 30%;
+    }
+    
+    .sutherland {
+        padding-top: 1em;
+    }
+    
+    .ahmad-tea {
+        padding-left: 20%;
+    }
+    
+    .red-bull {
+        padding-left: 30%;
+    }
+    
+    .nordics {
+        padding-top: 0.5em;
+    }
+}
+

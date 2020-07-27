@@ -78,10 +78,10 @@ export default function NavBar(){
           <Nav.Link>
             <Link
               activeClass="active"
-              to="ourteam"
+              to="team"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-60}
               duration={500}
             >
               Our Team
@@ -94,7 +94,7 @@ export default function NavBar(){
               to="sponsors"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-60}
               duration={500}
             >
               Sponsors

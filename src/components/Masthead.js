@@ -19,7 +19,7 @@ export default function Masthead() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
                 duration={500}
               >
                 Learn More

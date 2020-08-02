@@ -36,8 +36,8 @@ export default function NavBar(){
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link>
-            <Link
+          
+            <Nav.Link as={Link}
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -45,12 +45,11 @@ export default function NavBar(){
                 offset={-60}
                 duration={500}
               >
-                Who We Are
-              </Link>
-          </Nav.Link>
+                <span>Who We Are</span>
+              </Nav.Link>
+          
 
-          <Nav.Link>
-            <Link
+            <Nav.Link as={Link}
               activeClass="active"
               to="events"
               spy={true}
@@ -58,12 +57,10 @@ export default function NavBar(){
               offset={-60}
               duration={500}
             >
-              Events
-            </Link>
+              <span>Events</span>
           </Nav.Link>
 
-          <Nav.Link>
-            <Link
+          <Nav.Link as={Link}
               activeClass="active"
               to="speakers"
               spy={true}
@@ -71,12 +68,10 @@ export default function NavBar(){
               offset={-60}
               duration={500}
             >
-              Speakers
-            </Link>
+              <span>Speakers</span>
           </Nav.Link>
 
-          <Nav.Link>
-            <Link
+          <Nav.Link as={Link}
               activeClass="active"
               to="team"
               spy={true}
@@ -84,12 +79,10 @@ export default function NavBar(){
               offset={-60}
               duration={500}
             >
-              Our Team
-            </Link>
+              <span>Our Team</span>
           </Nav.Link>
 
-          <Nav.Link>
-            <Link
+          <Nav.Link as={Link}
               activeClass="active"
               to="sponsors"
               spy={true}
@@ -97,12 +90,10 @@ export default function NavBar(){
               offset={-60}
               duration={500}
             >
-              Sponsors
-            </Link>
+              <span>Sponsors</span>
           </Nav.Link>
 
-          <Nav.Link>
-            <Link
+          <Nav.Link as={Link}
               activeClass="active"
               to="contact"
               spy={true}
@@ -110,8 +101,7 @@ export default function NavBar(){
               offset={0}
               duration={500}
             >
-              Contact
-            </Link>
+              <span>Contact</span>
           </Nav.Link>
 
         </Nav>

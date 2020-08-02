@@ -31,15 +31,15 @@ export default function Testimonials() {
 							</div>
 
 							<div className="col-md">
-								<i class="fa fa-quote-left" aria-hidden="true"></i>
-								<blockquote class="blockquote text-center">
-									<p class="testimonials-body">{testimonialsText1}</p>
+								<i className="fa fa-quote-left" aria-hidden="true"></i>
+								<blockquote className="blockquote text-center">
+									<p className="testimonials-body">{testimonialsText1}</p>
 									<i
-										class="fa fa-quote-right"
+										className="fa fa-quote-right"
 										aria-hidden="true"
 										style={{ float: 'right' }}
 									></i>
-									<footer class="blockquote-footer">
+									<footer className="blockquote-footer">
                                         Velislav Velislav
                                         <br/>
 										<cite title="Source Title">1st Place Winner at StartUP Weekend 2019</cite>
@@ -62,15 +62,15 @@ export default function Testimonials() {
 							</div>
 
 							<div className="col-md">
-								<i class="fa fa-quote-left" aria-hidden="true"></i>
-								<blockquote class="blockquote text-center">
-									<p class="testimonials-body">{testimonialsText1}</p>
+								<i className="fa fa-quote-left" aria-hidden="true"></i>
+								<blockquote className="blockquote text-center">
+									<p className="testimonials-body">{testimonialsText1}</p>
 									<i
-										class="fa fa-quote-right"
+										className="fa fa-quote-right"
 										aria-hidden="true"
 										style={{ float: 'right' }}
 									></i>
-									<footer class="blockquote-footer">
+									<footer className="blockquote-footer">
                                         Fatma Xhafa
                                         <br/>
 										<cite title="Source Title">StartUP Conference 2019 Speaker</cite>
@@ -93,15 +93,15 @@ export default function Testimonials() {
 							</div>
 
 							<div className="col-md">
-								<i class="fa fa-quote-left" aria-hidden="true"></i>
-								<blockquote class="blockquote text-center">
-									<p class="testimonials-body">{testimonialsText1}</p>
+								<i className="fa fa-quote-left" aria-hidden="true"></i>
+								<blockquote className="blockquote text-center">
+									<p className="testimonials-body">{testimonialsText1}</p>
 									<i
-										class="fa fa-quote-right"
+										className="fa fa-quote-right"
 										aria-hidden="true"
 										style={{ float: 'right' }}
 									></i>
-									<footer class="blockquote-footer">
+									<footer className="blockquote-footer">
                                         Jacobs
                                         <br/>
 										<cite title="Source Title">Sponsor Since 2018</cite>

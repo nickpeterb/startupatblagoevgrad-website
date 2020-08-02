@@ -32,10 +32,10 @@ export default function Sponsors() {
 					<span>Sponsors</span>
 				</h2>
 
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 					{sponsors.map((sponsor, index) => (
-						<div class="col m-4">
-							<img src={sponsor.img} class={`sponsor-img ${sponsor.className}`} alt=""></img>
+						<div className="col m-4" key={index}>
+							<img src={sponsor.img} className={`sponsor-img ${sponsor.className}`} alt=""></img>
 						</div>
 					))}
 				</div>

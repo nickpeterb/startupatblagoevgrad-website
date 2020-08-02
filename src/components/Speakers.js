@@ -76,17 +76,17 @@ export default function Speakers() {
 						<span>Speakers</span>
 					</h2>
 
-					<div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+					<div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 						{speakersList.map((speaker, index) => (
-							<>
-								<div class="col mb-4">
+							<div key={index}>
+								<div className="col mb-4" >
 									<div className="speaker-card">
 										<div className="card-top-wrapper">
 											<div
 												className="arrow-overlay"
 												onClick={() => handleShow(speaker)}
 											>
-												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<i className="fa fa-arrow-right" aria-hidden="true"></i>
 											</div>
 
 											<div
@@ -95,19 +95,19 @@ export default function Speakers() {
 											>
 												<img
 													src={speaker.img}
-													class="card-img-top"
+													className="card-img-top"
 													alt=""
 												></img>
 											</div>
 										</div>
 
-										<div class="card-body">
-											<h5 class="card-title">{speaker.name}</h5>
-											<p class="card-text">{speaker.tagline}</p>
+										<div className="card-body">
+											<h5 className="card-title">{speaker.name}</h5>
+											<p className="card-text">{speaker.tagline}</p>
 										</div>
 									</div>
 								</div>
-							</>
+							</div>
 						))}
 					</div>
 				</div>

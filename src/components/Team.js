@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { useMediaQuery } from 'react-responsive';
 
 import './styles/Team.css';
 
@@ -14,17 +15,59 @@ import flavia from '../images/team/flavia.png';
 import ilko from '../images/team/ilko.png';
 
 const board = [
-    {name:"velko", img: velko},
-    {name:"emma", img: emma}, 
-    {name:"boyan", img: boyan}
+	{ name: 'velko', img: velko },
+	{ name: 'emma', img: emma },
+	{ name: 'boyan', img: boyan },
+	{ name: 'nick', img: nick },
+	{ name: 'fatma', img: fatma },
+	{ name: 'ilko', img: ilko },
+	{ name: 'deni', img: deni },
 ];
-const speakersDept = [nick, fatma, ilko];
+/*const speakersDept = [nick, fatma, ilko];
 const sponsorsDept = [deni, flavia, elito];
-/*const marketingDept = [];
+const marketingDept = [];
 const itDept = [];*/
 
+function MembersSlide(props) {
+	return (
+		<>
+			<div className="row top-row">
+				{props.deptMembers.map((member, index) => (
+					<>
+						<div className="col" style={{ height: '13em', width: '8em' }} key={index}>
+							<img
+								src={member.img}
+								alt=""
+								className="team-img"
+								style={{ height: '13em', paddingLeft:"10%"}}
+							/>
+						</div>
+					</>
+				))}
+			</div>
+			<div className="row bot-row">
+				{props.deptMembers.map((member, index) => (
+					<div className="col" style={{ height: '12em', width: '8em' }} key={index}></div>
+				))}
+			</div>
+		</>
+	);
+}
+
+function SplitMembers(dept){
+    let groups = [], size = 3;
+    
+    while (dept.length > 0){
+        groups.push(dept.splice(0, size));
+    }
+    
+    return groups;
+}
 
 export default function Team() {
+
+    //const [size, setSize] = useState(3);
+    
 	return (
 		<div className="team">
 			<div
@@ -36,105 +79,11 @@ export default function Team() {
 				</h2>
 
 				<Carousel interval={null} style={{ marginBottom: '4em' }}>
-                <Carousel.Item>
-		<div className="row top-row">
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={velko}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={fatma}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={nick}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-		</div>
-		<div className="row bot-row" style={{ backgroundColor: '#F3F3F3' }}>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-		</div>
-	</Carousel.Item>
-    <Carousel.Item>
-		<div className="row top-row">
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={boyan}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={emma}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={elito}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-		</div>
-		<div className="row bot-row" style={{ backgroundColor: '#F3F3F3' }}>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-		</div>
-	</Carousel.Item>
-    <Carousel.Item>
-		<div className="row top-row">
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={deni}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={ilko}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-			<div className="col" style={{ height: '13em', width: '8em' }}>
-				<img
-					src={flavia}
-					alt=""
-					className="team-img"
-					style={{ height: '13em', paddingLeft: '25%' }}
-				/>
-			</div>
-		</div>
-		<div className="row bot-row" style={{ backgroundColor: '#F3F3F3' }}>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-			<div className="col" style={{ height: '12em', width: '8em' }}></div>
-		</div>
-	</Carousel.Item>
+                    {SplitMembers(board).map((group, index) => (
+						<Carousel.Item key={index}>
+							<MembersSlide deptMembers={group} />
+						</Carousel.Item>
+					))}
 				</Carousel>
 			</div>
 		</div>

@@ -45,7 +45,7 @@ export default function NavBar(){
                 offset={-60}
                 duration={500}
               >
-                <span>Who We Are</span>
+                <span>About Us</span>
               </Nav.Link>
           
 

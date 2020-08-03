@@ -12,7 +12,7 @@ export default function About() {
             <div className="container" style={{paddingTop:"2em", paddingBottom:"2em"}}>
                 <div className="row align-items-center">
                     <div className="col-md">
-                        <h2><span className="about-title">Who We Are</span></h2>
+                        <h2><span className="about-title">About Us</span></h2>
 
                         <p className="about-body">{aboutText}</p>
 

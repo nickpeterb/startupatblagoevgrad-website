@@ -9,12 +9,14 @@
 }
 
 .team .carousel .carousel-control-prev-icon {
-    margin-top: 5em;
+    margin-top: 2em;
+    margin-right: 50%;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .team .carousel .carousel-control-next-icon {
-    margin-top: 5em;
+    margin-top: 2em;
+    margin-left: 50%;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
@@ -29,6 +31,17 @@
 
 .team-img {
     filter: drop-shadow(3px 0px 3px #222); 
+}
+
+.member-desc {
+    border: solid grey;
+    border-width: 0px 1px;
+}
+
+.member-name {
+    margin-top: 1em;
+    text-transform:uppercase;
+    font-size: 1.2em;
 }
 
 .team .container .carousel .carousel-indicators li {

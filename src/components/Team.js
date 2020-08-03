@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { useMediaQuery } from 'react-responsive';
+import MediaQuery from 'react-responsive';
 
 import './styles/Team.css';
 
@@ -32,59 +32,79 @@ function MembersSlide(props) {
 	return (
 		<>
 			<div className="row top-row">
-				{props.deptMembers.map((member, index) => (
+				{props.slide.map((member, index) => (
 					<>
-						<div className="col" style={{ height: '13em', width: '8em' }} key={index}>
+						<div className="col member-img-col text-center" style={{ height: '13em', width: '8em' }} key={index}>
 							<img
 								src={member.img}
 								alt=""
 								className="team-img"
-								style={{ height: '13em', paddingLeft:"10%"}}
+								style={{ height: '13em', paddingLeft: "10%" }}
 							/>
 						</div>
 					</>
 				))}
 			</div>
 			<div className="row bot-row">
-				{props.deptMembers.map((member, index) => (
-					<div className="col" style={{ height: '12em', width: '8em' }} key={index}></div>
+				{props.slide.map((member, index) => (
+					<div className="col member-desc text-center" style={{ height: '13em', width: '8em'}} key={index}>
+						<div className="container">
+							<div className="member-name">{member.name}</div>
+						</div>
+					</div>
 				))}
 			</div>
 		</>
 	);
 }
 
-function SplitMembers(dept){
-    let groups = [], size = 3;
-    
-    while (dept.length > 0){
-        groups.push(dept.splice(0, size));
-    }
-    
-    return groups;
-}
-
 export default function Team() {
 
-    //const [size, setSize] = useState(3);
-    
+	const chunkArray = (array, size) => {
+		let result = []
+		for (let i = 0; i < array.length; i += size) {
+			let chunk = array.slice(i, i + size)
+			result.push(chunk)
+		}
+		return result
+	}
+
 	return (
 		<div className="team">
-			<div
-				className="container"
-				style={{ paddingTop: '2em', paddingBottom: '2em' }}
-			>
+			<div className="container" style={{ paddingTop: '2em', paddingBottom: '2em' }} >
 				<h2 className="team-title">
 					<span>Our Team</span>
 				</h2>
 
-				<Carousel interval={null} style={{ marginBottom: '4em' }}>
-                    {SplitMembers(board).map((group, index) => (
-						<Carousel.Item key={index}>
-							<MembersSlide deptMembers={group} />
-						</Carousel.Item>
-					))}
-				</Carousel>
+				<MediaQuery maxWidth={768}>
+					<Carousel interval={null} style={{ marginBottom: '4em' }}>
+						{chunkArray(board, 2).map((group, index) => (
+							<Carousel.Item key={index}>
+								<MembersSlide slide={group} />
+							</Carousel.Item>
+						))}
+					</Carousel>
+				</MediaQuery>
+
+				<MediaQuery minWidth={769} maxWidth={999}>
+					<Carousel interval={null} style={{ marginBottom: '4em' }}>
+						{chunkArray(board, 3).map((group, index) => (
+							<Carousel.Item key={index}>
+								<MembersSlide slide={group} />
+							</Carousel.Item>
+						))}
+					</Carousel>
+				</MediaQuery>
+
+				<MediaQuery minWidth={1000}>
+					<Carousel interval={null} style={{ marginBottom: '4em' }}>
+						{chunkArray(board, 4).map((group, index) => (
+							<Carousel.Item key={index}>
+								<MembersSlide slide={group} />
+							</Carousel.Item>
+						))}
+					</Carousel>
+				</MediaQuery>
 			</div>
 		</div>
 	);

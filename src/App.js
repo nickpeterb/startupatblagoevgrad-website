@@ -9,13 +9,12 @@ import Events from './components/Events.js';
 import Speakers from './components/Speakers.js';
 import Sponsors from './components/Sponsors.js';
 import Team from './components/Team.js';
-import Test from './components/Test.js';
 
 function App() {
   return (
     <div className="App">
       
-    {/*<NavBar />
+    <NavBar />
 
     <Masthead />
 
@@ -29,9 +28,7 @@ function App() {
 
     <Team />
 
-    <Sponsors />*/}
-
-    <Test />
+    <Sponsors />
 
     </div>
   );

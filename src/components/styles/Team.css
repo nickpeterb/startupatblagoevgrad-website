@@ -43,7 +43,7 @@
 
 .team-img {
     height: 13em;
-    
+    padding-left: 5%;
     padding-top: 0.65em;
     filter: drop-shadow(2px -2px 3px #222) brightness(1.1); 
     margin-right: 10%;

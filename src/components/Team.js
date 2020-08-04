@@ -115,7 +115,7 @@ function MembersSlide(props) {
 						<div className="member-name">{member.name}</div>
 						<span className="member-title">{member?.title}</span>
 						<div className="line" style={{borderColor:props.bgColor}}></div>
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<i class="fa fa-linkedin-square"></i>
 					</div>
 				))}
 			</div>

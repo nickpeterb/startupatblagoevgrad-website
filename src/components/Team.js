@@ -100,21 +100,18 @@ function MembersSlide(props) {
 		<div className="members-slide">
 			<div className="row top-row" style={{background:`linear-gradient(to top, ${props.bgColor} 80%, transparent 20%)`}}>
 				{props.slide.map((member, index) => (
-					<>
-						<div className="col member-img-col text-center" style={{ height: '13em', width: '8em' }} key={index}>
-							<img
-								src={member.img}
-								alt=""
-								className="team-img"
-								style={{ height: '13em', paddingLeft: "10%" }}
-							/>
-						</div>
-					</>
+					<div className="col member-img-col text-center" style={{ height: '13em' }} key={index}>
+						<img
+							src={member.img}
+							alt={member.name}
+							className="team-img"
+						/>
+					</div>
 				))}
 			</div>
 			<div className="row bot-row">
 				{props.slide.map((member, index) => (
-					<div className="col member-desc text-center"  key={index}>
+					<div className="col member-desc text-center" key={index}>
 						<div className="member-name">{member.name}</div>
 						<span className="member-title">{member?.title}</span>
 						<div className="line" style={{borderColor:props.bgColor}}></div>
@@ -175,7 +172,7 @@ function Dept(props) {
 				<Carousel interval={null} style={{ marginBottom: '4em' }}>
 					{chunkArray(props.members, 4).map((group, index) => (
 						<Carousel.Item key={index}>
-							<MembersSlide slide={group} bgColor={props.bgColor} />
+							<MembersSlide slide={group} bgColor={props.bgColor} hideIndicators={true}/>
 						</Carousel.Item>
 					))}
 				</Carousel>

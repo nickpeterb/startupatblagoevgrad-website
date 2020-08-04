@@ -42,9 +42,17 @@
 }
 
 .team-img {
-    padding-top: 0.5em;;
-    filter: drop-shadow(3px 0px 3px #222) brightness(1.1); 
+    height: 13em;
+    
+    padding-top: 0.65em;
+    filter: drop-shadow(2px -2px 3px #222) brightness(1.1); 
     margin-right: 10%;
+}
+
+@media (min-width: 768px) { 
+    .team-img {
+        padding-left: 10%;
+    }
 }
 
 .member-desc {

@@ -24,7 +24,7 @@
 
 @media (max-width: 576px) { 
     .speaker-card .card-title {
-        font-size: 1.4em;
+        font-size: 1em;
     }
     .speaker-card .card-text {
         font-size: 0.8em;

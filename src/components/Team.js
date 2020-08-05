@@ -92,7 +92,7 @@ const itDept = [
 function MembersSlide(props) {
 	return (
 		<div className="members-slide">
-			<div className="row top-row" style={{background:`linear-gradient(to top, ${props.bgColor} 80%, transparent 20%)`}}>
+			<div className="row top-row" style={{background:`linear-gradient(to top, ${props.bgColor} 75%, transparent 25%)`}}>
 				{props.slide.map((member, index) => (
 					<div className="col member-img-col text-center" style={{ height: '13em' }} key={index}>
 						<img

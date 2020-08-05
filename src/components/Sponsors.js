@@ -78,7 +78,7 @@ export default function Sponsors() {
 								</div>
 							))}
 						</div>
-						<Accordion.Toggle as="button" eventKey="0" style={{fontSize:"1.1em",marginTop:"1em", border:"none", background:"none"}}>
+						<Accordion.Toggle className="show-less" as="button" eventKey="0" style={{fontSize:"1.1em",marginTop:"1em", border:"none", background:"none"}}>
 							Show Less
                     	</Accordion.Toggle>
 						</>

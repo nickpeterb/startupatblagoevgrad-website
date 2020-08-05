@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import MediaQuery from 'react-responsive';
 
@@ -44,7 +44,7 @@ import andi from '../images/team/andi.png';
 import vladin from '../images/team/vladin.png';
 
 //idk
-import flavia from '../images/team/flavia.png';
+//import flavia from '../images/team/flavia.png';
 
 const board = [
 	{ name: 'Velislav Tsenov', img: velko, title: "President" },
@@ -119,6 +119,17 @@ function MembersSlide(props) {
 
 function Dept(props) {
 
+	/* Hide controls when carousel shows all members */
+	const [hideCarousel, setHideCarousel] = useState('');
+	const toggleHideCarousel = () => {
+		if (props.members.length <= 4) setHideCarousel('hide-carousel');
+		else setHideCarousel('');
+	}
+
+	useEffect(() => {
+		toggleHideCarousel();
+	});
+
 	const chunkArray = (array, size) => {
 		let result = []
 		for (let i = 0; i < array.length; i += size) {
@@ -162,8 +173,9 @@ function Dept(props) {
 				</Carousel>
 			</MediaQuery>
 
-			<MediaQuery minWidth={1000}>
-				<Carousel interval={null} style={{ marginBottom: '4em' }}>
+			<MediaQuery minWidth={1000} onChange={toggleHideCarousel}>
+				
+				<Carousel className={hideCarousel} interval={null} style={{ marginBottom: '4em' }}>
 					{chunkArray(props.members, 4).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} hideIndicators={true}/>

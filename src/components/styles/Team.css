@@ -14,8 +14,15 @@
     border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
-.team .carousel .carousel-control-prev, .team .carousel .carousel-control-next{
+.team .carousel .carousel-control-prev, 
+.team .carousel .carousel-control-next{
     width: 10% !important;
+}
+
+/* Hide controls when carousel shows all members */
+.team .hide-carousel .carousel-control-prev, 
+.team .hide-carousel .carousel-control-next{
+    display: none;
 }
 
 .team .carousel .carousel-control-prev-icon {
@@ -85,4 +92,9 @@
 
 .team .container .carousel .carousel-indicators .active {
     background-color: #444;
+}
+
+/* Hide indicators when carousel shows all members */
+.team .container .hide-carousel .carousel-indicators li {
+    display: none;
 }

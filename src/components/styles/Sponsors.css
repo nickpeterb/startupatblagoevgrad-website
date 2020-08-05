@@ -3,6 +3,10 @@
     overflow-x: hidden;
 }
 
+.sponsor-col {
+    border: 1px solid #e0e0e0;
+}
+
 .sponsors-title {
     margin-bottom: 1em;
 }
@@ -18,38 +22,22 @@
     max-width: 100%;
 }
 
+.sponsor-img-collapsed {
+    max-height: 5em;
+    max-width: 100%;
+}
+
 @media (max-width: 576px) { 
-    .sponsor-img {
-        height: 3em;
-    }
-    .musala-soft {
-        height: 4em;
-    }
-    .ahmad-tea {
-        height: 4em;
+    .sponsor-img-collapsed {
+        max-height: 5em;
+        max-width: 100%;
     }
 }
 
-@media (min-width: 768px) { 
-    .musala-soft {
-        height: 7em;
-        padding-left: 30%;
-    }
-    
-    .sutherland {
-        padding-top: 1em;
-    }
-    
-    .ahmad-tea {
-        padding-left: 20%;
-    }
-    
-    .red-bull {
-        padding-left: 30%;
-    }
-    
-    .nordics {
-        padding-top: 0.5em;
-    }
+.sutherland {
+    padding-top: 1em;
 }
 
+.nordics {
+    padding-top: 1em;
+}

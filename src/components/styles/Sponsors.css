@@ -34,6 +34,12 @@
     }
 }
 
+@media (min-width: 576px) { 
+    .show-less {
+        display: none;
+    }
+}
+
 .sutherland {
     padding-top: 1em;
 }

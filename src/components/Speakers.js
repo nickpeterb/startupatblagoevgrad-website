@@ -72,7 +72,7 @@ export default function Speakers() {
 					className="container"
 					style={{ paddingTop: '2em', paddingBottom: '2em' }}
 				>
-					<h2 className="speakers-title">
+					<h2 className="speakers-title text-center">
 						<span>Speakers</span>
 					</h2>
 

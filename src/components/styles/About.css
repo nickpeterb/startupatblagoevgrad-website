@@ -1,5 +1,5 @@
 
-.about-title{
+.about-title span{
     margin-bottom: 1em;
 
     border-bottom: 4px solid;
@@ -9,7 +9,7 @@
 
 .about-body {
     margin-top: 1em;
-    text-indent:40px;
+    
     font-size: 1.3em;
 }
 

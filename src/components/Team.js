@@ -192,7 +192,7 @@ export default function Team() {
 	return (
 		<div className="team">
 			<div className="container" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
-				<h2 className="team-title">
+				<h2 className="team-title text-center">
 					<span>Our Team</span>
 				</h2>
 

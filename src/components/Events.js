@@ -42,7 +42,7 @@ export default function Events() {
         <div className="events">
             <div className="container" style={{paddingTop:"2em", paddingBottom:"2em"}}>
 
-                <h2 className="events-title"><span>Events</span></h2>
+                <h2 className="events-title text-center"><span>Events</span></h2>
 
                 <div className="row align-items-center mb-5">
                     <div className="col-md">

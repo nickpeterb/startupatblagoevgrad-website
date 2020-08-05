@@ -55,7 +55,7 @@ export default function Sponsors() {
 	return (
 		<div className="sponsors">
 			<div className="container" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
-				<h2 className="sponsors-title">
+				<h2 className="sponsors-title text-center">
 					<span>Sponsors</span>
 				</h2>
 

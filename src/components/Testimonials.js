@@ -13,7 +13,7 @@ export default function Testimonials() {
 	return (
 		<div className="testimonials">
 			<div className="container">
-				<h2 className="testimonials-title">
+				<h2 className="testimonials-title text-center">
 					<span>Testimonials</span>
 				</h2>
 			</div>

@@ -4,7 +4,7 @@ import './styles/About.css';
 
 import armelaPrizePic from '../images/armela-prize.png';
 
-const aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis. In egestas est eu dui finibus porttitor.";
+const aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis.";
 
 export default function About() {
     return (
@@ -12,7 +12,7 @@ export default function About() {
             <div className="container" style={{paddingTop:"2em", paddingBottom:"2em"}}>
                 <div className="row align-items-center">
                     <div className="col-md">
-                        <h2><span className="about-title">About Us</span></h2>
+                        <h2 className="about-title text-center"><span>About Us</span></h2>
 
                         <p className="about-body">{aboutText}</p>
 

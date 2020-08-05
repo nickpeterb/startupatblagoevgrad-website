@@ -28,16 +28,13 @@ import siel from '../images/team/siel.png';
 
 //Marketing
 import boyan from '../images/team/boyan.png';
-import asya from '../images/team/asya.png';
 import deni from '../images/team/deni.png';
 import didi from '../images/team/didi.png';
 import emma from '../images/team/emma.png';
 import emily from '../images/team/emily.png';
 import ilko from '../images/team/ilko.png';
-import ivy from '../images/team/ivy.png';
 import nikol from '../images/team/nikol.png';
 import petar from '../images/team/petar.png';
-import ted from '../images/team/ted.png';
 import teddy from '../images/team/teddy.png';
 
 //IT 
@@ -81,11 +78,8 @@ const marketingDept = [
 	{ name: 'Nikol Peeva', img: nikol },
 	{ name: 'Teddy Vasileva', img: teddy },
 	{ name: 'Petar Hristakiev', img: petar },
-	{ name: 'Asya Velichkova', img: asya },
-	{ name: 'Ivy Arabadzhieva', img: ivy },
 	{ name: 'Diana Radkova', img: didi },
-	{ name: 'Emily Timcheva', img: emily },
-	{ name: 'Teodora Danailova', img: ted }
+	{ name: 'Emily Timcheva', img: emily }
 ]
 
 const itDept = [
@@ -115,7 +109,7 @@ function MembersSlide(props) {
 						<div className="member-name">{member.name}</div>
 						<span className="member-title">{member?.title}</span>
 						<div className="line" style={{borderColor:props.bgColor}}></div>
-						<i class="fa fa-linkedin-square"></i>
+						<i className="fa fa-linkedin-square"></i>
 					</div>
 				))}
 			</div>

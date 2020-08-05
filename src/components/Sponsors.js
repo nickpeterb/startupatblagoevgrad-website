@@ -1,8 +1,7 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
-import Button from 'react-bootstrap/Button';
 
 import './styles/Sponsors.css';
 

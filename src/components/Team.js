@@ -18,13 +18,14 @@ import karolina from '../images/team/karolina.png';
 import key from '../images/team/key.png';
 import nadiaT from '../images/team/nadia-t.png';
 import uerda from '../images/team/uerda.png';
-
-//Sponsors
-import kris from '../images/team/kris.png';
 /*import alex from '../images/team/alex.png'; missing */
+
+//Sponsorship
+import kris from '../images/team/kris.png';
 import nadiaD from '../images/team/nadia-d.png';
 import preso from '../images/team/preso.png';
 import siel from '../images/team/siel.png';
+import flavia from '../images/team/flavia.png';
 
 //Marketing
 import boyan from '../images/team/boyan.png';
@@ -44,7 +45,7 @@ import andi from '../images/team/andi.png';
 import vladin from '../images/team/vladin.png';
 
 //idk
-//import flavia from '../images/team/flavia.png';
+
 
 const board = [
 	{ name: 'Velislav Tsenov', img: velko, title: "President" },
@@ -57,6 +58,7 @@ const speakersDept = [
 	{ name: 'Fatma Xhafa', img: fatma },
 	{ name: 'Uerda Muca', img: uerda },
 	{ name: 'Darina Stanoilova', img: dari },
+	{ name: 'Alexandra Dimcheva', img: '' },
 	{ name: 'Nadia Traikova', img: nadiaT },
 	{ name: 'Karolina Kostadinova', img: karolina },
 	{ name: 'Key Prifti', img: key },
@@ -68,6 +70,7 @@ const sponsorsDept = [
 	{ name: 'Nadia Dimitrova', img: nadiaD },
 	{ name: 'Preslav Vachev', img: preso },
 	{ name: 'Siel Rien', img: siel },
+	{ name: 'Flavia Gançi', img: flavia },
 ]
 
 const marketingDept = [

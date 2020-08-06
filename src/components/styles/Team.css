@@ -77,6 +77,12 @@
     font-weight: 500;
 }
 
+@media (max-width: 576px) { 
+    .member-name {
+        word-spacing: 100vw;
+    }
+}
+
 .line {
     border-bottom: 2px solid;
     width: 3em;

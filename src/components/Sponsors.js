@@ -39,13 +39,15 @@ function ContextAwareToggle({ eventKey, callback }) {
     const isCurrentEventKey = currentEventKey === eventKey;
 
     return (
+		<div style={{marginTop:"1em"}}>
         <button
             type="button"
-            style={{border:"none", background:"none", fontSize:"1.2em",margin:"1em"}}
-            onClick={decoratedOnClick}
+			onClick={decoratedOnClick}
+			class="see-button"
         >
             {isCurrentEventKey ? 'Show Less' : 'Show More'}
         </button>
+		</div>
     );
 }
 
@@ -59,30 +61,27 @@ export default function Sponsors() {
 					<span>Sponsors</span>
 				</h2>
 
-				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 top-row">
 					{sponsors.slice(0, cutoff).map((sponsor, index) => (
-						<div className="col sponsor-col p-4 text-center" key={index}>
+						<div className="col sponsor-col p-4 text-center" key={index} >
 							<img src={sponsor.img} className={`sponsor-img ${sponsor.className}`} alt=""></img>
 						</div>
 					))}
 				</div>
 
 				<Accordion className="text-center">
-					<ContextAwareToggle eventKey="0"></ContextAwareToggle>
 					<Accordion.Collapse eventKey="0">
 						<>
 						<div className="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-4">
 							{sponsors.slice(cutoff, sponsors.length).map((sponsor, index) => (
-								<div className="col sponsor-col p-4" key={index}>
+								<div className="col sponsor-col p-4" key={index} >
 									<img src={sponsor.img} className={`sponsor-img-collapsed ${sponsor.className}`} alt=""></img>
 								</div>
 							))}
 						</div>
-						<Accordion.Toggle className="show-less" as="button" eventKey="0" style={{fontSize:"1.1em",marginTop:"1em", border:"none", background:"none"}}>
-							Show Less
-                    	</Accordion.Toggle>
 						</>
 					</Accordion.Collapse>
+					<ContextAwareToggle eventKey="0"></ContextAwareToggle>
 				</Accordion>
 			</div>
 		</div>

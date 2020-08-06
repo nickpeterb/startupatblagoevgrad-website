@@ -34,16 +34,18 @@
     }
 }
 
-@media (min-width: 576px) { 
-    .show-less {
-        display: none;
-    }
-}
-
 .sutherland {
     padding-top: 1em;
 }
 
 .nordics {
     padding-top: 1em;
+}
+
+.see-button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    position: absolute;
+    display: contents;
 }

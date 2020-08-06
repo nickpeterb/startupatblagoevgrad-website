@@ -44,8 +44,6 @@ import mitko from '../images/team/mitko.png';
 import andi from '../images/team/andi.png';
 import vladin from '../images/team/vladin.png';
 
-//idk
-
 
 const board = [
 	{ name: 'Velislav Tsenov', img: velko, title: "President" },
@@ -125,7 +123,7 @@ function Dept(props) {
 	/* Hide controls when carousel shows all members */
 	const [hideCarousel, setHideCarousel] = useState('');
 	const toggleHideCarousel = () => {
-		if (props.members.length <= 4) setHideCarousel('hide-carousel');
+		if (props.members.length <= 5) setHideCarousel('hide-carousel');
 		else setHideCarousel('');
 	}
 
@@ -179,7 +177,7 @@ function Dept(props) {
 			<MediaQuery minWidth={1000} onChange={toggleHideCarousel}>
 				
 				<Carousel className={hideCarousel} interval={null} style={{ marginBottom: '4em' }}>
-					{chunkArray(props.members, 4).map((group, index) => (
+					{chunkArray(props.members, 5).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} hideIndicators={true}/>
 						</Carousel.Item>

@@ -9,6 +9,7 @@ import Events from './components/Events.js';
 import Speakers from './components/Speakers.js';
 import Sponsors from './components/Sponsors.js';
 import Team from './components/Team.js';
+import Contact from './components/Contact.js';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
       <Sponsors />
       
       <Team />
+
+      <Contact />
 
     </div>
   );

@@ -71,8 +71,8 @@ export default function Contact() {
                                         <Form.Control as="select">
                                             <option>Reason for inquiry</option>
                                             <option>I have a question about your events</option>
-                                            <option>I want to be become a speaker</option>
-                                            <option>I want to be become a sponsor</option>
+                                            <option>I want to become a speaker</option>
+                                            <option>I want to become a sponsor</option>
                                         </Form.Control>
                                     </InputGroup>
                                 </Form.Group>

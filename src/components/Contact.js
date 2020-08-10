@@ -6,13 +6,15 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import './styles/Contact.css';
+
 export default function Contact() {
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
+        event.preventDefault();
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
-            event.preventDefault();
             event.stopPropagation();
         }
 
@@ -65,7 +67,7 @@ export default function Contact() {
                                     <InputGroup>
                                         <InputGroup.Prepend>
                                             <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white" }}>
-                                                <i className="fa fa-question" aria-hidden="true" style={{ fontSize: "1.4em" }}></i>
+                                                <i className="fa fa-question" aria-hidden="true" style={{ fontSize: "1.4em", marginRight:"5px" }}></i>
                                             </InputGroup.Text>
                                         </InputGroup.Prepend>
                                         <Form.Control as="select">
@@ -96,10 +98,10 @@ export default function Contact() {
                         <iframe
                             title="map"
                             className="map"
-                            frameborder="0"
+                            frameBorder="0"
                             style={{ border: "0", width: '100%', maxWidth:"50vh", height: '50vh', marginTop: "1em" }}
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4
-    &q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowfullscreen>
+    &q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowFullScreen>
                         </iframe>
 
                     </Col>

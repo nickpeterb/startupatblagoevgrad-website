@@ -14,13 +14,13 @@ import tsenovImg from '../images/speakers/tsenov.jpg';
 const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis. In egestas est eu dui finibus porttitor.';
 
 export default function Speakers() {
-    /* this should eventually be moved to its own file, or imported from a db */
+	/* this should eventually be moved to its own file, or imported from a db */
 	const speakersList = [
-		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator',img: bruhnevImg, bio: lorem},
+		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
 		{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
 		{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
 		{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
-		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator',img: bruhnevImg, bio: lorem },
+		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
 		{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
 		{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
 		{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
@@ -30,8 +30,8 @@ export default function Speakers() {
 	const [activeSpeaker, setActiveSpeaker] = useState({
 		name: String,
 		tagline: String,
-        img: Image,
-        bio: String
+		img: Image,
+		bio: String
 	});
 
 	/* handles opening and closing the modal */
@@ -46,25 +46,25 @@ export default function Speakers() {
 		<>
 			<Modal size="lg" scrollable={true} background="true" show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
-                    <div style={{display:"block"}}>
-					<Modal.Title><span>{activeSpeaker.name}</span></Modal.Title>
-                    <div>{activeSpeaker.tagline}, 2019 Conference Speaker</div>
-                    </div>
+					<div style={{ display: "block" }}>
+						<Modal.Title><span>{activeSpeaker.name}</span></Modal.Title>
+						<div>{activeSpeaker.tagline}, 2019 Conference Speaker</div>
+					</div>
 				</Modal.Header>
 				<Modal.Body>
-                    <div className="row">
-                        <div className="col-xs mx-auto">
-                            <img src={activeSpeaker.img} className="modal-img" alt=""></img>
-                        </div>
-                        <div className="col-lg speaker-bio">
-                            {activeSpeaker.bio}
-                        </div>
-                    </div>
-                </Modal.Body>
-                <Modal.Footer className="mx-auto">
-                    <Button>Their Website</Button>
-                    <Button>Other Link</Button>
-                </Modal.Footer>
+					<div className="row">
+						<div className="col-xs mx-auto">
+							<img src={activeSpeaker.img} className="modal-img" alt=""></img>
+						</div>
+						<div className="col-lg speaker-bio">
+							{activeSpeaker.bio}
+						</div>
+					</div>
+				</Modal.Body>
+				<Modal.Footer className="mx-auto">
+					<Button>Their Website</Button>
+					<Button>Other Link</Button>
+				</Modal.Footer>
 			</Modal>
 
 			<div className="speakers">

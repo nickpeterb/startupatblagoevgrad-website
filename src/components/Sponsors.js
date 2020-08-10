@@ -43,7 +43,7 @@ function ContextAwareToggle({ eventKey, callback }) {
         <button
             type="button"
 			onClick={decoratedOnClick}
-			class="see-button"
+			className="see-button"
         >
             {isCurrentEventKey ? 'Show Less' : 'Show More'}
         </button>

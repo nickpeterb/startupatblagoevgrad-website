@@ -3,9 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import './styles/Events.css';
 
-import confImg1 from '../images/speaker.jpg';
-import confImg2 from '../images/stock-speaker.jpg';
-import confImg3 from '../images/stock-speaker2.jpg';
+import confImg1 from '../images/events/speaker.jpg';
+import confImg2 from '../images/events/stock-speaker.jpg';
+import confImg3 from '../images/events/stock-speaker2.jpg';
 
 const eventsText1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis.";
 

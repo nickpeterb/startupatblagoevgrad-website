@@ -81,7 +81,7 @@ export default function Contact() {
                             </Form.Row>
 
                             <Form.Row>
-                                <Form.Group as={Col} controlId="validationMessage">
+                                <Form.Group as={Col}  md="11" controlId="validationMessage">
                                     <Form.Label><b style={{ color: "white" }}>Message</b></Form.Label>
                                     <Form.Control required as="textarea" style={{ height: "6em" }} />
                                 </Form.Group>
@@ -99,7 +99,6 @@ export default function Contact() {
                             title="map"
                             className="map"
                             frameBorder="0"
-                            style={{ border: "0", width: '100%', maxWidth:"50vh", height: '50vh', marginTop: "1em" }}
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4
     &q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowFullScreen>
                         </iframe>

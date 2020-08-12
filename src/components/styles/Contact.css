@@ -5,3 +5,17 @@
 .was-validated .form-control:valid {
     border: 1px solid #ced4da !important;
 }
+
+.map {
+    border: 0;
+    width: 100%;
+    float: right;
+    height: 50vh;
+    margin-top: 1em;
+}
+
+@media (max-width: 992px) { 
+    .map {
+        margin-top: 5em;
+    }
+}

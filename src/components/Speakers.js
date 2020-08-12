@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import OnImagesLoaded from 'react-on-images-loaded';
 
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
@@ -13,18 +14,19 @@ import tsenovImg from '../images/speakers/tsenov.jpg';
 
 const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis. In egestas est eu dui finibus porttitor.';
 
+/* this should eventually be moved to its own file, or imported from a db */
+const speakersList = [
+	{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
+	{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
+	{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
+	{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
+	{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
+	{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
+	{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
+	{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
+];
+
 export default function Speakers() {
-	/* this should eventually be moved to its own file, or imported from a db */
-	const speakersList = [
-		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
-		{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
-		{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
-		{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
-		{ name: 'Nick Bruhnev', tagline: 'Professional Procrastinator', img: bruhnevImg, bio: lorem },
-		{ name: 'Fatma Xhafa', tagline: 'Health Guru', img: xhafaImg, bio: lorem },
-		{ name: 'Mitko Mitko', tagline: 'Hackerman', img: galvinkovImg, bio: lorem },
-		{ name: 'Velislav Velisav', tagline: 'Mr. President', img: tsenovImg, bio: lorem },
-	];
 
 	/* keeps track of which speaker to display in the modal */
 	const [activeSpeaker, setActiveSpeaker] = useState({
@@ -41,6 +43,8 @@ export default function Speakers() {
 		setActiveSpeaker(item);
 		setShow(true);
 	};
+
+	const [loading, setLoading] = useState(true);
 
 	return (
 		<>
@@ -76,7 +80,10 @@ export default function Speakers() {
 						<span>Speakers</span>
 					</h2>
 
-					<div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+					{loading && <div class="loader">Loading...</div>}
+					
+					<OnImagesLoaded onLoaded={() => setLoading(false)}>
+					<div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" style={{display:loading && "none"}}>
 						{speakersList.map((speaker, index) => (
 							<div key={index}>
 								<div className="col mb-4" >
@@ -110,6 +117,7 @@ export default function Speakers() {
 							</div>
 						))}
 					</div>
+					</OnImagesLoaded>
 				</div>
 			</div>
 		</>

@@ -145,7 +145,7 @@ function Dept(props) {
 			<h3 className="text-center">{props.teamName}</h3>
 
 			<MediaQuery maxWidth={360}>
-				<Carousel interval={null} style={{ marginBottom: '4em' }}>
+				<Carousel interval={null} >
 					{chunkArray(props.members, 1).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} />
@@ -155,7 +155,7 @@ function Dept(props) {
 			</MediaQuery>
 
 			<MediaQuery minWidth={361} maxWidth={768}>
-				<Carousel interval={null} style={{ marginBottom: '4em' }}>
+				<Carousel interval={null} >
 					{chunkArray(props.members, 2).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} />
@@ -165,7 +165,7 @@ function Dept(props) {
 			</MediaQuery>
 
 			<MediaQuery minWidth={769} maxWidth={999}>
-				<Carousel interval={null} style={{ marginBottom: '4em' }}>
+				<Carousel interval={null} >
 					{chunkArray(props.members, 3).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} />
@@ -175,8 +175,7 @@ function Dept(props) {
 			</MediaQuery>
 
 			<MediaQuery minWidth={1000} onChange={toggleHideCarousel}>
-				
-				<Carousel className={hideCarousel} interval={null} style={{ marginBottom: '4em' }}>
+				<Carousel className={hideCarousel} interval={null} >
 					{chunkArray(props.members, 5).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} hideIndicators={true}/>
@@ -192,7 +191,7 @@ function Dept(props) {
 export default function Team() {
 	return (
 		<div className="team">
-			<div className="container" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
+			<div className="container-fluid" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
 				<h2 className="team-title text-center">
 					<span>Our Team</span>
 				</h2>

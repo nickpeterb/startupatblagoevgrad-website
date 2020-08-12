@@ -1,4 +1,4 @@
-.team .container {
+.team .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -11,6 +11,10 @@
     border-bottom: 4px solid;
     border-width: 0px 0px 4px 0px; 
     border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.team .carousel {
+    margin-bottom: 4em;;
 }
 
 .team .carousel .carousel-control-prev, 
@@ -49,8 +53,6 @@
 
 .bot-row {
     background-color: #F3F3F3;
-    /*border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;*/ 
 }
 
 .team-img {
@@ -89,15 +91,23 @@
     margin: 0 auto;
 }
 
-.team .container .carousel .carousel-indicators li {
+.team .container-fluid .carousel .carousel-indicators li {
     background-color: #999;
 }
 
-.team .container .carousel .carousel-indicators .active {
+.team .container-fluid .carousel .carousel-indicators .active {
     background-color: #444;
 }
 
 /* Hide indicators when carousel shows all members */
-.team .container .hide-carousel .carousel-indicators li {
+.team .container-fluid .hide-carousel .carousel-indicators li {
     display: none;
+}
+
+@media (min-width: 1000px) { 
+    .team .carousel {
+        width: 92vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

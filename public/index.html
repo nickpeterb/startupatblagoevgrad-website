@@ -24,24 +24,25 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 
-  <!-- jQuery CDN-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-
   <!-- collapse navbar by clicking outside it -->
   <script>
-    $(document).ready(function () {
-       $(document).click(function (event) {
-           var click = $(event.target);
-           var _open = $(".navbar-collapse").hasClass("show");
-           if (_open === true && !click.hasClass("navbar-toggler")) {
-               $(".navbar-toggler").click();
-           }
-       });
-    });
+    if (document.readyState != 'loading') {
+      toggleNavBar();
+    } else {
+      document.addEventListener('DOMContentLoaded', toggleNavBar);
+    }
+    function toggleNavBar() {
+      document.addEventListener('click', function (event) {
+        var clickedElem = event.target;
+        var isOpen = document.querySelector(".navbar-collapse").classList.contains("show");
+        if (isOpen && !clickedElem.classList.contains("navbar-toggler")) {
+          document.querySelector(".navbar-toggler").click();
+        }
+      }, false);
+    }
   </script>
 </body>
 
-  
+
 
 </html>

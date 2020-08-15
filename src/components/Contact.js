@@ -20,11 +20,13 @@ export default function Contact() {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
+            setValidated(true);
         }
         if(form.checkValidity() === true) {
             setShow(true);
+            document.getElementById("contact-us-form").reset();
+            setValidated(false);
         }
-        setValidated(true);
     };
 
     return (
@@ -43,7 +45,7 @@ export default function Contact() {
                 <Row>
                     <Col lg>
                         <h2 style={{ color: "white", paddingBottom: "0.5em" }}>Contact Us</h2>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} className="contact-us-form">
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} className="contact-us-form" id="contact-us-form">
                             <Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationName" >
                                     <InputGroup >
@@ -55,7 +57,7 @@ export default function Contact() {
                                         <Form.Control style={{border:"none"}}
                                             required
                                             type="text"
-                                            name="nameorcompany"
+                                            name="name_or_company"
                                             placeholder="Name or Company*"
                                         />
                                     </InputGroup>
@@ -88,7 +90,7 @@ export default function Contact() {
                                                 <i className="fa fa-question" aria-hidden="true" style={{ fontSize: "1.4em", marginRight:"5px" }}></i>
                                             </InputGroup.Text>
                                         </InputGroup.Prepend>
-                                        <Form.Control as="select" name="reason" style={{border:"none"}}>
+                                        <Form.Control as="select" name="reason_for_inquiry" style={{border:"none"}}>
                                             <option value="" disabled selected>Reason for inquiry</option>
                                             <option value="I have a question about your events">I have a question about your events</option>
                                             <option value="I want to become a speaker">I want to become a speaker</option>
@@ -102,7 +104,7 @@ export default function Contact() {
                             <Form.Row>
                                 <Form.Group as={Col}  md="11" controlId="validationMessage">
                                     <Form.Label><b style={{ color: "white"}}>Message*</b></Form.Label>
-                                    <Form.Control required as="textarea" type="text" name="message" placeholder="Ask us anything..." style={{ height: "6em", border:"none" }}  />
+                                    <Form.Control required as="textarea" type="text" name="message" placeholder="Ask us anything..." style={{ height: "8em", border:"none" }}  />
                                 </Form.Group>
                             </Form.Row>
                             
@@ -113,15 +115,12 @@ export default function Contact() {
                     </Col>
 
                     <Col className="text-center">
-
                         <iframe
                             title="map"
                             className="map"
                             frameBorder="0"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4
-    &q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowFullScreen>
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4&q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowFullScreen>
                         </iframe>
-
                     </Col>
                 </Row>
 

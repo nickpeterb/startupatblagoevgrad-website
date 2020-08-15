@@ -14,7 +14,6 @@ import stan from '../images/team/stan.png';
 import aneta from '../images/team/aneta.png';
 import dari from '../images/team/dari.png';
 import fatma from '../images/team/fatma.png';
-import karolina from '../images/team/karolina.png';
 import key from '../images/team/key.png';
 import nadiaT from '../images/team/nadia-t.png';
 import uerda from '../images/team/uerda.png';
@@ -23,7 +22,6 @@ import alex from '../images/team/alex.png';
 //Sponsorship
 import kris from '../images/team/kris.png';
 import nadiaD from '../images/team/nadia-d.png';
-import preso from '../images/team/preso.png';
 import siel from '../images/team/siel.png';
 import flavia from '../images/team/flavia.png';
 
@@ -58,7 +56,6 @@ const speakersDept = [
 	{ name: 'Darina Stanoilova', img: dari },
 	{ name: 'Alexandra Dimcheva', img: alex },
 	{ name: 'Nadia Traikova', img: nadiaT },
-	{ name: 'Karolina Kostadinova', img: karolina },
 	{ name: 'Key Prifti', img: key },
 	{ name: 'Aneta Gerginova', img: aneta },
 ]
@@ -66,7 +63,6 @@ const speakersDept = [
 const sponsorsDept = [
 	{ name: 'Kris Petrov', img: kris },
 	{ name: 'Nadia Dimitrova', img: nadiaD },
-	{ name: 'Preslav Vachev', img: preso },
 	{ name: 'Siel Rien', img: siel },
 	{ name: 'Flavia Gançi', img: flavia },
 ]

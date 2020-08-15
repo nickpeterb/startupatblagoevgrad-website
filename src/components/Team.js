@@ -7,7 +7,7 @@ import './styles/Team.css';
 //The Board
 import velko from '../images/team/velko.png';
 import elito from '../images/team/elito.png';
-import armela from '../images/team/armela.png'; //need actual picture
+import armela from '../images/team/armela.png';
 import stan from '../images/team/stan.png';
 
 //Speakers

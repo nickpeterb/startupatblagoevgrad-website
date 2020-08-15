@@ -7,7 +7,7 @@ import './styles/Team.css';
 //The Board
 import velko from '../images/team/velko.png';
 import elito from '../images/team/elito.png';
-import armela from '../images/team/armela-temp.png'; //need actual picture
+import armela from '../images/team/armela.png'; //need actual picture
 import stan from '../images/team/stan.png';
 
 //Speakers
@@ -18,7 +18,7 @@ import karolina from '../images/team/karolina.png';
 import key from '../images/team/key.png';
 import nadiaT from '../images/team/nadia-t.png';
 import uerda from '../images/team/uerda.png';
-/*import alex from '../images/team/alex.png'; missing */
+import alex from '../images/team/alex.png';
 
 //Sponsorship
 import kris from '../images/team/kris.png';
@@ -56,7 +56,7 @@ const speakersDept = [
 	{ name: 'Fatma Xhafa', img: fatma },
 	{ name: 'Uerda Muca', img: uerda },
 	{ name: 'Darina Stanoilova', img: dari },
-	{ name: 'Alexandra Dimcheva', img: '' },
+	{ name: 'Alexandra Dimcheva', img: alex },
 	{ name: 'Nadia Traikova', img: nadiaT },
 	{ name: 'Karolina Kostadinova', img: karolina },
 	{ name: 'Key Prifti', img: key },

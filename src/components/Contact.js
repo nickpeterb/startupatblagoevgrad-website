@@ -11,7 +11,11 @@ import './styles/Contact.css';
 export default function Contact() {
 
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
+    const handleClose = () => {
+        document.getElementById("contact-us-form").reset();
+        setValidated(false);
+        setShow(false);
+    }
 
     const [validated, setValidated] = useState(false);
 
@@ -24,8 +28,6 @@ export default function Contact() {
         }
         if(form.checkValidity() === true) {
             setShow(true);
-            document.getElementById("contact-us-form").reset();
-            setValidated(false);
         }
     };
 
@@ -45,7 +47,7 @@ export default function Contact() {
                 <Row>
                     <Col lg>
                         <h2 style={{ color: "white", paddingBottom: "0.5em" }}>Contact Us</h2>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} className="contact-us-form" id="contact-us-form">
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} id="contact-us-form">
                             <Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationName" >
                                     <InputGroup >
@@ -57,8 +59,26 @@ export default function Contact() {
                                         <Form.Control style={{border:"none"}}
                                             required
                                             type="text"
-                                            name="name_or_company"
-                                            placeholder="Name or Company*"
+                                            name="full_name"
+                                            id="full_name"
+                                            placeholder="Name*"
+                                        />
+                                    </InputGroup>
+                                </Form.Group>
+                            </Form.Row>
+                            
+                            <Form.Row>
+                                <Form.Group as={Col} md="9" controlId="validationCompany" >
+                                    <InputGroup >
+                                        <InputGroup.Prepend >
+                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none" }}>
+                                                <i className="fa fa-building" style={{ fontSize: "1.4em" }}></i>
+                                            </InputGroup.Text>
+                                        </InputGroup.Prepend >
+                                        <Form.Control style={{border:"none"}}
+                                            type="text"
+                                            name="company"
+                                            placeholder="Company"
                                         />
                                     </InputGroup>
                                 </Form.Group>
@@ -114,7 +134,7 @@ export default function Contact() {
 
                     </Col>
 
-                    <Col className="text-center">
+                    <Col className="map-wrapper text-center align-self-center" > 
                         <iframe
                             title="map"
                             className="map"

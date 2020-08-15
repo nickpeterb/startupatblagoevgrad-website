@@ -3,12 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
 import './styles/Contact.css';
 
 export default function Contact() {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
@@ -17,28 +21,41 @@ export default function Contact() {
         if (form.checkValidity() === false) {
             event.stopPropagation();
         }
-
+        if(form.checkValidity() === true) {
+            setShow(true);
+        }
         setValidated(true);
     };
 
     return (
+        <>
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Thanks for contacting us!</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                We'll get back to you as soon as possible.
+            </Modal.Body>
+        </Modal>
+
         <div className="contact" style={{ backgroundColor: "#2cb3ab", padding: "3em 0 3em 0" }}>
             <Container>
                 <Row>
                     <Col lg>
                         <h2 style={{ color: "white", paddingBottom: "0.5em" }}>Contact Us</h2>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} >
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} className="contact-us-form">
                             <Form.Row>
-                                <Form.Group as={Col} md="9" controlId="validationName">
-                                    <InputGroup>
+                                <Form.Group as={Col} md="9" controlId="validationName" >
+                                    <InputGroup >
                                         <InputGroup.Prepend >
-                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white" }}>
+                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none" }}>
                                                 <i className="fa fa-user" aria-hidden="true" style={{ fontSize: "1.4em" }}></i>
                                             </InputGroup.Text>
-                                        </InputGroup.Prepend>
-                                        <Form.Control
+                                        </InputGroup.Prepend >
+                                        <Form.Control style={{border:"none"}}
                                             required
                                             type="text"
+                                            name="nameorcompany"
                                             placeholder="Name or Company*"
                                         />
                                     </InputGroup>
@@ -49,45 +66,47 @@ export default function Contact() {
                                 <Form.Group as={Col} md="9" controlId="validationEmail">
                                     <InputGroup>
                                         <InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white" }}>
+                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none" }}>
                                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                                             </InputGroup.Text>
                                         </InputGroup.Prepend>
-                                        <Form.Control
-                                            type="text"
+                                        <Form.Control style={{border:"none"}}
+                                            type="email"
                                             placeholder="Email*"
+                                            name="email"
                                             required
                                         />
                                     </InputGroup>
                                 </Form.Group>
                             </Form.Row>
-
+                             
                             <Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationReason">
                                     <InputGroup>
                                         <InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white" }}>
+                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none"}}>
                                                 <i className="fa fa-question" aria-hidden="true" style={{ fontSize: "1.4em", marginRight:"5px" }}></i>
                                             </InputGroup.Text>
                                         </InputGroup.Prepend>
-                                        <Form.Control as="select">
-                                            <option>Reason for inquiry</option>
-                                            <option>I have a question about your events</option>
-                                            <option>I want to become a speaker</option>
-                                            <option>I want to become a sponsor</option>
+                                        <Form.Control as="select" name="reason" style={{border:"none"}}>
+                                            <option value="" disabled selected>Reason for inquiry</option>
+                                            <option value="I have a question about your events">I have a question about your events</option>
+                                            <option value="I want to become a speaker">I want to become a speaker</option>
+                                            <option value="I want to become a sponsor">I want to become a sponsor</option>
+                                            <option value="Nove of the above">Nove of the above</option>
                                         </Form.Control>
                                     </InputGroup>
                                 </Form.Group>
                             </Form.Row>
-
+                            
                             <Form.Row>
                                 <Form.Group as={Col}  md="11" controlId="validationMessage">
-                                    <Form.Label><b style={{ color: "white" }}>Message</b></Form.Label>
-                                    <Form.Control required as="textarea" style={{ height: "6em" }} />
+                                    <Form.Label><b style={{ color: "white"}}>Message*</b></Form.Label>
+                                    <Form.Control required as="textarea" type="text" name="message" placeholder="Ask us anything..." style={{ height: "6em", border:"none" }}  />
                                 </Form.Group>
                             </Form.Row>
-
-                            <Button type="submit" style={{ border: "none", backgroundColor: "white", color: "#2cb3ab" }}><b>SEND</b></Button>
+                            
+                            <input type="submit" value="SEND" className="submitButton"></input>
 
                         </Form>
 
@@ -108,5 +127,6 @@ export default function Contact() {
 
             </Container>
         </div>
+        </>
     );
 }

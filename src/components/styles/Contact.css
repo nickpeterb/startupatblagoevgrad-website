@@ -19,3 +19,12 @@
         margin-top: 5em;
     }
 }
+
+.submitButton {
+    border: none;
+    background-color: white;
+    color: #2cb3ab;
+    font-weight: bold;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}

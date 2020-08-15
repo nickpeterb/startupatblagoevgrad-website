@@ -115,11 +115,13 @@ function MembersSlide(props) {
 }
 
 function Dept(props) {
+	
+	const membersLgDevice = 5; //How many members to show on big screens
 
 	/* Hide controls when carousel shows all members */
 	const [hideCarousel, setHideCarousel] = useState('');
 	const toggleHideCarousel = () => {
-		if (props.members.length <= 5) setHideCarousel('hide-carousel');
+		if (props.members.length <= membersLgDevice) setHideCarousel('hide-carousel');
 		else setHideCarousel('');
 	}
 
@@ -172,7 +174,7 @@ function Dept(props) {
 
 			<MediaQuery minWidth={1000} onChange={toggleHideCarousel}>
 				<Carousel className={hideCarousel} interval={null} >
-					{chunkArray(props.members, 5).map((group, index) => (
+					{chunkArray(props.members, membersLgDevice).map((group, index) => (
 						<Carousel.Item key={index}>
 							<MembersSlide slide={group} bgColor={props.bgColor} hideIndicators={true}/>
 						</Carousel.Item>

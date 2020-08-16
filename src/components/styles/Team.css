@@ -19,7 +19,7 @@
 
 .team .carousel .carousel-control-prev, 
 .team .carousel .carousel-control-next{
-    width: 10% !important;
+    width: 8% !important;
 }
 
 /* Hide controls when carousel shows all members */
@@ -47,7 +47,7 @@
 }
 
 .fa-linkedin-square:hover {
-    color: lightgray;
+    color: #0077B5;
     cursor: pointer;
 }
 

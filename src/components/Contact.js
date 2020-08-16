@@ -48,6 +48,24 @@ export default function Contact() {
                     <Col lg>
                         <h2 style={{ color: "white", paddingBottom: "0.5em" }}>Contact Us</h2>
                         <Form noValidate validated={validated} onSubmit={handleSubmit} id="contact-us-form">
+                        <Form.Row>
+                                <Form.Group as={Col} md="9" controlId="validationEmail">
+                                    <InputGroup>
+                                        <InputGroup.Prepend>
+                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none" }}>
+                                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                            </InputGroup.Text>
+                                        </InputGroup.Prepend>
+                                        <Form.Control style={{border:"none"}}
+                                            type="email"
+                                            placeholder="Email*"
+                                            name="email"
+                                            required
+                                        />
+                                    </InputGroup>
+                                </Form.Group>
+                            </Form.Row>
+
                             <Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationName" >
                                     <InputGroup >
@@ -78,24 +96,6 @@ export default function Contact() {
                                             type="text"
                                             name="company"
                                             placeholder="Company"
-                                        />
-                                    </InputGroup>
-                                </Form.Group>
-                            </Form.Row>
-
-                            <Form.Row>
-                                <Form.Group as={Col} md="9" controlId="validationEmail">
-                                    <InputGroup>
-                                        <InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroupPrepend" style={{ backgroundColor: "white", border:"none" }}>
-                                                <i className="fa fa-envelope" aria-hidden="true"></i>
-                                            </InputGroup.Text>
-                                        </InputGroup.Prepend>
-                                        <Form.Control style={{border:"none"}}
-                                            type="email"
-                                            placeholder="Email*"
-                                            name="email"
-                                            required
                                         />
                                     </InputGroup>
                                 </Form.Group>

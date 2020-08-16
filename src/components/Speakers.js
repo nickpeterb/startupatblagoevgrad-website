@@ -80,7 +80,7 @@ export default function Speakers() {
 						<span>Speakers</span>
 					</h2>
 
-					{loading && <div class="loader">Loading...</div>}
+					{loading && <div className="loader">Loading...</div>}
 					
 					<OnImagesLoaded onLoaded={() => setLoading(false)}>
 					<div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" style={{display:loading && "none"}}>

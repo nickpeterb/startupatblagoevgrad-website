@@ -77,7 +77,7 @@ export default function Speakers() {
 					style={{ paddingTop: '2em', paddingBottom: '2em' }}
 				>
 					<h2 className="speakers-title text-center">
-						<span>Speakers</span>
+						<span>Past Speakers</span>
 					</h2>
 
 					{loading && <div className="loader">Loading...</div>}

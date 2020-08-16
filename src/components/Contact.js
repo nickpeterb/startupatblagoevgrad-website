@@ -57,10 +57,9 @@ export default function Contact() {
                                             </InputGroup.Text>
                                         </InputGroup.Prepend >
                                         <Form.Control style={{border:"none"}}
-                                            required
-                                            type="text"
-                                            name="full_name"
-                                            id="full_name"
+                                            required 
+                                            type="text" 
+                                            name="full_name" 
                                             placeholder="Name*"
                                         />
                                     </InputGroup>
@@ -110,8 +109,8 @@ export default function Contact() {
                                                 <i className="fa fa-question" aria-hidden="true" style={{ fontSize: "1.4em", marginRight:"5px" }}></i>
                                             </InputGroup.Text>
                                         </InputGroup.Prepend>
-                                        <Form.Control as="select" name="reason_for_inquiry" style={{border:"none"}}>
-                                            <option value="" disabled selected>Reason for inquiry</option>
+                                        <Form.Control as="select" name="reason_for_inquiry" defaultValue={'Reason for inquiry'} style={{border:"none"}}>
+                                            <option value="Reason for inquiry" disabled>Reason for inquiry</option>
                                             <option value="I have a question about your events">I have a question about your events</option>
                                             <option value="I want to become a speaker">I want to become a speaker</option>
                                             <option value="I want to become a sponsor">I want to become a sponsor</option>

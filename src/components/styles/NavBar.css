@@ -1,9 +1,11 @@
 .navbar {
   background: #f8f9fa !important;
   
-    border-bottom: 4px solid;
-    border-width: 0px 0px 4px 0px; /*for safari and iphones*/
-    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+  border-bottom: 4px solid;
+  border-width: 0px 0px 4px 0px; /*for safari and iphones*/
+  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+
+  text-align: right;
 }
 
 .nav-link {
@@ -29,11 +31,19 @@
   border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%,#731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
-.navbar{
-  text-align: right;
+@media (max-width: 768px) { 
+  .nav-link{
+    font-size: 3em;
+  }
+  .navbar-nav > .active > span{
+    border-width: 0px 0px 6px 0px; ;
+  }
+  .navbar-nav {
+    max-height: 90vh;
+  }
 }
 
-@media only screen and (max-width: 420px) {
+@media (max-width: 420px) {
   .navbar-brand > img {
     height: 25px;
     width: 25px;
@@ -43,7 +53,7 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .navbar-brand > img {
     height: 20px;
     width: 20px;
@@ -53,7 +63,7 @@
   }
 }
 
-@media only screen and (max-width: 325px) {
+@media (max-width: 325px) {
   .navbar-brand > img {
     height: 20px;
     width: 20px;

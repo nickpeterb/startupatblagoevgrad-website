@@ -31,12 +31,21 @@
     background-clip: content-box, border-box;
 }
 
+.testimonials .carousel .carousel-control-prev,
+.testimonials .carousel .carousel-control-next {
+    width: 8% !important;
+}
+
 @media (max-width: 768px) { 
     .testimonials-body {
         padding: 0 2em;
     }
     .testimonials-pic {
-        width: 17em;
+        width: 15em;
+    }
+    .testimonials .carousel .carousel-control-prev-icon,
+    .testimonials .carousel .carousel-control-next-icon {
+        display: none;
     }
 }
 

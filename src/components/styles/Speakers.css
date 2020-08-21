@@ -1,5 +1,5 @@
 .speakers {
-    background-color: #F3F3F3; /*#d6d3d3*/
+    /*background-color: #F3F3F3; */
     overflow-x: hidden; /* hides the overflow on mobile caused by the rotation for some reason */
 }
 
@@ -40,13 +40,13 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 
-    animation: spin infinite 7s linear;
-    transition: border-width 0.09s linear;
+    animation: spin infinite 6s linear;
+    transition: border-width 0.09s ease-in;
 }
 
 .speaker-border .card-img-top {
     border-radius: 50%;
-    animation: anti-spin infinite 7s linear;
+    animation: anti-spin infinite 6s linear;
 }
 
 .speaker-border:hover{

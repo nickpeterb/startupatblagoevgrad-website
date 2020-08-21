@@ -18,7 +18,7 @@ export default function Testimonials() {
 				</h2>
 			</div>
 
-			<Carousel interval={null}>
+			<Carousel interval={7000}>
 				<Carousel.Item>
 					<div className="container">
 						<div className="row align-items-center mb-5">

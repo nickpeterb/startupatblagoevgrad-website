@@ -1,6 +1,6 @@
 .masthead {
     height: 100vh;
-    background-image: url("../../images/speaker.jpg");
+    background-image: url("../../images/pepo-stage.jpg");
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .masthead-title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 8vw;
 }
 
@@ -31,8 +31,7 @@
         font-size: 13vw;
     }
 
-    /*. needed in case image seems off on mobile
-    masthead{
-        background-position: right;
-    }*/
+    .masthead{
+        background-position: center;
+    }
 }

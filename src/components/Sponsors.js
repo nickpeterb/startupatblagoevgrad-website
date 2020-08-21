@@ -61,7 +61,7 @@ export default function Sponsors() {
 					<span>Sponsors</span>
 				</h2>
 
-				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 top-row">
+				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 top-row">
 					{sponsors.slice(0, cutoff).map((sponsor, index) => (
 						<div className="col sponsor-col p-4 text-center" key={index} >
 							<img src={sponsor.img} className={`sponsor-img ${sponsor.className}`} alt=""></img>
@@ -72,7 +72,7 @@ export default function Sponsors() {
 				<Accordion className="text-center">
 					<Accordion.Collapse eventKey="0">
 						<>
-						<div className="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-4">
+						<div className="row row-cols-2 row-cols-sm-3 row-cols-md-4">
 							{sponsors.slice(cutoff, sponsors.length).map((sponsor, index) => (
 								<div className="col sponsor-col p-4" key={index} >
 									<img src={sponsor.img} className={`sponsor-img-collapsed ${sponsor.className}`} alt=""></img>

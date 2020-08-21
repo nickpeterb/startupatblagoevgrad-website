@@ -22,10 +22,18 @@
     width: 8% !important;
 }
 
-/* Hide controls when carousel shows all members */
+/* Hide arrow controls when carousel shows all members */
 .team .hide-carousel .carousel-control-prev, 
 .team .hide-carousel .carousel-control-next{
     display: none;
+}
+
+/* Hide arrow controls on touchscreens */
+@media (pointer:coarse) { 
+    .team .carousel .carousel-control-prev, 
+    .team .carousel .carousel-control-next{
+        display: none;
+    }
 }
 
 .team .carousel .carousel-control-prev-icon {

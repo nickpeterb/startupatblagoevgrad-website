@@ -28,12 +28,14 @@
     font-size: 1.2em;
 }
 
+/* spaghetti starts here */
+
 /* everything except iPhones */
 @supports not (-webkit-touch-callout: none) {
     .events .bg {
         background-attachment: fixed;
         width: 100%;
-        height: 30em;
+        height: 32em;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -45,7 +47,7 @@
     .events section {
         position: relative;
         width: 100%;
-        height: 30em;
+        height: 32em;
     }
     
     .events .bg-wrap {
@@ -73,7 +75,7 @@
 
 @media (min-width: 576px) {
     .events .flex-container {
-        padding: 2em;
+        padding: 2em 5em;
     }
 }
 
@@ -93,8 +95,8 @@
 }
 
 .slides {
-    height: 12em;
-    width: 20em;
+    height: auto;
+    width: 24em;
 }
 
 .slides img{
@@ -113,12 +115,13 @@
     }
     .slides {
         width: 90vw;
+        height: auto;
         margin: 1em;
     }
 }
 
 @media (max-width: 768px) {
-    .video-wrapper, .conf-img, .slides {
+    .video-wrapper {
         margin-bottom: 2em;
     }
 }

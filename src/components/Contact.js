@@ -114,7 +114,7 @@ export default function Contact() {
                                             <option value="I have a question about your events">I have a question about your events</option>
                                             <option value="I want to become a speaker">I want to become a speaker</option>
                                             <option value="I want to become a sponsor">I want to become a sponsor</option>
-                                            <option value="Nove of the above">Nove of the above</option>
+                                            <option value="Other">Other</option>
                                         </Form.Control>
                                     </InputGroup>
                                 </Form.Group>
@@ -138,7 +138,7 @@ export default function Contact() {
                             title="map"
                             className="map"
                             frameBorder="0"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4&q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria" allowFullScreen>
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDFjUIu9J4dcGhpfNADgVvshkY9uK8v8H4&q=American+University+in+Bulgaria,Blagoevgrad+Bulgaria">
                         </iframe>
                     </Col>
                 </Row>

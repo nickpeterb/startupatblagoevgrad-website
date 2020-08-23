@@ -16,7 +16,7 @@ export default function About() {
 
                         <p className="about-body">{aboutText}</p>
 
-                        <div className="row m-auto" >
+                        <div className="row text-center" >
                             <div className="col">
                                 <h1><span style={{color:"#ec7510"}}>15</span></h1>
                                 <h3>events</h3>

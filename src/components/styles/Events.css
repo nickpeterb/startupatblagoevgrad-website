@@ -19,35 +19,131 @@
     border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
+.events .flex-container {
+    padding: 1em;
+}
+
 .events-body {
     margin-top: 1em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
-.events section {
-    position: relative;
-    width: 100%;
-    height: 30em;
+/* everything except iPhones */
+@supports not (-webkit-touch-callout: none) {
+    .events .bg {
+        background-attachment: fixed;
+        width: 100%;
+        height: 30em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
-.events .bg-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* for iPhones */
+@supports (-webkit-touch-callout: none) {
+    .events section {
+        position: relative;
+        width: 100%;
+        height: 30em;
+    }
+    
+    .events .bg-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .events .bg {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
 }
 
-.events .bg {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
+@media (min-width: 576px) {
+    .events .flex-container {
+        padding: 2em;
+    }
 }
+
+.conf-img {
+    height: 20em;
+    width: auto;
+    border-radius: 10px;
+}
+
+.video-weekend2019 {
+    border-radius: 10px;
+}
+
+.video-wrapper {
+    height: 12em;
+    width: 20em;
+}
+
+.slides {
+    height: 12em;
+    width: 20em;
+}
+
+.slides img{
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .video-wrapper {
+        width: 90vw;
+        margin: 1em;
+    }
+    .conf-img {
+        width: 70vw;
+        height: auto;
+        margin: 1em;
+    }
+    .slides {
+        width: 90vw;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-wrapper, .conf-img, .slides {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .relative-lg {
+        position: relative;
+    }
+    .video-wrapper {
+        margin-top: -4.5em;
+        z-index: 2;
+        height: 17em;
+        width: 30em;
+    }
+    .conf-img {
+        margin-top: -12em;
+        z-index: 100;
+        height: 23em;
+        width: auto;
+    }
+    .slides {
+        margin-top: -9em;
+        z-index: 2;
+        height: 16em;
+        width: 29em;
+    }
+}
+

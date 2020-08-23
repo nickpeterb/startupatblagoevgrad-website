@@ -24,6 +24,7 @@ export default function Testimonials() {
 						<div className="row align-items-center mb-5">
 						    <div className="col-md">
 								<img
+									loading="lazy"
 									className="testimonials-pic"
 									src={tesimonialsImg1}
 									alt=""
@@ -55,6 +56,7 @@ export default function Testimonials() {
 						<div className="row align-items-center mb-5">
 							<div className="col-md">
 								<img
+									loading="lazy"
 									className="testimonials-pic"
 									src={tesimonialsImg2}
 									alt=""
@@ -86,6 +88,7 @@ export default function Testimonials() {
 						<div className="row align-items-center mb-5">
 							<div className="col-md">
 								<img
+									loading="lazy"
 									className="testimonials-pic"
 									src={tesimonialsImg3}
                                     alt=""

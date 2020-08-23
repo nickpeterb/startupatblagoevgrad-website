@@ -19,6 +19,7 @@ function Slides(props) {
             {props.imgs.map((img, index) => (
                 <Carousel.Item key={index}>
                   <img
+                    loading="lazy"
                     className="d-block w-100"
                     src={img}
                     alt={`Slide Number ${index+1}`}
@@ -49,7 +50,7 @@ export default function Events() {
                         <div className="events-body">{eventsText1}</div>
                     </div>
                     <div className="col-xs relative-lg m-auto">
-                        <img src={lightbulb} alt="" className="conf-img" />
+                        <img loading="lazy" src={lightbulb} alt="" className="conf-img" />
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ export default function Events() {
                 <div className="row">
                     <div className="col-xs relative-lg m-auto">
                         <div className="video-wrapper">
-                            <iframe title="video-weekend2019" className="video-weekend2019" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/rwtviNEwc4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                            <iframe loading="lazy" title="video-weekend2019" className="video-weekend2019" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/rwtviNEwc4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
                         </div>
                     </div>
                     <div className="col-md">

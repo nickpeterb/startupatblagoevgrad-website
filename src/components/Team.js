@@ -93,6 +93,7 @@ function MembersSlide(props) {
 				{props.slide.map((member, index) => (
 					<div className="col member-img-col text-center" style={{ height: '13em' }} key={index}>
 						<img
+							loading="lazy"
 							src={member.img}
 							alt={member.name}
 							className="team-img"

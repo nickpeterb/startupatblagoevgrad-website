@@ -58,7 +58,7 @@ export default function Speakers() {
 				<Modal.Body>
 					<div className="row">
 						<div className="col-xs mx-auto">
-							<img src={activeSpeaker.img} className="modal-img" alt=""></img>
+							<img loading="lazy" src={activeSpeaker.img} className="modal-img" alt=""></img>
 						</div>
 						<div className="col-lg speaker-bio">
 							{activeSpeaker.bio}
@@ -101,6 +101,7 @@ export default function Speakers() {
 												onClick={() => handleShow(speaker)}
 											>
 												<img
+													loading="lazy"
 													src={speaker.img}
 													className="card-img-top"
 													alt=""

@@ -40,12 +40,18 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 
+    -webkit-animation: spin infinite 6s linear;
+    -moz-animation: spin infinite 6s linear;
+    -o-animation: spin infinite 6s linear;
     animation: spin infinite 6s linear;
     transition: border-width 0.09s ease-in;
 }
 
 .speaker-border .card-img-top {
     border-radius: 50%;
+    -webkit-animation: anti-spin infinite 6s linear;
+    -moz-animation: anti-spin infinite 6s linear;
+    -o-animation: anti-spin infinite 6s linear;
     animation: anti-spin infinite 6s linear;
 }
 

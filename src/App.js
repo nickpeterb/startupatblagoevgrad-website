@@ -23,9 +23,7 @@ function App() {
     
       <Masthead />
     
-      <About />
-    
-      <Testimonials />  
+      <About />  
     
       <Events />
 
@@ -34,6 +32,8 @@ function App() {
       <Sponsors />
       
       <Team />
+
+      <Testimonials />
 
       <Contact />
 

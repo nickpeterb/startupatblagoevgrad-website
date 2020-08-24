@@ -41,8 +41,6 @@ export default function Events() {
                 </div>
             </section>
 
-            {/*<div className="bg" style={{ backgroundImage: `url(${crowd})` }}></div>*/}
-
             <div className="flex-container">
                 <div className="row">
                     <div className="col-sm">

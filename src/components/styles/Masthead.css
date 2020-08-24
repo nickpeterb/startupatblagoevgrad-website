@@ -11,7 +11,7 @@
 /* revert to normal background on ios */
 @supports (-webkit-touch-callout: none) {
     .masthead {
-        background-attachment: initial;
+        background-attachment: scroll;
     }
 }
 

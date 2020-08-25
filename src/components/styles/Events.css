@@ -139,16 +139,16 @@
         position: relative;
     }
     .video-wrapper {
-        margin-top: -4.5em;
+        margin-top: -6.5em;
         z-index: 2;
-        height: 17em;
-        width: 30em;
+        height: 18.7em;
+        width: 29em;
         border: 5px solid white;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .conf-img {
         margin-top: -12em;
-        z-index: 100;
+        z-index: 2;
         height: 23em;
         width: auto;
         border: 5px solid white;
@@ -160,7 +160,7 @@
         height: 16em;
         width: 29em;
         border: 5px solid white;
-        border-radius: 10px;
+        border-radius: 15px;
     }
 }
 

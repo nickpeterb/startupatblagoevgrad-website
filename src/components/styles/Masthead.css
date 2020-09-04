@@ -8,6 +8,14 @@
     background-attachment: fixed; /* doesn't work on ios */
 }
 
+/* Safari 10.0+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .masthead {
+        background-attachment: scroll;
+    }
+}}
+
 /* revert to normal background on ios */
 @supports (-webkit-touch-callout: none) {
     .masthead {

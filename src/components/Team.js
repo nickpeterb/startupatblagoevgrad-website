@@ -117,7 +117,7 @@ function MembersSlide(props) {
 
 function Dept(props) {
 	
-	const membersLgDevice = 5; //How many members to show on big screens
+	const membersLgDevice = 4; //How many members to show on big screens
 
 	/* Hide controls when carousel shows all members */
 	const [hideCarousel, setHideCarousel] = useState('');

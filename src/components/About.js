@@ -4,7 +4,7 @@ import './styles/About.css';
 
 //import armelaPrizePic from '../images/armela-prize.jpg';
 
-const aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis.";
+const aboutText = "StartUP@Blagoevgrad is a student club in the American University in Bulgaria, that specializes in the organization of different entrepreneurial events. The focus of these events is to bring together both up-and-coming entrepreneurs and experts in the respective fields, and ambitious students, who want to know how challenging the journey to have a reputable business actually is. We try our best to provide our attendees with a clear idea of the challenges and wins that follow those who have set course on the entrepreneurial path."
 
 export default function About() {
     return (

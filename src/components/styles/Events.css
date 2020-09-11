@@ -24,8 +24,13 @@
 }
 
 .events-body {
-    margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 1.17em;
+}
+
+@media (max-width: 576px) { 
+    .events-body {
+        margin-top: 1em;
+    }
 }
 
 /* spaghetti starts here */
@@ -141,13 +146,13 @@
     .video-wrapper {
         margin-top: -6.5em;
         z-index: 2;
-        height: 18.7em;
+        height: 20em;
         width: 29em;
         border: 5px solid white;
         border-radius: 15px;
     }
     .conf-img {
-        margin-top: -12em;
+        margin-top: -8em;
         z-index: 2;
         height: 23em;
         width: auto;

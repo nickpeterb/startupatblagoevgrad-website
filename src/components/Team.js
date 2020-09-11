@@ -86,6 +86,8 @@ const itDept = [
 	{ name: 'Vladin Bonov', img: vladin, linkedIn: "" }
 ]
 
+const teamDesc = "The team of StartUP@Blagoevgrad, much like any team, is made up of different cogs that help the machine work perfectly. In our team, the work of the machine depends on the impeccable work of our four big cogs, also known as our four departments - Speakers, Sponsorship, Marketing, and IT.";
+
 function MembersSlide(props) {
 	return (
 		<div className="members-slide">
@@ -193,8 +195,9 @@ export default function Team() {
 			<div className="container-fluid" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
 				<h2 className="team-title text-center">
 					<span>Our Team</span>
+					{/*<div className="team-desc">{teamDesc}</div>*/}
 				</h2>
-
+				
 				<Dept teamName="The Board" members={board} bgColor="#fbbb06" />
 
 				<Dept teamName="Speakers Department" members={speakersDept} bgColor="#aa1638" />

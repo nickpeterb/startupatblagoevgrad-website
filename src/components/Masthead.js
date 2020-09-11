@@ -13,18 +13,6 @@ export default function Masthead() {
               <h1 className="masthead-title">
                STARTUP.<br/>BUILD.<br/>SUSTAIN.
               </h1>
-              <button type="primary" className="btn btn-light">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-60}
-                duration={500}
-              >
-                Learn More
-              </Link>
-              </button>
             </div>
           </div>
         </div>

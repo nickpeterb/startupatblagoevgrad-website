@@ -47,14 +47,14 @@
 }
 
 
-.fa-linkedin-square {
+.team .fa-linkedin-square {
     color: grey;
     font-size: 2.3em;
     margin: 0.4em;
     margin-bottom: 1.2em;
 }
 
-.fa-linkedin-square:hover {
+.team .fa-linkedin-square:hover {
     color: #0077B5;
     cursor: pointer;
 }
@@ -112,9 +112,15 @@
     display: none;
 }
 
+.team-desc {
+    font-size: 0.6em;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
 /* Make the departments not take up the width of the whole screen on lg devices*/
 @media (min-width: 1000px) { 
-    .team .carousel {
+    .team .carousel, .team-desc {
         width: 92vw;
         margin-left: auto;
         margin-right: auto;

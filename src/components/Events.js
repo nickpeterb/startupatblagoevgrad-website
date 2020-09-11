@@ -11,7 +11,8 @@ import lightbulb from '../images/events/lightbulb.jpg';
 import ferrosWin from '../images/events/ferros-win.jpg';
 import groupDiscussion from '../images/events/group-discussion.jpg';
 
-const eventsText1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, accumsan in sem vel, imperdiet maximus lorem. Vivamus pulvinar odio id tortor venenatis, id pulvinar nisi convallis. Vivamus sed tortor porttitor, sagittis dolor ut, facilisis ipsum. Aenean lobortis, tellus ut rutrum placerat, ligula leo imperdiet metus, vitae congue lacus orci sed orci. Ut viverra mi in mi egestas semper et a turpis.";
+const confText = "The biggest event that StartUP@Blagoevgrad hosts throughout the duration of the academic year is the StartUP Conference. The conference is a one-day-long conference, packed full of interesting lectures and workshops. The students are welcome to attend lectures given by a number of speakers, both up-and-coming and wildly experienced, to accumulate knowledge from the speakers’ experience.  Another aspect of the conference is the workshops, where the attendees are given the opportunity to put the knowledge that they were given throughout the day to use and to get a vague idea of how different fields of business.";
+const weekendText = "The second big event that the club organizes is the StartUP Weekend. It is a 3-day-long event starting on Friday, where the participants are given 3 days to come up with an idea for a start-up idea and prepare everything to be presented by Sunday. The participants, divided into teams, have to come up with an original idea for a start-up, polish it out and present it in front of our jury, who then decide on who the 3 best ideas were. Throughout the duration of the weekend, the teams have mentors, who are there to help them анд ensure that their idea is more than ready to be seen by the judges."; 
 
 function Slides(props) {
     return (
@@ -43,9 +44,9 @@ export default function Events() {
 
             <div className="flex-container">
                 <div className="row">
-                    <div className="col-sm">
+                    <div className="col-md">
                         <h2 style={{ fontWeight: "400" }}>StartUP <span style={{ color: "#ec7510" }}>Conference</span></h2>
-                        <div className="events-body">{eventsText1}</div>
+                        <div className="events-body">{confText}</div>
                     </div>
                     <div className="col-xs relative-lg m-auto">
                         <img loading="lazy" src={lightbulb} alt="" className="conf-img" />
@@ -68,13 +69,11 @@ export default function Events() {
                     </div>
                     <div className="col-md">
                         <h2 style={{ fontWeight: "400" }}>StartUP <span style={{ color: "#ce1c63" }}>Weekend</span></h2>
-                        <div className="events-body">{eventsText1}</div>
+                        <div className="events-body">{weekendText}</div>
                     </div>
-
                 </div>
-
             </div>
-
+            {/* 
             <section>
                 <div className="bg-wrap">
                     <div className="bg" style={{ backgroundImage: `url(${joshua})` }}></div>
@@ -85,7 +84,7 @@ export default function Events() {
                 <div className="row">
                     <div className="col-md">
                         <h2 style={{ fontWeight: "400" }}>Още Нещо <span style={{ color: "#2cb3ab" }}>Яко</span></h2>
-                        <div className="events-body">{eventsText1}</div>
+                        <div className="events-body">{weekendText}</div>
                     </div>
 
                     <div className="col-xs relative-lg m-auto">
@@ -95,7 +94,7 @@ export default function Events() {
                     </div>
                 </div>
             </div>
-
+            */}
             <section>
                 <div className="bg-wrap">
                     <div className="bg" style={{ backgroundImage: `url(${weekend2019})` }}></div>

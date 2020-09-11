@@ -135,10 +135,31 @@
     }
 }
 
-.modal-title span{
+.modal .fa-linkedin-square {
+  color: grey;
+  font-size: 2.3em;
+}
+
+.modal .fa-linkedin-square:hover {
+  color: #0077B5;
+  cursor: pointer;
+}
+
+.speaker-bio span{
+    font-size: 1.5em;
     border-bottom: 4px solid;
     border-width: 0px 0px 4px 0px; 
     border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  padding: 0.5rem 0.5rem 0 0 !important;
+}
+
+.modal-header .close {
+  padding-right: 1.7rem !important;
+  padding-top: 1.5rem !important;
 }
 
 .modal-img {
@@ -152,13 +173,6 @@
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-}
-
-/* Vertically centers bio on larger screens. Should be changed if text is longer. */
-@media (min-width: 991px) { 
-    .speaker-bio {
-        margin-top: 2em;
-    }
 }
 
 /* Loading Animation */

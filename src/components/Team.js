@@ -44,17 +44,17 @@ import vladin from '../images/team/vladin.png';
 
 
 const board = [
-	{ name: 'Velislav Tsenov', img: velko, title: "President", linkedIn: "" },
-	{ name: 'Elena Ivanova', img: elito, title: "Vice President", linkedIn: "" },
+	{ name: 'Velislav Tsenov', img: velko, title: "President", linkedIn: "https://www.linkedin.com/in/velislavtsenov/" },
+	{ name: 'Elena Ivanova', img: elito, title: "Vice President", linkedIn: "https://www.linkedin.com/in/elena-ivanova-636178153/" },
 	{ name: 'Armela Gjylsheni', img: armela, title: "Vice President", linkedIn: "" },
-	{ name: 'Stanislav Todorov', img: stan, title: "Treasurer", linkedIn: "" }
+	{ name: 'Stanislav Todorov', img: stan, title: "Treasurer", linkedIn: "https://www.linkedin.com/in/stanislav-todorov-2a8a78198/" }
 ];
 
 const speakersDept = [
 	{ name: 'Fatma Xhafa', img: fatma, linkedIn: "" },
-	{ name: 'Uerda Muca', img: uerda, linkedIn: "" },
+	{ name: 'Uerda Muca', img: uerda, linkedIn: "https://www.linkedin.com/in/uerda-muca-340140135/" },
 	{ name: 'Darina Stanoilova', img: dari, linkedIn: "" },
-	{ name: 'Alexandra Dimcheva', img: alex, linkedIn: "" },
+	{ name: 'Alexandra Dimcheva', img: alex, linkedIn: "https://www.linkedin.com/in/alexandra-dimcheva-b18866172/" },
 	{ name: 'Nadia Traikova', img: nadiaT, linkedIn: "" },
 	{ name: 'Key Prifti', img: key, linkedIn: "" },
 	{ name: 'Aneta Gerginova', img: aneta, linkedIn: "" },
@@ -62,21 +62,21 @@ const speakersDept = [
 
 const sponsorsDept = [
 	{ name: 'Kris Petrov', img: kris, linkedIn: "" },
-	{ name: 'Nadia Dimitrova', img: nadiaD, linkedIn: "" },
+	{ name: 'Nadia Dimitrova', img: nadiaD, linkedIn: "http://linkedin.com/in/dimitrovani/" },
 	{ name: 'Siel Rien', img: siel, linkedIn: "" },
 	{ name: 'Flavia Gançi', img: flavia, linkedIn: "" },
 ]
 
 const marketingDept = [
 	{ name: 'Emma Kerencheva', img: emma, linkedIn: "" },
-	{ name: 'Boyan Zlatarski', img: boyan, linkedIn: "" },
+	{ name: 'Boyan Zlatarski', img: boyan, linkedIn: "http://linkedin.com/in/boyan-zlatarski-5891261a6/" },
 	{ name: 'Denislava Angelova', img: deni, linkedIn: "" },
-	{ name: 'Ilia Dobrev', img: ilko, linkedIn: "" },
+	{ name: 'Ilia Dobrev', img: ilko, linkedIn: "https://www.linkedin.com/in/ilia-dobrev/" },
 	{ name: 'Nikol Peeva', img: nikol, linkedIn: "" },
 	{ name: 'Teddy Vasileva', img: teddy, linkedIn: "" },
 	{ name: 'Petar Hristakiev', img: petar, linkedIn: "" },
 	{ name: 'Diana Radkova', img: didi, linkedIn: "" },
-	{ name: 'Emily Timcheva', img: emily, linkedIn: "" }
+	{ name: 'Emily Timcheva', img: emily, linkedIn: "https://www.linkedin.com/in/emily-timcheva/" }
 ]
 
 const itDept = [
@@ -85,8 +85,6 @@ const itDept = [
 	{ name: 'Andrea Shipkovensky', img: andi, linkedIn: "" },
 	{ name: 'Vladin Bonov', img: vladin, linkedIn: "" }
 ]
-
-const teamDesc = "The team of StartUP@Blagoevgrad, much like any team, is made up of different cogs that help the machine work perfectly. In our team, the work of the machine depends on the impeccable work of our four big cogs, also known as our four departments - Speakers, Sponsorship, Marketing, and IT.";
 
 function MembersSlide(props) {
 	return (
@@ -109,7 +107,12 @@ function MembersSlide(props) {
 						<div className="member-name">{member.name}</div>
 						<span className="member-title">{member?.title}</span>
 						<div className="line" style={{borderColor:props.bgColor}}></div>
-						<i className="fa fa-linkedin-square"></i>
+						{member.linkedIn !== "" ?
+							<i className="fa fa-linkedin-square" onClick={() => window.open(member.linkedIn,'_blank')}></i>
+						:
+							<div className="empty-square"></div>
+						}
+							
 					</div>
 				))}
 			</div>
@@ -195,7 +198,6 @@ export default function Team() {
 			<div className="container-fluid" style={{ paddingTop: '2em', paddingBottom: '2em' }}>
 				<h2 className="team-title text-center">
 					<span>Our Team</span>
-					{/*<div className="team-desc">{teamDesc}</div>*/}
 				</h2>
 				
 				<Dept teamName="The Board" members={board} bgColor="#fbbb06" />

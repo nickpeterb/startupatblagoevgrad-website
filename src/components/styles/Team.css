@@ -59,6 +59,15 @@
     cursor: pointer;
 }
 
+.team .empty-square {
+    background-color: grey;
+    border-radius: 0.4em;
+    width: 2em;
+    height: 2em;
+    margin: 0.9em auto 1.2em auto;
+    
+}
+
 .bot-row {
     background-color: #F3F3F3;
 }

@@ -2,8 +2,6 @@ import React from 'react';
 
 import './styles/Masthead.css';
 
-import { Link } from "react-scroll";
-
 export default function Masthead() {
     return (
         <div className="masthead">

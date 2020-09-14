@@ -11,6 +11,10 @@
   font-weight: 600;
 }
 
+.lang-button:hover {
+  text-decoration: none !important;
+}
+
 .navbar-brand {
   font-weight: 600;
   color: black !important;

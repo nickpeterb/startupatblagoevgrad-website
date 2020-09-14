@@ -7,9 +7,17 @@ import logo from '../images/logo.png';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import {Link as RouterLink} from "react-router-dom";
+
 import './styles/NavBar.css';
 
-export default function NavBar(){
+function whichLang(lang){
+  if(lang === "en") return "/bg";
+  if(lang === "bg") return "/en";
+  return "/en";
+}
+
+export default function NavBar(props){
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -103,6 +111,14 @@ export default function NavBar(){
             >
               <span>Contact</span>
           </Nav.Link>
+
+          <Nav.Link>
+          <RouterLink to={whichLang(props.lang)} className="lang-button">
+            { props.lang === "en" && <span>BG</span> }
+            { props.lang === "bg" && <span>EN</span> }
+          </RouterLink>
+          </Nav.Link>
+          
 
         </Nav>
       </Navbar.Collapse>

@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 import logo from '../images/logo.png';
+import usFlag from '../images/us-flag.svg';
+import bgFlag from '../images/bg-flag.svg';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -114,8 +116,8 @@ export default function NavBar(props){
 
           <Nav.Link>
           <RouterLink to={whichLang(props.lang)} className="lang-button">
-            { props.lang === "en" && <span>BG</span> }
-            { props.lang === "bg" && <span>EN</span> }
+            { props.lang === "en" && <img src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
+            { props.lang === "bg" && <img src={usFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
           </RouterLink>
           </Nav.Link>
           

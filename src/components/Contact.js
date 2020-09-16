@@ -8,7 +8,34 @@ import Modal from 'react-bootstrap/Modal';
 
 import './styles/Contact.css';
 
-export default function Contact() {
+const contactText = {
+    "title": {
+        "en": "Contact",
+        "bg": "Контакт"
+    },
+    "name": {
+        "en": "Name",
+        "bg": "Име"
+    },
+    "company": {
+        "en": "Company",
+        "bg": "Компания"
+    },
+    "message": {
+        "en": "Message",
+        "bg": "Съобщение"
+    },
+    "askus": {
+        "en": "Ask us anything...",
+        "bg": "Задайте въпрос..."
+    },
+    "send": {
+        "en": "SEND",
+        "bg": "Изпрати"
+    },
+}
+
+export default function Contact(props) {
 
     const [show, setShow] = useState(false);
     const handleClose = () => {
@@ -46,7 +73,7 @@ export default function Contact() {
             <Container>
                 <Row>
                     <Col lg>
-                        <h2 style={{ color: "white", paddingBottom: "0.5em" }}>Contact Us</h2>
+                        <h2 style={{ color: "white", paddingBottom: "0.5em" }}>{contactText.title[props.lang]}</h2>
                         <Form noValidate validated={validated} onSubmit={handleSubmit} id="contact-us-form">
                         <Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationEmail">
@@ -78,7 +105,7 @@ export default function Contact() {
                                             required 
                                             type="text" 
                                             name="full_name" 
-                                            placeholder="Name*"
+                                            placeholder={contactText.name[props.lang] + "*"}
                                         />
                                     </InputGroup>
                                 </Form.Group>
@@ -95,13 +122,13 @@ export default function Contact() {
                                         <Form.Control style={{border:"none"}}
                                             type="text"
                                             name="company"
-                                            placeholder="Company"
+                                            placeholder={contactText.company[props.lang]}
                                         />
                                     </InputGroup>
                                 </Form.Group>
                             </Form.Row>
                              
-                            <Form.Row>
+                            {/*<Form.Row>
                                 <Form.Group as={Col} md="9" controlId="validationReason">
                                     <InputGroup>
                                         <InputGroup.Prepend>
@@ -118,16 +145,16 @@ export default function Contact() {
                                         </Form.Control>
                                     </InputGroup>
                                 </Form.Group>
-                            </Form.Row>
+                            </Form.Row>*/}
                             
                             <Form.Row>
                                 <Form.Group as={Col}  md="11" controlId="validationMessage">
-                                    <Form.Label><b style={{ color: "white"}}>Message*</b></Form.Label>
-                                    <Form.Control required as="textarea" type="text" name="message" placeholder="Ask us anything..." style={{ height: "8em", border:"none" }}  />
+                                    <Form.Label><b style={{ color: "white"}}>{contactText.message[props.lang]}*</b></Form.Label>
+                                    <Form.Control required as="textarea" type="text" name="message" placeholder={contactText.askus[props.lang]} style={{ height: "8em", border:"none" }}  />
                                 </Form.Group>
                             </Form.Row>
                             
-                            <input type="submit" value="SEND" className="submitButton"></input>
+                            <input type="submit" value={contactText.send[props.lang]} className="submitButton"></input>
 
                         </Form>
 

@@ -1,5 +1,9 @@
 .testimonials {
-    background-color: #F3F3F3;
+    background-color: #fafafa;
+    margin: 0vw 5.73vw 7vw 5.73vw;
+    box-shadow: 25px 25px 45px -22px black;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
 }
 
 .testimonials-title {

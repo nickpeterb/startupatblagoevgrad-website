@@ -6,6 +6,15 @@
     border: 1px solid #e6e6e6;
 }
 
+/* REMOVE WHEN MORE TESTIMONIALS ARE ADDED */
+.testimonials .carousel .carousel-control-prev, 
+.testimonials .carousel .carousel-control-next{
+    display: none;
+}
+.testimonials .carousel .carousel-indicators li {
+    display: none;
+}
+
 .testimonials-title {
     padding-top: 1em;
 }

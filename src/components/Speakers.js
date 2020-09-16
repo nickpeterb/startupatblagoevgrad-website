@@ -27,24 +27,32 @@ const AshKumra = 'Ash is a community builder, global speaker, meditation coach a
 
 /* this could eventually be moved to its own file, or imported from a db */
 const speakersList = [
-	{ name: 'Kiril Petkov', tagline: 'Co-Founder, Center for Economic Strategy', img: kirilImg, bio: KirilPetkov, linkedIn: "" },
-	{ name: 'Omar Al Busaidy', tagline: 'Fulbright Nominee, Entrepreneur, and Futurist', img: omarImg, bio: OmarAlBusaidy, linkedIn: "" },
-	{ name: 'Clifford Hurst', tagline: 'Professor of Entrepreneurship at Westminster College', img: cliffordImg, bio: CliffordHurst, linkedIn: "" },
-	{ name: 'Justine Toms', tagline: 'Founder, ABC Design & Communication', img: justineImg, bio: JustineToms, linkedIn: "" },
-	{ name: 'Niki Iliev', tagline: 'Director and Actor, "The Foreigner"', img: nikiImg, bio: NikiIliev, linkedIn: "" },
-	{ name: 'Boris Hristov', tagline: 'Founder, 365Labs and PowerPoint Specialist', img: borisImg, bio: BorisHristov, linkedIn: "" },
-	{ name: 'Blagovesta Pugyova', tagline: 'Founder, Give A Book Foundation', img: blagovestaImg, bio: BlagovestaPugyova, linkedIn: "" },
-	{ name: 'Ash Kumra', tagline: 'Radio Show Host, Global Speaker', img: ashImg, bio: AshKumra, linkedIn: "" },
+	{ name: 'Kiril Petkov', tagline: 'Co-Founder, Center for Economic Strategy', img: kirilImg, bio: KirilPetkov, social: "https://www.linkedin.com/in/kiril-petkov-86381412/" },
+	{ name: 'Omar Al Busaidy', tagline: 'Fulbright Nominee, Entrepreneur, and Futurist', img: omarImg, bio: OmarAlBusaidy, social: "https://www.linkedin.com/in/omaralbusaidy/?originalSubdomain=ae" },
+	{ name: 'Clifford Hurst', tagline: 'Professor of Entrepreneurship at Westminster College', img: cliffordImg, bio: CliffordHurst, social: "https://www.linkedin.com/in/cliffhurst/" },
+	{ name: 'Justine Toms', tagline: 'Founder, ABC Design & Communication', img: justineImg, bio: JustineToms, social: "https://www.linkedin.com/in/justinetoms/" },
+	{ name: 'Niki Iliev', tagline: 'Director and Actor, "The Foreigner"', img: nikiImg, bio: NikiIliev, social: "https://www.facebook.com/niki.iliev.official/" },
+	{ name: 'Boris Hristov', tagline: 'Founder, 365Labs and PowerPoint Specialist', img: borisImg, bio: BorisHristov, social: "https://www.linkedin.com/in/brshristov/" },
+	{ name: 'Blagovesta Pugyova', tagline: 'Founder, Give A Book Foundation', img: blagovestaImg, bio: BlagovestaPugyova, social: "https://www.linkedin.com/in/blagovesta-pugyova-bb178653/" },
+	{ name: 'Ash Kumra', tagline: 'Radio Show Host, Community Builder, and Global Speaker', img: ashImg, bio: AshKumra, social: "https://www.linkedin.com/in/ashkumra/" },
 ];
 
-export default function Speakers() {
+export default function Speakers(props) {
+
+	const speakersText = {
+		"title":{
+			"en": "Speakers",
+			"bg": "Лектори"
+		}
+	}
 
 	/* keeps track of which speaker to display in the modal */
 	const [activeSpeaker, setActiveSpeaker] = useState({
-		name: String,
-		tagline: String,
-		img: Image,
-		bio: String
+		name: "",
+		tagline: "",
+		img: "",
+		bio: "",
+		social: ""
 	});
 
 	/* handles opening and closing the modal */
@@ -57,24 +65,35 @@ export default function Speakers() {
 
 	const [loading, setLoading] = useState(true);
 
+	const socialButton = (link) => {
+		if(link.includes("linkedin")) return "linkedin";
+		if(link.includes("facebook")) return "facebook";
+	}
+
 	return (
 		<>
 			<Modal size="lg" scrollable={true} background="true" show={show} onHide={handleClose}>
 				<Modal.Header closeButton></Modal.Header>
 				<Modal.Body>
 					<div className="row">
-						<div className="col-xs mx-auto">
-							<img loading="lazy" src={activeSpeaker.img} className="modal-img" alt=""></img>
+						<div className="col-xs mx-auto align-self-center">
+							<img src={activeSpeaker.img} className="modal-img" alt=""></img>
 						</div>
 						<div className="col-lg speaker-bio text-center">
 							<div><span>{activeSpeaker.name}</span></div>
 							<div style={{marginTop:"1em"}}>{activeSpeaker.bio}</div>
+							
+							<i 
+								className={"fa fa-" + socialButton(activeSpeaker.social) + "-square"} 
+								onClick={() => window.open(activeSpeaker.social,'_blank')}
+								style={{ padding: "0.3em", margin:"0.2em", borderTop: "1px solid lightgrey"}}
+							></i>
+							
 						</div>
 					</div>
+					
 				</Modal.Body>
-				<Modal.Footer className="mx-auto">
-					<i className="fa fa-linkedin-square"></i>
-				</Modal.Footer>
+				
 			</Modal>
 
 			<div className="speakers">
@@ -83,7 +102,7 @@ export default function Speakers() {
 					style={{ paddingTop: '2em', paddingBottom: '2em' }}
 				>
 					<h2 className="speakers-title text-center">
-						<span>Past Speakers</span>
+						<span>{speakersText.title[props.lang]}</span>
 					</h2>
 
 					{loading && <div className="loader">Loading...</div>}

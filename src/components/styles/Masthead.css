@@ -26,6 +26,7 @@
 .masthead-title {
     font-weight: 600;
     font-size: 8vw;
+    text-shadow: 5px 5px white;
 }
 
 @media only screen and (max-width: 1000px) {

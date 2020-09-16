@@ -9,7 +9,11 @@ export default function Masthead() {
           <div className="row h-100 align-items-center">
             <div className="col text-center title-wrapper">
               <h1 className="masthead-title">
-               STARTUP.<br/>BUILD.<br/>SUSTAIN.
+               <span style={{color:"#aa1638"}}>STARTUP.</span>
+               <br/>
+               <span style={{color:"#e45315"}}>BUILD.</span>
+               <br/>
+               <span style={{color:"#2cb3ab"}}>SUSTAIN.</span>
               </h1>
             </div>
           </div>

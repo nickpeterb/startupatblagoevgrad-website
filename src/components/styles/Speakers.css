@@ -135,12 +135,12 @@
     }
 }
 
-.modal .fa-linkedin-square {
+.modal .fa-linkedin-square, .fa-facebook-square {
   color: grey;
   font-size: 2.3em;
 }
 
-.modal .fa-linkedin-square:hover {
+.modal .fa-linkedin-square:hover, .fa-facebook-square:hover {
   color: #0077B5;
   cursor: pointer;
 }

@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
-import logo from '../images/logo.png';
-import usFlag from '../images/us-flag.svg';
-import bgFlag from '../images/bg-flag.svg';
+import logo from '../images/navbar/logo.png';
+import usFlag from '../images/navbar/us-flag.svg';
+import bgFlag from '../images/navbar/bg-flag.svg';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 

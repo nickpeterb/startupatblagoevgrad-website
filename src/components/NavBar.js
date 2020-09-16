@@ -9,20 +9,62 @@ import bgFlag from '../images/bg-flag.svg';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import {Link as RouterLink} from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
-import './styles/NavBar.css';
+import './styles/NavBar.css'; 
 
-function whichLang(lang){
-  if(lang === "en") return "/bg";
-  if(lang === "bg") return "/en";
-  return "/en";
-}
+const navItems = [
+  {
+    to: "about",
+    text: {
+      "en": "About Us",
+      "bg": "За Нас"
+    }
+  },
+  {
+    to: "events",
+    text: {
+      "en": "Events",
+      "bg": "Събития"
+    }
+  },
+  {
+    to: "speakers",
+    text: {
+      "en": "Speakers",
+      "bg": "Лектори"
+    }
+  },
+  {
+    to: "sponsors",
+    text: {
+      "en": "Sponsors",
+      "bg": "Спонсори"
+    }
+  },
+  {
+    to: "team",
+    text: {
+      "en": "Our Team",
+      "bg": "Нашия Екип"
+    }
+  },
+  {
+    to: "contact",
+    text: {
+      "en": "Contact",
+      "bg": "Контакт"
+    }
+  },
+]
 
 export default function NavBar(props){
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+
+  const switchLang = (lang) => {
+    if(lang === "en") return "/bg";
+    if(lang === "bg") return "/en";
+    return "/en";
+  }
 
   return (
     <Navbar
@@ -32,7 +74,7 @@ export default function NavBar(props){
       fixed="top"
     >
     <Container>
-      <Navbar.Brand onClick={scrollToTop}>
+      <Navbar.Brand onClick={() => scroll.scrollToTop()}>
         <img
           src={logo}
           width="30"
@@ -46,81 +88,29 @@ export default function NavBar(props){
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          
-            <Nav.Link as={Link}
+
+          {
+            navItems.map((item, index) => (
+              <Nav.Link as={Link} key={index}
                 activeClass="active"
-                to="about"
+                to={item.to}
                 spy={true}
                 smooth={true}
                 offset={-60}
                 duration={500}
               >
-                <span>About Us</span>
+                <span>{item.text[props.lang]}</span>
               </Nav.Link>
-          
+            ))
 
-            <Nav.Link as={Link}
-              activeClass="active"
-              to="events"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              <span>Events</span>
-          </Nav.Link>
+          }
 
-          <Nav.Link as={Link}
-              activeClass="active"
-              to="speakers"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              <span>Speakers</span>
-          </Nav.Link>
-
-          <Nav.Link as={Link}
-              activeClass="active"
-              to="sponsors"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              <span>Sponsors</span>
-          </Nav.Link>
-
-          <Nav.Link as={Link}
-              activeClass="active"
-              to="team"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              <span>Our Team</span>
-          </Nav.Link>
-
-          <Nav.Link as={Link}
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              <span>Contact</span>
-          </Nav.Link>
-
-          <Nav.Link>
-          <RouterLink to={whichLang(props.lang)} className="lang-button">
-            { props.lang === "en" && <img src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
-            { props.lang === "bg" && <img src={usFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
-          </RouterLink>
-          </Nav.Link>
-          
+          <div className="nav-link">
+            <RouterLink to={switchLang(props.lang)} className="lang-button">
+              { props.lang === "en" && <img src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
+              { props.lang === "bg" && <img src={usFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
+            </RouterLink>
+          </div>
 
         </Nav>
       </Navbar.Collapse>

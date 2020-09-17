@@ -136,7 +136,7 @@ function MembersSlide(props) {
 						{ member.linkedIn !== "" ?
 							<i className="fa fa-linkedin-square" onClick={() => window.open(member.linkedIn,'_blank')}></i>
 						:
-							<div className="empty-square"></div>
+							<i className="fa fa-linkedin-square" style={{color:"#F3F3F3"}}></i>
 						}
 							
 					</div>

@@ -51,7 +51,7 @@
     color: grey;
     font-size: 2.3em;
     margin: 0.4em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 .team .fa-linkedin-square:hover {
@@ -59,17 +59,9 @@
     cursor: pointer;
 }
 
-.team .empty-square {
-    background-color: grey;
-    border-radius: 0.4em;
-    width: 2em;
-    height: 2em;
-    margin: 0.9em auto 1.2em auto;
-    
-}
-
 .bot-row {
     background-color: #F3F3F3;
+    min-height: 10em;
 }
 
 .team-img {

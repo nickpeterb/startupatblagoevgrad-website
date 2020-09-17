@@ -129,7 +129,7 @@ export default function Speakers(props) {
 													loading="lazy"
 													src={speaker.img}
 													className="card-img-top"
-													alt={"Picture of" + speaker.name}
+													alt=""
 												></img>
 											</div>
 										</div>

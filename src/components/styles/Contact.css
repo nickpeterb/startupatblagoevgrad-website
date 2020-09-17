@@ -1,8 +1,3 @@
-.contact {
-    background-color: #aa1638;
-    padding: 3em 0 3em 0;
-}
-
 .was-validated .form-control:invalid {
     border: 1px solid #ced4da !important;
 }
@@ -14,7 +9,7 @@
 .map {
     border: 0;
     width: 100%;
-    height: 42vh;
+    height: 55vh;
 }
 
 @media (max-width: 992px) { 

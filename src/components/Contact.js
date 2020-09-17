@@ -69,7 +69,7 @@ export default function Contact(props) {
             </Modal.Body>
         </Modal>
 
-        <div className="contact">
+        <div className="contact" style={{ backgroundColor: "#2cb3ab", padding: "3em 0 3em 0" }}>
             <Container>
                 <Row>
                     <Col lg>

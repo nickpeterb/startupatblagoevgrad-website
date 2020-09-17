@@ -1,17 +1,13 @@
 .navbar {
-  background: #131313 !important;
+  background: #f8f9fa !important;
   
   border-bottom: 4px solid;
   border-width: 0px 0px 4px 0px; /*for safari and iphones*/
   border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 .nav-link {
-  color: white !important;
+  color: black !important;
   font-weight: 600;
 }
 
@@ -21,7 +17,7 @@
 
 .navbar-brand {
   font-weight: 600;
-  color: white !important;
+  color: black !important;
 }
 
 .navbar-brand:hover, .nav-link:hover{

@@ -60,10 +60,14 @@
     border-width: 15px;
 }
 
+.card-top-wrapper:hover .arrow-overlay{
+    color: #2f6093;
+}
+
 .arrow-overlay {
     height: 3em;
     width: 3em;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
 
     position: absolute;
@@ -76,13 +80,9 @@
     border-width: 15px;
 }
 
-.card-top-wrapper:hover .arrow-overlay{
-  color: #2b91ff;
-}
-
 .arrow-overlay:hover {
     cursor: pointer;
-    color: #2b91ff;
+    color: #2f6093;
 }
 
 .fa-arrow-right {
@@ -135,24 +135,6 @@
     }
 }
 
-.modal-content {
-  background-color: black;
-}
-
-.modal-content .close {
-  color: white;
-  text-shadow: none;
-  font-size: 2em;
-
-  padding-right: 1.7rem !important;
-  padding-top: 1.5rem !important;
-  
-}
-
-.modal-content .close:hover {
-  color: red;
-}
-
 .modal .fa-linkedin-square, .fa-facebook-square {
   color: grey;
   font-size: 2.3em;
@@ -163,10 +145,21 @@
   cursor: pointer;
 }
 
+.speaker-bio span{
+    font-size: 1.5em;
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
 
 .modal-header {
   border-bottom: none !important;
-  padding: 0 0.5rem 0 0 !important;
+  padding: 0.5rem 0.5rem 0 0 !important;
+}
+
+.modal-header .close {
+  padding-right: 1.7rem !important;
+  padding-top: 1.5rem !important;
 }
 
 .modal-img {
@@ -180,13 +173,6 @@
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-}
-
-.speaker-bio span{
-  font-size: 1.5em;
-  border-bottom: 4px solid;
-  border-width: 0px 0px 4px 0px; 
-  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
 /* Loading Animation */

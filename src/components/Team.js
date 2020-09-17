@@ -146,11 +146,10 @@ function MembersSlide(props) {
 						<div className="member-name">{member.name}</div>
 						<span className="member-title">{member.title?.[props.lang]}</span>
 						<div className="line" style={{borderColor:props.bgColor}}></div>
-
 						{ member.linkedIn !== "" ?
 							<i className="fa fa-linkedin-square" onClick={() => window.open(member.linkedIn,'_blank')}></i>
 						:
-							<i className="fa fa-linkedin-square" style={{color:"#3a3a3a"}}></i>
+							<div className="empty-square"></div>
 						}
 							
 					</div>

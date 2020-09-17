@@ -25,7 +25,7 @@ import logodaj from '../images/sponsors/logodaj.svg';
 import office1 from '../images/sponsors/office1.png';
 import otvorko from '../images/sponsors/otvorko.png';
 import papabear from '../images/sponsors/papabear.png';
-import quinbite from '../images/sponsors/quinbite.png';
+import quinbite from '../images/sponsors/quinbite.webp';
 import sofiatp from '../images/sponsors/stp.svg';
 
 const sponsors = [

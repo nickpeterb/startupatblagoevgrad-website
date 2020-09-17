@@ -1,14 +1,13 @@
 .sponsors {
-    background-color: #cbced3;
+    background-color: #F3F3F3;
     overflow-x: hidden;
 }
 
 .sponsor-col {
-    border: 1px solid #868686;
+    border: 1px solid #e0e0e0;
 }
 
 .sponsors-title {
-    color: black;
     margin-bottom: 1em;
 }
 
@@ -44,7 +43,6 @@
 }
 
 .see-button {
-    color: black;
     border: none;
     background: none;
     font-size: 1.2em;

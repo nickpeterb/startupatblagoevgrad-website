@@ -8,6 +8,16 @@
     background-attachment: fixed; /* doesn't work on ios */
 }
 
+.arrow {
+    margin-top: 2em;
+    height: 2em;
+    fill:white;
+}
+
+.arrow:hover {
+    fill: #2cb3ab;
+}
+
 /* Safari 10.0+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {

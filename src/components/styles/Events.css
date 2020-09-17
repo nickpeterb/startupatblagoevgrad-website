@@ -40,7 +40,7 @@
     .events .bg {
         background-attachment: fixed;
         width: 100%;
-        height: 32em;
+        height: 35em;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     .events section {
         position: relative;
         width: 100%;
-        height: 32em;
+        height: 35em;
     }
     
     .events .bg-wrap {
@@ -148,7 +148,7 @@
         z-index: 2;
         height: 20em;
         width: 29em;
-        border: 5px solid white;
+        border: 5px solid black;
         border-radius: 15px;
     }
     .conf-img {
@@ -156,7 +156,7 @@
         z-index: 2;
         height: 23em;
         width: auto;
-        border: 5px solid white;
+        border: 5px solid black;
         
     }
     .slides {
@@ -164,7 +164,7 @@
         z-index: 2;
         height: 16em;
         width: 29em;
-        border: 5px solid white;
+        border: 5px solid black;
         border-radius: 15px;
     }
 }

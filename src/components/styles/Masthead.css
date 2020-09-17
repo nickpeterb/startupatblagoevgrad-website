@@ -1,6 +1,6 @@
 .masthead {
     height: 100vh;
-    background-image: url("../../images/crowd.jpg");
+    background-image: linear-gradient(#00000000 0%, #0000008f 90%, #000000 100%), url("../../images/crowd.jpg");
     background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;

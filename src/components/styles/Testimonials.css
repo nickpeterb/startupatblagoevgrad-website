@@ -1,9 +1,9 @@
 .testimonials {
-    background-color: #fafafa;
+    background-color: #3a3a3a;
     margin: 0vw 5.73vw 7vw 5.73vw;
-    box-shadow: 25px 25px 45px -22px black;
+    box-shadow: 25px 25px 45px -22px white;
     border-radius: 5px;
-    border: 1px solid #e6e6e6;
+    
 }
 
 /* REMOVE WHEN MORE TESTIMONIALS ARE ADDED */

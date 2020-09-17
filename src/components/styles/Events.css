@@ -4,13 +4,10 @@
 
 .events-title {
     margin-top: 1em;
-    margin-bottom: 1em;
-    
-    color:white;
     position: absolute;
-    z-index: 2;
-    left: 50%;
-    margin-left: -1.8em;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
 
 .events-title span{
@@ -107,15 +104,6 @@
     width: 20em;
 }
 
-.slides {
-    height: auto;
-    width: 24em;
-}
-
-.slides img{
-    border-radius: 10px;
-}
-
 @media (max-width: 576px) {
     .video-wrapper {
         width: 90vw;
@@ -123,11 +111,6 @@
     }
     .conf-img {
         width: 70vw;
-        height: auto;
-        margin: 1em;
-    }
-    .slides {
-        width: 90vw;
         height: auto;
         margin: 1em;
     }
@@ -148,7 +131,7 @@
         z-index: 2;
         height: 20em;
         width: 29em;
-        border: 5px solid black;
+        border: 5px solid white;
         border-radius: 15px;
     }
     .conf-img {
@@ -156,16 +139,8 @@
         z-index: 2;
         height: 23em;
         width: auto;
-        border: 5px solid black;
+        border: 5px solid white;
         
-    }
-    .slides {
-        margin-top: -9em;
-        z-index: 2;
-        height: 16em;
-        width: 29em;
-        border: 5px solid black;
-        border-radius: 15px;
     }
 }
 

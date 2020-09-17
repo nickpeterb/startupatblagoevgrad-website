@@ -16,6 +16,7 @@
 
 .arrow:hover {
     fill: #2cb3ab;
+    cursor: pointer;
 }
 
 /* Safari 10.0+ */

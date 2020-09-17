@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/Masthead.css';
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Masthead() {
     return (

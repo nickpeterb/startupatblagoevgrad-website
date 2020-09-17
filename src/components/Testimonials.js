@@ -5,21 +5,28 @@ import './styles/Testimonials.css';
 
 import kirilImg from '../images/testimonials/kiril-z.png';
 
+const testimonialsText = {
+	"title": {
+		"en": "Testimonials",
+		"bg": "Какво Мислят Нашите Гости"
+	}
+}
+
 const testimonialsList = [
 	{
 		name: 'Kiril Zhelyazkov',
 		img: kirilImg,
 		text: "Big thanks to @StartUPBlagoevgrad for organizig the StartUp Weekend. To me it was an excellent and refreshing opportunity to get away of everyday life and try out what’s like to be one of the creators of a disruptive business idea.",
-		cite: "1st Place Winner at StartUP Weekend 2018"
+		cite: {"en": "1st Place Winner at StartUP Weekend 2018", "bg": "1во Място в StartUP Уикенд 2018"}
 	}
 ]
 
-export default function Testimonials() {
+export default function Testimonials(props) {
 	return (
 		<div className="testimonials">
 			<div className="container">
 				<h2 className="testimonials-title text-center">
-					<span>Testimonials</span>
+					<span>{testimonialsText.title[props.lang]}</span>
 				</h2>
 			</div>
 
@@ -49,7 +56,7 @@ export default function Testimonials() {
 									<footer className="blockquote-footer">
                                         {testimonial.name}
                                         <br/>
-										<cite>{testimonial.cite}</cite>
+										<cite>{testimonial.cite[props.lang]}</cite>
 									</footer>
 								</blockquote>
 							</div>

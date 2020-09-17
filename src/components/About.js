@@ -4,12 +4,12 @@ import './styles/About.css';
 
 const aboutText = {
     "title": {
-        "en": "About Us",
-        "bg": "За Нас"
+        "en": "What We Do",
+        "bg": "Кои Сме Ние"
     },
     "body": {
         "en": "StartUP@Blagoevgrad is a student club in the American University in Bulgaria, that specializes in the organization of different entrepreneurial events. The focus of these events is to bring together both up-and-coming entrepreneurs and experts in the respective fields, and ambitious students, who want to know how challenging the journey to have a reputable business actually is. We try our best to provide our attendees with a clear idea of the challenges and wins that follow those who have set course on the entrepreneurial path.",
-        "bg": "StartUP@Blagoevgrad е студентски клуб в Американския Университет в България, който специализита в организацията на различни предпиемачески събития. Фокуса на тези събития е да събере игряващи предприемачи, както и експрети в определените сфери, и амбициозни студенти, които искат да знаят колко всъщност е труден пътя към това, да създадеш успяващ бизнес. Екипът на StartUP@Blagoevgrad се старае да предостави на присъстващите ясна идея за трудностите и победите на тези, които са тръгнали по пътя към предприемачеството."
+        "bg": "StartUP@Blagoevgrad е студентски клуб към Американския Университет в България, който организира разнообразни събития на тема предприемачество. Целта на събитията е да събере млади и изгряващи предприемачи, експерти от различни бизнес сфери, и амбициозни студенти, които искат да разберат какви са възможностите и трудностите по пътя към създаването на успешен бизнес. Екипът на StartUP@Blagoevgrad се стреми да даде на участниците и публиката на своите събития ясна представа за това, какво очаква тези, които са тръгнали по пътя на предприемачеството."
     }
 }
 

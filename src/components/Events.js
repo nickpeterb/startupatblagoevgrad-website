@@ -9,8 +9,8 @@ import lightbulb from '../images/events/lightbulb.jpg';
 
 const eventsText = {
     "title":{
-        "en": "Events",
-        "bg": "Събития"
+        "en": "How We Do It",
+        "bg": "Какво Правим"
     },
     "conf": {
         "en": "Conference",
@@ -22,18 +22,20 @@ const eventsText = {
     },
     "confText": {
         "en": "The biggest event that StartUP@Blagoevgrad hosts throughout the duration of the academic year is the StartUP Conference. The conference is a one-day-long conference, packed full of interesting lectures and workshops. The students are welcome to attend lectures given by a number of speakers, both up-and-coming and wildly experienced, to accumulate knowledge from the speakers’ experience.  Another aspect of the conference is the workshops, where the attendees are given the opportunity to put the knowledge that they were given throughout the day to use and to get a vague idea of how different fields of business.",
-        "bg": "Най-голямото събитие, което StartUP@Blagoevgrad организира през академичната година е StartUP Конференцията. Конференцията трае един ден и е пълна с интересни лекии и уъркшопове.Студентите могат да подетят лекции проведени от няколко говорителя, експерти и все още изгряващи, за да съберат знания от преживяваниета на говорителите. Друг аспект на конференцията са уъркшоповете, където посетителите имат върможността да използват знанията, които са събрани през деня, и да получат малка представа от това как работят различните сфери в бизнеса."
+        "bg": "Най-голямото събитие, което StartUP@Blagoevgrad организира през академичната година е StartUP Конференцията. В продължението на един ден, събитието представя множество обучителни и мотивационни лекции под формата на презентации, както и бизнес „работилници“ (т.нар. workshops). По време на конферентната част, публиката може да посети лекциите, водени от установени експерти в различни сфери и вдъхновяващи предприемачи в началото на своето развитие, за да научи от първо лице повече за висините и падежите в бизнеса. По време на работилниците, участниците имат възможността да работят по практически бизнес казуси и да научат детайли за различни концепции и добри бизнес практики."
     },
     "weekendText": {
-        "en": "The second big event that the club organizes is the StartUP Weekend. It is a 3-day-long event starting on Friday, where the participants are given 3 days to come up with an idea for a start-up idea and prepare everything to be presented by Sunday. The participants, divided into teams, have to come up with an original idea for a start-up, polish it out and present it in front of our jury, who then decide on who the 3 best ideas were. Throughout the duration of the weekend, the teams have mentors, who are there to help them and ensure that their idea is more than ready to be seen by the judges.",
-        "bg": "Второто събитие, което клуба организира, е StartUp Уикенд. Това е тридневно събитие, започващо в петък, в което участниците разполагат с 3 дни да създадат идея за старт-ъп, както и да се приготвят да презентират идеята си в неделя. Участниците, разделени в отбори, трябва да измислят оригинална идея, да я осъвършенстват и да я презентират пред жури, което избира трите най-добри идеи. По време на уикенда, отборите имат ментори, които да им асистират, за да може идеите на отборите да са повече от готови да бъдат представени пред журито.                                                                                                                                                       "
+        "en": "The second big event that the club organizes is the StartUP Weekend. It is a 3-day-long event, taking place from Friday until Sunday, in which the participants are posed with the challenge to come up with an idea or a start-up. The participants, divided into teams, have to come up with an original business idea, polish it out and present it in front of a professional jury, who then decide on which 3 ideas and executions are the best. Throughout the duration of the weekend, the teams have mentors, who are there to help them and ensure that their idea is more than ready to be seen by the judges.",
+        "bg": "Второто събитие, което клубът организира, е StartUP Уикенд. Събитието се състои в рамките на три дни, от петък до неделя, в които участниците, разделени в отбори, измислят оригинални стартъп идеи, усъвършенстват ги и ги презентират пред експертно жури. По време на Уикенда, видни ментори от българската и международна бизнес среда помагат на участниците чрез напътствия в различни аспекти в разработката на проектите им, за да гарантират качествено развитие на идеята и практическо предаване на знание."
     }
 }
 
 export default function Events(props) {
     return (
         <div className="events">
-            <h1 className="events-title text-center"><span>{eventsText.title[props.lang]}</span></h1>
+            
+                <h1 className="events-title text-center"><span>{eventsText.title[props.lang]}</span></h1>
+            
 
             <section>
                 <div className="bg-wrap">

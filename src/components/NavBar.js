@@ -17,36 +17,36 @@ const navItems = [
   {
     to: "about",
     text: {
-      "en": "About Us",
-      "bg": "За Нас"
+      "en": "What We Do",
+      "bg": "Кои Сме Ние"
     }
   },
   {
     to: "events",
     text: {
-      "en": "Events",
-      "bg": "Събития"
+      "en": "How We Do It",
+      "bg": "Какво Правим"
     }
   },
   {
     to: "speakers",
     text: {
-      "en": "Speakers",
-      "bg": "Лектори"
+      "en": "Our Guests Were",
+      "bg": "Наши Гости Бяха"
     }
   },
   {
     to: "sponsors",
     text: {
-      "en": "Sponsors",
-      "bg": "Спонсори"
+      "en": "Our Partners Were",
+      "bg": "Наши Партньори Бяха"
     }
   },
   {
     to: "team",
     text: {
       "en": "Our Team",
-      "bg": "Нашия Екип"
+      "bg": "Екипът"
     }
   },
   {
@@ -69,11 +69,11 @@ export default function NavBar(props){
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
+      expand="xl"
       bg="light"
       fixed="top"
     >
-    <Container>
+    <Container fluid>
       <Navbar.Brand onClick={() => scroll.scrollToTop()}>
         <img
           src={logo}
@@ -107,7 +107,7 @@ export default function NavBar(props){
 
           <div className="nav-link">
             <RouterLink to={switchLang(props.lang)} className="lang-button">
-              { props.lang === "en" && <img src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
+              { props.lang === "en" && <img className="bg-flag" src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
               { props.lang === "bg" && <img src={usFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
             </RouterLink>
           </div>

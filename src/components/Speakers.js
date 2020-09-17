@@ -41,8 +41,8 @@ export default function Speakers(props) {
 
 	const speakersText = {
 		"title":{
-			"en": "Speakers",
-			"bg": "Лектори"
+			"en": "Our Guests Were",
+			"bg": "Наши Гости Бяха"
 		}
 	}
 

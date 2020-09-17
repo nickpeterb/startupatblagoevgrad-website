@@ -45,48 +45,35 @@ import vladin from '../images/team/vladin.png';
 const teamText = {
 	"title": {
 		"en": "Our Team",
-		"bg": "Нашия Екип"
+		"bg": "Екипът Зад Всичко Това"
 	},
 	"board": {
 		"en": "The Board",
-		"bg": "Борда"
+		"bg": "Борд"
 	},
 	"speakers": {
 		"en": "Speakers Department",
-		"bg": "Лектор Департмент"
+		"bg": "Отдел Лектори"
 	},
 	"sponsorship": {
 		"en": "Sponsorship Department",
-		"bg": "Спонсор Департмент",
+		"bg": "Отдел Спонсори",
 	},
 	"marketing": {
 		"en": "Marketing Department",
-		"bg": "Маркетинг Департмент",
+		"bg": "Отдел Маркетинг",
 	},
 	"it": {
-		"en": "IT Team",
-		"bg": "IT Отбор"
+		"en": "IT Department",
+		"bg": "Отдел IT"
 	},
-	"positions": {
-		"president": {
-			"en": "President",
-			"bg": "Президент"
-		},
-		"vice": { "en": "Vice President", "bg": "Вицепрезидент" },
-		"speakers": {
-			"en": "Head of Speakers",
-			"bg": "Ръководител на Лекторите"
-		},
-		"sponsorship": { "en": "Head of Sponsorship", "bg": "Ръководител на Спонсорството" },
-		"marketing": { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" },
-	}
 }
 
 const board = [
 	{ name: 'Velislav Tsenov', img: velko, title: { "en": "President", "bg": "Президент" }, linkedIn: "https://www.linkedin.com/in/velislavtsenov/" },
-	{ name: 'Elena Ivanova', img: elito, title: { "en": "Vice President, Head of Speakers", "bg": "Вицепрезидент, Ръководител на Лекторите" }, linkedIn: "https://www.linkedin.com/in/elena-ivanova-636178153/" },
+	{ name: 'Elena Ivanova', img: elito, title: { "en": "Vice President, Head of Speakers", "bg": "Вицепрезидент, Ръководител на Отдел Лектори " }, linkedIn: "https://www.linkedin.com/in/elena-ivanova-636178153/" },
 	{ name: 'Armela Gjylsheni', img: armela, title: { "en": "Vice President", "bg": "Вицепрезидент" }, linkedIn: "https://www.linkedin.com/in/armela-gjylsheni-404630153/" },
-	{ name: 'Stanislav Todorov', img: stan, title: { "en": "Treasurer", "bg": "Касиер" }, linkedIn: "https://www.linkedin.com/in/stanislav-todorov-2a8a78198/" }
+	{ name: 'Stanislav Todorov', img: stan, title: { "en": "Treasurer", "bg": "Ковчежник" }, linkedIn: "https://www.linkedin.com/in/stanislav-todorov-2a8a78198/" }
 ];
 
 const speakersDept = [

@@ -55,8 +55,8 @@ const sponsors = [
 
 const sponsorsText = {
 	"title":{
-		"en": "Sponsors",
-		"bg": "Спонсори"
+		"en": "Our Partners Were",
+		"bg": "Наши Партньори Бяха"
 	},
 	"button": {
 		"en": ["Show Less", "Show More"],

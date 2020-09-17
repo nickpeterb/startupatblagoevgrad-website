@@ -97,7 +97,7 @@ export default function Sponsors(props) {
 					<span>{sponsorsText.title[props.lang]}</span>
 				</h2>
 
-				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 top-row">
+				<div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 top-row">
 					{sponsors.slice(0, cutoff).map((sponsor, index) => (
 						<div className="col sponsor-col p-4 text-center" key={index} >
 							<img 

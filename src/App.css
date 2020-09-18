@@ -1,5 +1,5 @@
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
 }

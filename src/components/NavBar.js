@@ -89,6 +89,10 @@ export default function NavBar(props){
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
 
+          <div className='nav-link'>
+            <RouterLink to='/apply' className={`apply-button nav-link-${props.lang}`} >APPLY NOW</RouterLink>
+          </div>
+
           {
             navItems.map((item, index) => (
               <Nav.Link as={Link} key={index}
@@ -98,6 +102,7 @@ export default function NavBar(props){
                 smooth={true}
                 offset={-60}
                 duration={500}
+                className={"nav-link-" + props.lang}
               >
                 <span>{item.text[props.lang]}</span>
               </Nav.Link>

@@ -1,6 +1,6 @@
 .navbar {
   background: #f8f9fa !important;
-  
+  text-align: center;
   border-bottom: 4px solid;
   border-width: 0px 0px 4px 0px; /*for safari and iphones*/
   border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
@@ -8,6 +8,10 @@
 
 .bg-flag {
   border: 1px solid grey;
+}
+
+.apply-button:hover {
+  text-decoration: none;
 }
 
 .nav-link {
@@ -36,13 +40,19 @@
 
 @media (max-width: 1200px) { 
   .nav-link{
-    font-size: 9vw;
+    font-size: 6vh !important;
   }
   .navbar-nav > .active > span{
-    border-width: 0px 0px 6px 0px; ;
+    border-width: 0px 0px 6px 0px;
   }
-  .navbar{
-    text-align: center;
+}
+
+@media (max-width: 500px) { 
+  .nav-link-en{
+    font-size: 5.7vh !important;
+  }
+  .nav-link-bg{
+    font-size: 9vw !important;
   }
 }
 
@@ -52,7 +62,7 @@
     width: 25px;
   }
   .navbar-brand {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 }
 
@@ -62,7 +72,7 @@
     width: 20px;
   }
   .navbar-brand {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -72,6 +82,6 @@
     width: 20px;
   }
   .navbar-brand {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 }

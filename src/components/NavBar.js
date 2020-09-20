@@ -31,15 +31,15 @@ const navItems = [
   {
     to: "speakers",
     text: {
-      "en": "Our Guests Were",
-      "bg": "Наши Гости Бяха"
+      "en": "Our Guests",
+      "bg": "Наши Гости"
     }
   },
   {
     to: "sponsors",
     text: {
-      "en": "Our Partners Were",
-      "bg": "Наши Партньори Бяха"
+      "en": "Our Partners",
+      "bg": "Наши Партньори"
     }
   },
   {

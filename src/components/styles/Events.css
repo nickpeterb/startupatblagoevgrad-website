@@ -5,6 +5,7 @@
 .events-title {
     margin-top: 1em;
     position: absolute;
+    z-index: 2;
     color: white;
     text-align: center;
     width: 100%;

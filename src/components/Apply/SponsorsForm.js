@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
 
@@ -10,6 +10,10 @@ export default function SponsorsForm(props) {
         portalId: '2571739',
         formId: '83518f7a-36c5-4366-b73d-342d7ba3b0dd',
         target: '#hubspot-sponsors-form'
+    });
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
     });
     
     return (

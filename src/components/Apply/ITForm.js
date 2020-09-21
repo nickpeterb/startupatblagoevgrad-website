@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
 
@@ -10,6 +10,10 @@ export default function ITForm(props) {
         portalId: '2571739',
         formId: '876fe06c-1571-4b4f-9a8e-a3ee325220f1',
         target: '#hubspot-it-form'
+    });
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
     });
     
     return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
 
@@ -10,6 +10,10 @@ export default function SpeakersForm(props) {
         portalId: '2571739',
         formId: '4a91c225-c380-4902-87b4-0e9341b72839',
         target: '#hubspot-speakers-form'
+    });
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
     });
 
     return (
@@ -25,7 +29,7 @@ export default function SpeakersForm(props) {
                         </div>
 
                         <div className="desc-text mt-3">
-                            If you are good with people and enjoy finding interesting and exceptional people, then the Speakers department is for you. The Speakers’ department works tirelessly to find inspiring people to come and share their experiences and their hardships. Тhe Speakers’ department are the ones who provide our events with the most ideal lecturers, who have achieved truly extraordinary things in their careers. Those with the confidence to reach out to people of all walks of life, the speakers’ department is a perfect option for you.
+                            If you are good with people and enjoy finding interesting and exceptional people, then the Speakers department is for you. The Speakers department works tirelessly to find inspiring people to come and share their experiences and their hardships. Тhe Speakers department are the ones who provide our events with the most ideal lecturers, who have achieved truly extraordinary things in their careers. Those with the confidence to reach out to people of all walks of life, the speakers’ department is a perfect option for you.
                         </div>
                     </div>
 

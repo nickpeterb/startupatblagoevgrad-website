@@ -1,7 +1,6 @@
 import React from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
-import ScriptTag from 'react-script-tag';
 
 import './styles/apply.css';
 import './styles/SpeakersForm.css';

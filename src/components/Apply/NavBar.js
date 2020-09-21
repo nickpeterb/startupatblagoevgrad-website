@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 import logo from '../../images/navbar/logo.png';
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 import { Link as RouterLink } from "react-router-dom";
 

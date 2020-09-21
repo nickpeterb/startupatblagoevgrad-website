@@ -230,7 +230,7 @@ export default function Team(props) {
 
 				<Dept teamName={teamText.speakers[props.lang]} members={speakersDept} bgColor="#aa1638" lang={props.lang}/>
 
-				<Dept teamName={teamText.sponsorship[props.lang]} members={sponsorsDept} bgColor=" #579ccb" lang={props.lang}/>
+				<Dept teamName={teamText.sponsorship[props.lang]} members={sponsorsDept} bgColor="#579ccb" lang={props.lang}/>
 
 				<Dept teamName={teamText.marketing[props.lang]} members={marketingDept} bgColor="#731c64" lang={props.lang}/>
 

@@ -1,7 +1,12 @@
 import React from 'react';
 
 import { Switch, Route, Link } from "react-router-dom";
+
 import SpeakersForm from './SpeakersForm.js';
+import SponsorsForm from './SponsorsForm.js';
+import MarketingForm from './MarketingForm.js';
+import ITForm from './ITForm.js';
+
 import NavBar from './NavBar.js';
 
 import './styles/apply.css';
@@ -51,6 +56,9 @@ export default function Apply({ match }) {
             <NavBar />
             <Switch>
                 <Route path={match.path + "/speakers"} component={SpeakersForm} />
+                <Route path={match.path + "/sponsorship"} component={SponsorsForm} />
+                <Route path={match.path + "/marketing"} component={MarketingForm} />
+                <Route path={match.path + "/it"} component={ITForm} />
                 
                 <Route exact path={match.path} component={LandingPage} />
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import { Switch, Route, Link } from "react-router-dom";
 
@@ -13,6 +13,10 @@ import './styles/apply.css';
 import './styles/LandingPage.css';
 
 function LandingPage({ match }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div className="landing-page">
             <div className="container text-center">

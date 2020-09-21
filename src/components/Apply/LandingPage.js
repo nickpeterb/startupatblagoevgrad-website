@@ -26,7 +26,7 @@ function LandingPage({ match }) {
                         </div>
 
                         <div className="desc-text mt-3">
-                            Founded in 2012 with the purpose of bringing together students, enterprisers, &amp; investors through the two biggest entrepreneurial events on campus, we’ve grown to be not just partners in crime, but a family, and our family is looking for new members.The team of StartUP@Blagoevrgad, much like any team, is made up of different cogs that help the machine work perfectly. In our team, the work of the machine depends on the impeccable work of our four big cogs, also known as our four departments - Speakers, Sponsorship, Marketing, and IT.
+                            Founded in 2012 with the purpose of bringing together students, enterprisers, &amp; investors through the two biggest entrepreneurial events on campus, we’ve grown to be not just partners in crime, but a family, and our family is looking for new members. <br/><br/> The team of StartUP@Blagoevrgad, much like any team, is made up of different cogs that help the machine work perfectly. In our team, the work of the machine depends on the impeccable work of our four big cogs, also known as our four departments - Speakers, Sponsorship, Marketing, and IT.
                         </div>
                     </div>
                 

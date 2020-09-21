@@ -1,0 +1,8 @@
+.marketing-form{
+    min-height: 100vh;
+
+    background: rgb(251,87,235);
+    background: linear-gradient(180deg, rgba(251,87,235,1) 29%, rgb(223, 22, 209) 74%, rgb(191, 20, 194) 100%);
+    
+   color: white;
+}

@@ -1,0 +1,8 @@
+.sponsors-form{
+    min-height: 100vh;
+    
+    background: rgb(126,192,237);
+    background: linear-gradient(180deg, rgba(126,192,237,1) 29%, rgba(87,156,203,1) 77%, rgba(87,141,203,1) 100%);
+    
+    color: white;
+}

@@ -1,8 +1,8 @@
 .speakers-form{
     min-height: 100vh;
     
-    background: rgb(175,26,61);
-    background: linear-gradient(180deg, rgba(175,26,55,1) 0%, rgba(135,23,49,1) 40%, rgba(98,20,38,1) 100%);
-
+    background: rgb(186,60,182);
+    background: linear-gradient(180deg, rgba(186,60,182,1) 21%, rgba(158,23,147,1) 45%, rgba(117,14,131,1) 100%);
+    
     color: white;
 }

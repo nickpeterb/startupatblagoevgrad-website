@@ -1,0 +1,17 @@
+.apply .nav-link {
+    font-size: 1em !important;
+}
+
+.application-text {
+    margin-left: 0.5em;
+}
+
+.application-text:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .application-text {
+        font-size: 0.7rem;
+    }
+}

@@ -94,7 +94,7 @@ const sponsorsDept = [
 ]
 
 const marketingDept = [
-	{ name: 'Emma Kerencheva', img: emma, title: { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" }, linkedIn: "" },
+	{ name: 'Emma Kerencheva', img: emma, title: { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" }, linkedIn: "https://www.linkedin.com/in/emanuela-kerencheva-1805091a5/" },
 	{ name: 'Emily Timcheva', img: emily, title: { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" }, linkedIn: "https://www.linkedin.com/in/emily-timcheva/" },
 	{ name: 'Boyan Zlatarski', img: boyan, linkedIn: "http://linkedin.com/in/boyan-zlatarski-5891261a6/" },
 	{ name: 'Denislava Angelova', img: deni, linkedIn: "https://www.linkedin.com/in/denislava-angelova/" },
@@ -148,7 +148,7 @@ function MembersSlide(props) {
 
 function Dept(props) {
 	
-	const membersLgDevice = 4; //How many members to show on big screens
+	const membersLgDevice = 5; //How many members to show on big screens
 
 	/* Hide controls when carousel shows all members */
 	const [hideCarousel, setHideCarousel] = useState('');

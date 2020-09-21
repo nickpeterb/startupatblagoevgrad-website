@@ -43,13 +43,23 @@
                  0.04em 0.04em white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .masthead-title{
         font-size: 11vw;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 576px){
+    .masthead-title {
+        text-shadow: 0.01em 0.01em white,
+                 0.02em 0.02em white,
+                 0.03em 0.03em white,
+                 0.04em 0.04em white,
+                 0.05em 0.05em white;
+    }
+}
+
+@media (max-width: 500px) {
     .masthead-title{
         font-size: 13vw;
     }
@@ -58,3 +68,4 @@
         background-position: center;
     }
 }
+

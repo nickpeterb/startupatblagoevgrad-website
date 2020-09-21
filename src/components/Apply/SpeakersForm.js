@@ -6,14 +6,15 @@ import './styles/apply.css';
 import './styles/SpeakersForm.css';
 
 export default function SpeakersForm(props) {
-    const { loaded, error, formCreated } = useHubspotForm({
+    const { error } = useHubspotForm({
         portalId: '2571739',
         formId: '4a91c225-c380-4902-87b4-0e9341b72839',
         target: '#hubspot-speakers-form'
     });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        if(error) console.log("Error: Could not load HubSpot Form");
     });
 
     return (

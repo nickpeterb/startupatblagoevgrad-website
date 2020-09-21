@@ -6,14 +6,15 @@ import './styles/apply.css';
 import './styles/MarketingForm.css';
 
 export default function MarketingForm(props) {
-    const { loaded, error, formCreated } = useHubspotForm({
+    const { error } = useHubspotForm({
         portalId: '2571739',
         formId: '2b182f8b-f0ef-4f64-8549-7e0759706345',
         target: '#hubspot-marketing-form'
     });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        if(error) console.log("Error: Could not load HubSpot Form");
     });
     
     return (

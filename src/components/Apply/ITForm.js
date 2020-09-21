@@ -6,14 +6,15 @@ import './styles/apply.css';
 import './styles/ITForm.css';
 
 export default function ITForm(props) {
-    const { loaded, error, formCreated } = useHubspotForm({
+    const { error } = useHubspotForm({
         portalId: '2571739',
         formId: '876fe06c-1571-4b4f-9a8e-a3ee325220f1',
         target: '#hubspot-it-form'
     });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        if(error) console.log("Error: Could not load HubSpot Form");
     });
     
     return (

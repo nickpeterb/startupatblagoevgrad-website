@@ -6,14 +6,15 @@ import './styles/apply.css';
 import './styles/SponsorsForm.css';
 
 export default function SponsorsForm(props) {
-    const { loaded, error, formCreated } = useHubspotForm({
+    const { error } = useHubspotForm({
         portalId: '2571739',
         formId: '83518f7a-36c5-4366-b73d-342d7ba3b0dd',
         target: '#hubspot-sponsors-form'
     });
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        if(error) console.log("Error: Could not load HubSpot Form");
     });
     
     return (

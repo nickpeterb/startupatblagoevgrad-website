@@ -1,0 +1,46 @@
+.landing-page{
+    min-height: 100vh;
+    
+    background: rgb(251,187,6);
+    background: linear-gradient(180deg, rgba(251,187,6,1) 0%, rgba(251,172,6,1) 10%, rgba(251,98,6,1) 100%);
+    color: white;
+}
+
+.depts-list li{
+    font-size: 3.1rem;
+    font-weight: 600;
+    list-style-type: none;
+    text-align: left;
+}
+
+.depts-list li:hover {
+    transition: transform 500ms ease-out;
+    transform: translateY(-0.6rem);
+}
+
+.depts-list li:hover a {
+    color: white !important;
+}
+
+.depts-list a {
+    color: #eeecec !important;
+}
+
+.depts-list a:hover {
+    text-decoration: none;
+    
+}
+
+.depts-col {
+    margin-top: 2em;
+}
+
+@media (min-width: 1200px) {
+    .depts-list li{
+        font-size: 4rem;
+    }
+    .depts-col {
+        margin-top: 0;
+        margin-left: 4em;
+    }
+}

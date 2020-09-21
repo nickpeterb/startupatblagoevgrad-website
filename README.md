@@ -1,3 +1,3 @@
 ## StartUP@Blagoevgrad Website
 
-### WORK IN PROGRESS
+Check it out at https://www.startupatblagoevgrad.org/

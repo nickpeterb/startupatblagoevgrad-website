@@ -7,7 +7,7 @@ import kirilImg from '../images/testimonials/kiril-z.png';
 
 const testimonialsText = {
 	"title": {
-		"en": "Testimonials",
+		"en": "Testimonial",
 		"bg": "Какво Мислят Нашите Гости"
 	}
 }
@@ -16,7 +16,7 @@ const testimonialsList = [
 	{
 		name: 'Kiril Zhelyazkov',
 		img: kirilImg,
-		text: "Big thanks to @StartUPBlagoevgrad for organizig the StartUp Weekend. To me it was an excellent and refreshing opportunity to get away of everyday life and try out what’s like to be one of the creators of a disruptive business idea.",
+		text: "Big thanks to @StartUPBlagoevgrad for organizing the StartUP Weekend. To me it was an excellent and refreshing opportunity to get away of everyday life and try out what it's like to be one of the creators of a disruptive business idea.",
 		cite: {"en": "1st Place Winner at StartUP Weekend 2018", "bg": "1во Място в StartUP Уикенд 2018"}
 	}
 ]

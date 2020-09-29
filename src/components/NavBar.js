@@ -89,9 +89,11 @@ export default function NavBar(props){
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
 
+          {/* 
           <div className='nav-link'>
             <RouterLink to='/apply' className={`apply-button nav-link-${props.lang}`} >APPLY NOW</RouterLink>
-          </div>
+          </div> 
+          */}
 
           {
             navItems.map((item, index) => (

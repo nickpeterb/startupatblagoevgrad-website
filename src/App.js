@@ -11,9 +11,10 @@ import Sponsors from './components/Sponsors.js';
 import Team from './components/Team.js';
 import Contact from './components/Contact.js';
 
-import Apply from './components/Apply/LandingPage.js';
+import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+// import Apply from './components/Apply/LandingPage.js';
+
 
 function StartUpApp(props) {
   return (
@@ -47,7 +48,11 @@ function App() {
             <StartUpApp lang="bg" />
           </Route>
           
-          <Route path="/apply" component={Apply} />
+          {/* <Route path="/apply" component={Apply} /> */}
+
+          <Route path="/apply"> 
+            <Redirect to="/en" />
+          </Route>
           
           <Route exact path="/">
             <Redirect to="/en" />
@@ -58,6 +63,7 @@ function App() {
               <div className="row" style={{height:"100vh"}}>
                 <div className="col-sm my-auto">
                   <h1>Page Not Found :(</h1>
+                  <Link to="/en"><h2>Back To Home</h2></Link>
                 </div>
               </div>
             </div>

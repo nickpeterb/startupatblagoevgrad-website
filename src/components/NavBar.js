@@ -114,8 +114,8 @@ export default function NavBar(props){
 
           <div className="nav-link">
             <RouterLink to={switchLang(props.lang)} className="lang-button">
-              { props.lang === "en" && <img className="bg-flag" src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
-              { props.lang === "bg" && <img src={usFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
+              { props.lang === "en" && <img onClick={() => localStorage.setItem('lang', 'bg')} className="bg-flag" src={bgFlag} style={{marginTop:"-0.25em", height:"1.1em"}} alt="BG"></img> }
+              { props.lang === "bg" && <img src={usFlag} onClick={() => localStorage.setItem('lang', 'en')} style={{marginTop:"-0.25em", height:"1.1em"}} alt="EN"></img> }
             </RouterLink>
           </div>
 

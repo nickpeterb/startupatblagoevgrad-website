@@ -16,18 +16,18 @@ import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 // import Apply from './components/Apply/LandingPage.js';
 
 
-function StartUpApp(props) {
+function StartUpApp({ lang }) {
   return (
     <>
-    <NavBar lang={props.lang}/>
-    <Masthead lang={props.lang}/>
-    <About lang={props.lang}/>  
-    <Events lang={props.lang}/>
-    <Speakers lang={props.lang}/>
-    <Sponsors lang={props.lang}/>
-    <Team lang={props.lang}/>
-    <Testimonials lang={props.lang}/>
-    <Contact lang={props.lang}/>
+      <NavBar lang={lang}/>
+      <Masthead lang={lang}/>
+      <About lang={lang}/>  
+      <Events lang={lang}/>
+      <Speakers lang={lang}/>
+      <Sponsors lang={lang}/>
+      <Team lang={lang}/>
+      <Testimonials lang={lang}/>
+      <Contact lang={lang}/>
     </>
   );
 }
@@ -55,7 +55,7 @@ function App() {
           </Route>
           
           <Route exact path="/">
-            <Redirect to="/en" />
+            <Redirect to={"/" + (localStorage.getItem('lang') ?? 'en')} />
           </Route>
 
           <Route>

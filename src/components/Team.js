@@ -106,8 +106,8 @@ const marketingDept = [
 ]
 
 const itDept = [
+	{ name: 'Dimitar Glavinkov', img: mitko, title: { "en": "Head of IT", "bg": "Ръководител на IT" }, linkedIn: "" },
 	{ name: 'Nick Bruhnev', img: nick, linkedIn: "https://www.linkedin.com/in/nick-bruhnev/" },
-	{ name: 'Dimitar Glavinkov', img: mitko, linkedIn: "" },
 	{ name: 'Andrea Shipkovensky', img: andi, linkedIn: "" },
 	{ name: 'Vladin Bonov', img: vladin, linkedIn: "" }
 ]

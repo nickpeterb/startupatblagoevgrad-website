@@ -8,13 +8,13 @@
     background-attachment: fixed; /* doesn't work on ios */
 }
 
-.arrow {
+.masthead .arrow {
     margin-top: 2em;
     height: 2em;
     fill:white;
 }
 
-.arrow:hover {
+.masthead .arrow:hover {
     fill: #2cb3ab;
     cursor: pointer;
 }

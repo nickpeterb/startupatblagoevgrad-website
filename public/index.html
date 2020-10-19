@@ -19,25 +19,7 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-
-  <!-- collapse navbar by clicking outside it -->
-  <script>
-    if (document.readyState != 'loading') {
-      toggleNavBar();
-    } else {
-      document.addEventListener('DOMContentLoaded', toggleNavBar);
-    }
-    function toggleNavBar() {
-      document.addEventListener('click', function (event) {
-        var clickedElem = event.target;
-        var isOpen = document.querySelector(".navbar-collapse").classList.contains("show");
-        if (isOpen && !clickedElem.classList.contains("navbar-toggler")) {
-          document.querySelector(".navbar-toggler").click();
-        }
-      }, false);
-    }
-  </script>
-
+  
   <!-- HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2571739.js"></script>
 </body>

@@ -99,18 +99,24 @@ export default function ConfSpeakers() {
         });
 
         var cellElements = flkty.getCellElements();
-        //set cells to the right and left of the selected cell to medium size
-        cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].classList.add('offset1');
-        cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].classList.add('offset1');
+        //set the 2 cells to the right and left of the selected cell to medium sizes
+        cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+        cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+        cellElements[mod(flkty.selectedIndex + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+        cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
 
         flkty.on('change', function (index) {
-            //reset all cells to small size and push them up
+            //set all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
-                cellElements[mod(i, flkty.cells.length)].classList.remove('offset1');
+                cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
             }
-            //set cells to the right and left of the new selected cell to medium size
-            cellElements[mod(index + 1, flkty.cells.length)].classList.add('offset1');
-            cellElements[mod(index - 1, flkty.cells.length)].classList.add('offset1');
+            //set the 2 cells to the right and left of the new selected cell to medium sizes
+            cellElements[mod(index + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+            cellElements[mod(index - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+            cellElements[mod(index + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+            cellElements[mod(index - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+            //make selected cell full size
+            cellElements[index].style.transform = "translateY(35%)";
         });
     });
 

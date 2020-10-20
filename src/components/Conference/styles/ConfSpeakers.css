@@ -77,3 +77,10 @@
   opacity: 1;
 }
 
+.flickity-page-dots {
+	bottom: 20px !important;
+}
+
+.flickity-page-dots .dot{
+	background: white !important;
+}

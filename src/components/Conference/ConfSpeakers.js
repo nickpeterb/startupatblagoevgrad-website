@@ -100,19 +100,17 @@ export default function ConfSpeakers() {
 
         var cellElements = flkty.getCellElements();
         //set cells to the right and left of the selected cell to medium size
-        cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
-        cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
+        cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].classList.add('offset1');
+        cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].classList.add('offset1');
 
         flkty.on('change', function (index) {
-            //set all cells to small size and push them up
+            //reset all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
-                cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
+                cellElements[mod(i, flkty.cells.length)].classList.remove('offset1');
             }
             //set cells to the right and left of the new selected cell to medium size
-            cellElements[mod(index + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
-            cellElements[mod(index - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
-            //make selected cell full size
-            cellElements[index].style.transform = "scale(1) translateY(0)";
+            cellElements[mod(index + 1, flkty.cells.length)].classList.add('offset1');
+            cellElements[mod(index - 1, flkty.cells.length)].classList.add('offset1');
         });
     });
 

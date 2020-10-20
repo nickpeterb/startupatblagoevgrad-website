@@ -1,6 +1,22 @@
 .conf-speakers {
-  background-color: #222;
-  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.conf-speakers-title {
+  
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.conf-speakers-title span{
+  font-size: 1.3em;
+  border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
 }
 
 .speaker-img {
@@ -46,7 +62,7 @@
 
 @media (min-width: 880px) {
   .cell-wrapper {
-    margin-top: 6em;
+    margin-top: 8em;
   }
 }
 
@@ -55,11 +71,21 @@
   width: 100%;
   border-radius: 50%;
 }
+
+.flick-carousel-cell:hover {
+  cursor: pointer;
+}
   
 .speaker-name, .speaker-tagline {
   opacity: 0;
   text-align: center;
   transition: opacity 0.6s;
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  .speaker-name, .speaker-tagline {
+    transition: none;
+  }
 }
 
 .is-selected {
@@ -68,19 +94,35 @@
 }
 
 .is-selected .speaker-name {
-  opacity: 1;
+  opacity: 1 !important;
   margin-top: 1em;
   font-size: 2em;
 }
 
 .is-selected .speaker-tagline {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .flickity-page-dots {
-	bottom: 20px !important;
+	bottom: 5em !important;
+}
+
+@media (min-width: 880px) {
+  .flickity-page-dots {
+    bottom: -10px !important;
+  }
 }
 
 .flickity-page-dots .dot{
 	background: white !important;
+}
+
+.conf-speakers-modal .modal-content {
+  background-color: #222 !important;
+  color: white !important;
+  padding-bottom: 2em;
+}
+
+.conf-speakers-modal .modal-content .close{
+  color: white !important;
 }

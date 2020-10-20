@@ -1,84 +1,91 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Flickity from 'flickity';
 
+import Modal from 'react-bootstrap/Modal';
+
 //speaker imgs must be cropped to exact squares, to keep the cards the same height
-import kirilImg from '../../images/speakers/kiril.jpg';
-import justineImg from '../../images/speakers/justine.png';
-import cliffordImg from '../../images/speakers/clifford.jpg';
-import omarImg from '../../images/speakers/omar.jpg';
-import nikiImg from '../../images/speakers/niki.jpg';
-import borisImg from '../../images/speakers/boris.png';
-import blagovestaImg from '../../images/speakers/blagovesta.png';
-import ashImg from '../../images/speakers/ash.jpg';
+import svetlanImg from './images/speakers/svetlan.jpg';
+import ivanLambovImg from './images/speakers/ivan-lambov.jpg';
+import ivanIllievImg from './images/speakers/ivan-illiev.jpg';
+import ekaterinaImg from './images/speakers/ekaterina.jpg';
+import miroslavImg from '././images/speakers/miroslav.jpg';
+import deniImg from './images/speakers/deni.jpg';
+import dimitarImg from './images/speakers/dimitar.jpeg';
+import philippeImg from './images/speakers/philippe.jpg';
+import victorImg from './images/speakers/victor.jpg';
+import martinImg from './images/speakers/martin.jpg';
+import vladiImg from './images/speakers/vladi.jpg';
+import ninaImg from './images/speakers/nina.jpg';
+import elenaImg from './images/speakers/elena.jpg';
 
 import './styles/Flickity.css';
 import './styles/ConfSpeakers.css';
 
-const KirilPetkov = 'Kiril is the co-founder of the Center for Economic Strategy and Competitiveness where he teaches courses on economic development and enterperneurship, and the CEO and co-founder of the biotech startup ProViotic. Being experienced in investment projects in the field of multi-disciplinary and high-tech innovations in Bulgaria, he has worked for McCain Group. He is also the CEO of the investment company BDC which is focused on investing in tech and science startups from Eastern Europe. Kiril holds a MBA from Harvard Business School where he graduated in the top 10% of his class.';
-const JustineToms = 'Justine Toms is an expert in online media and marketing, founder of digital agency ABC Design & Communication, and the  creator of a number of niche online websites, such as Az-jenata.bg and Az-deteto.bg. Justine has also been the idea leader of the competition for best Bulgarian online projects - BG Site since 1999. She is the author of 15 books in the area of online presence, digital media, CSR and communication, entrepreneurship and a lecturer at New Bulgarian University and SoftUni Digital.';
-const CliffordHurst = 'Clifford is a professor at Westminster College in Salt Lake City where he teaches entrepreneurship, social entrepreneurship, and a variety of leadership and management courses. For 24 years, he owned and operated an organizational development consulting practice with clients across the US and Canada, as well as the UK, Germany, Dubai, Hong Kong, and Australia. Cliff\'s mission in life is to help people to know themselves, choose themselves, grow themselves, and then give themselves to something greater than themselves.';
-const OmarAlBusaidy = 'Omar Al Busaidy is a Fulbright nominee, a best-selling author, entrepreneur and the host of Future Talk, the only radio show dedicated to tech in the UAE. Due to having such various roles and interests, Omar has many different accomplishments ranging from publishing his personal development book "Just Read It" and “Why Jobs are Robots and Life is for People", to investing in startups from all kinds of industries. Al Busaidy’s passion lies in entrepreneurship and futurism, hence, since 2010, he has been invited to mentor students on entrepreneurship and leadership at several universities across the UAE.';
-const NikiIliev = 'Niki is an actor who appears in American, Italian, Russian, German, French and Bulgarian movies and TV series. He made his professional debut as a director with the movie “The Foreigner” -- the most watched and highest grossing Bulgarian film for 2012 and 2013. Niki has directed many award-wining movies and TV series among which is his third feature movie as a director/writer/producer “All She Wrote” (2018) which is acclaimed by film festivals in Paris, New York and Rome. Niki Iliev has a Master degree in film directing and acting and since 2015 he has been teaching film directing in The New Bulgarian University.';
-const BorisHristov = 'Boris is the founder of the presentation agency 356labs and the only Bulgarian who has been awarded as a PowerPoint MVP (Most Valuable Professional). He has presented in 25+ countries and has been rated as the top speaker numerous times. Boris has years of experience as a trainer, mentor, and consultant who has coached not just students, but also IT, sales, marketing and management professionals on topics ranging from presentation skills and storytelling through the psychology behind slide design.';
-const BlagovestaPugyova = 'Blagovesta Pugyova is a social entrepreneur and the founder of one of the most meaningful NGOs in Bulgaria - the "Give a Book" foundation. She is the CEO of the software development company Childish, the executive director of Time Heroes and the Chief Operating Officer of JobTiger. She has been awarded by the Bulgarian Helsinki Committee for "Person of the Year" and named for "30 under 30" by Forbes magazine in 2016.';
-const AshKumra = 'Ash is a community builder, global speaker, meditation coach and national radio show host recognized twice by the White House as “an entrepreneur making an impact.” He is the Chairman, and co-founder of digital content distribution agency DesiYou. Ash is also an active angel investor and coach for businesses involved with consumer internet, entertainment and digital media. He is a frequent speaker on entrepreneurship, a professor on entrepreneurship, and the creator of the entrepreneurship movement YOUNGRY for millennials, women and inclusive entrepreneurs.';
-
 const speakersList = [
     {
-        name: 'Kiril Petkov', 
-        tagline: 'Co-Founder, Center for Economic Strategy',
-        img: kirilImg,
-        bio: KirilPetkov,
-        social: "https://www.linkedin.com/in/kiril-petkov-86381412/"
+        name: 'Philippe Boulanger', 
+        img: philippeImg,
+        bio: 'Philippe is an innovation evangelist who began his career as an entrepreneur while still a PhD student in the IBM Research Center in France. Before diving into the world of startups, he has occupied C-level positions in some of the biggest international corporations among which  Apple and Sony. He dedicates a lot of his time to speaking and consulting businesses on internal and open innovation. Moreover, he is a mentor and advisor to few selected startups as well as a partner in a seed stage venture capital fund. One of his most formidable assets is combining knowledge of the ecosystem of startups and that of the corporate world. His specialties and expertise are hot news and he has given inspiring keynotes on innovation, AI, disruption. growth,change and risk management by experimentation, and futurology.',
     },
     {
-        name: 'Omar Al Busaidy', 
-        tagline: 'Fulbright Nominee, Entrepreneur, and Futurist',
-        img: omarImg,
-        bio: OmarAlBusaidy,
-        social: "https://www.linkedin.com/in/omaralbusaidy/?originalSubdomain=ae"
+        name: 'Svetlan Stanoev', 
+        img: svetlanImg,
+        bio: "Svetlan is the co-founder of the Business Institute and is the author of the business tool \"Business Idea Mandala\" - an instrument for evaluation of new and innovative business ideas. His tool has received recognition and application in a number of start-ups and innovation incubators as well as in companies in Bulgaria and abroad. Being a former CFO at Orbitel, a Corporate Finance Consultant at KPMG, his specialties include strategic and financial management, corporate finance, venture capital, and start-ups.",
     },
     {
-        name: 'Clifford Hurst',
-        tagline: 'Professor of Entrepreneurship at Westminster College',
-        img: cliffordImg,
-        bio: CliffordHurst,
-        social: "https://www.linkedin.com/in/cliffhurst/"
+        name: 'Ivan Iliev', 
+        img: ivanIllievImg,
+        bio: 'Ivan is the founder and CEO of Eden Tech Labs - a digital product development company focused on building the next generation of mobile apps. Together with another Bulgarian tech company Imagga, his startup has developed an application which made it to the top 5 of Apple’s best paid apps in 2018. Owned by a US company, Plant Snap is a mobile app which uses AI for plant image recognition and which has generated close morethan $4M in revenues. In Eden Tech Labs Ivan has assembled a team of A players, hungry for new technologies and ready to tackle today’s challenges.',
     },
     {
-        name: 'Justine Toms',
-        tagline: 'Founder, ABC Design & Communication',
-        img: justineImg,
-        bio: JustineToms,
-        social: "https://www.linkedin.com/in/justinetoms/"
+        name: 'Denitsa Simeonova', 
+        img: deniImg,
+        bio: 'As Delivery Manager at Farstar, Denitsa is involved in the creation and management of entrepreneurship programmes for some of the most talented innovators in the world. Her mission is to empower researchers turned entrepreneurs in some of the world\'s fastest-changing environments. She has experience supporting European, African, Latin American and South-East Asian founders. She has also served as the CEO of the Association of the Bulgarian Leaders and Entrepreneurs (ABLE) which unites over 300 members who have started more than 50 businesses.',
     },
     {
-        name: 'Niki Iliev',
-        tagline: 'Director and Actor, "The Foreigner"',
-        img: nikiImg,
-        bio: NikiIliev,
-        social: "https://www.facebook.com/niki.iliev.official/"
+        name: 'Nina Prodanova-Iozeva', 
+        img: ninaImg,
+        bio: 'Nina Prodanova-Iozeva is a founder and CEO of ITCE - a company that provides innovative training and consulting solutions to support digital transformation.  Nina is a highly qualified consultant and a leader with more than 20 years of experience in managing highly complex transformations. Her name is well-known in the field of Agile and Enterprise Architecture. She has also been recognized as one of the E&Y Entrepreneurial Winning Women in Europe, a program which identifies high-potential female leaders with growing and innovative businesses. In her personal time, Nina leads an equally active lifestyle by doing a lot of sport activities such as skiing, climbing, and running. She has won the CEO Dash 1000m running completion 3 years in a row.',
     },
     {
-        name: 'Boris Hristov',
-        tagline: 'Founder, 365Labs and PowerPoint Specialist',
-        img: borisImg,
-        bio: BorisHristov,
-        social: "https://www.linkedin.com/in/brshristov/"
+        name: 'Victor Penev', 
+        img: victorImg,
+        bio: 'Victor Penev is a serial entrepreneur, born in Bulgaria but currently residing in the United States. He was a digital technology pioneer and co-founder of Bulgaria’s largest Internet company, NetInfo, in the late nineties. Victor’s latest startup, Edamam, is aiming to organize the world’s food knowledge, so it can help people everywhere eat better and live longer, healthier lives. The company, which has a development team in Bulgaria, has assembled the world\'s largest, deepest and most accurate database of foods, meals and nutrients and it works with companies such as Nestle, Amazon and The Food Network to realize its mission. Victor is passionate about a number of new technologies both in food tech, but also in fields such as longevity, quantum computing and consciousness hacking.',
     },
     {
-        name: 'Blagovesta Pugyova',
-        tagline: 'Founder, Give A Book Foundation',
-        img: blagovestaImg,
-        bio: BlagovestaPugyova,
-        social: "https://www.linkedin.com/in/blagovesta-pugyova-bb178653/"
+        name: 'Dimitar Karaivanov', 
+        img: dimitarImg,
+        bio: 'Dimitar - the CEO and co-founder of Kanbanzie, is a Lean-thinker and a Kanban practitioner with a background in software development and process improvement. Before founding Kanbanize, he has had more than 15 years experience working in corporations such as Johnson Controls, SAP and Software AG. His startup provides Kanban software for agile project management and has more than 700 customers across the world – ranging from SMEs to Fortune 500 companies. Dimitar is a keynote speaker and author of ‘Lean Software Development with Kanban’. He is an active member of the Lean / Kanban community and supporter of initiatives, which aim to promote it. Currently, he is  working with the GarGarage startup accelerator to help more young people develop their startup ideas.',
     },
     {
-        name: 'Ash Kumra',
-        tagline: 'Radio Show Host, Community Builder, and Global Speaker',
-        img: ashImg,
-        bio: AshKumra,
-        social: "https://www.linkedin.com/in/ashkumra/"
+        name: 'Elena Nikolova', 
+        img: elenaImg,
+        bio: 'Elena is one of the three co-founders and the CMO of ESCREO - a startup which helps people be more productive and creative at the workplace. For the last four years she has been living and working the deep waters of building the company, creating a strong brand and marketing their innovative product. Elena is passionate about entrepreneurship and actively supports numerous projects and initiatives in the Bulgarian ecosystem - she is a Forbes 30 under 30 fellow and has been a \"Teeninovator\" mentor. In her free time she writes in her blog, travels, plays tennis and volunteers in various initiatives.',
+    },
+    {
+        name: 'Miroslav Miroslavov', 
+        img: miroslavImg,
+        bio: 'Miro is an experienced product manager, entrepreneur, and blogger. He is the co-founder and CEO of one of the most innovative tech startups in Bulgaria, OfficeRnD - a platform thanks to which coworking spaces around the world can fully manage their business processes and provide great service to their clients. Software engineer by vocation with a great entrepreneurial mindset and invaluable business experience, Miro vision is to make \"Flexible Working the Way of Working.\"',
+    },
+    {
+        name: 'Ekaterina Stambolieva', 
+        img: ekaterinaImg,
+        bio: 'Katia is a serial impact entrepreneur, a female space tech founder and a startup mentor. She describes herself as a swiss-army knife, and in 2019 she was the only woman in Portugal who led and implemented a space tech project. Besides having extensive expertise in Machine Learning , Python and Satellite Image Analysis, she is also skilled in managing medium-sized teams, leading tech communities of +1000 members and mentoring impact & tech entrepreneurs. She is driven to use her skill to create impact in the world - to  contribute with tangible and measurable improvements to either the life of people or the environment.',
+    },
+    {
+        name: 'Vladislav Dramaliev', 
+        img: vladiImg,
+        bio: 'Vlad is a social entrepreneur, communications and marketing expert, and one of the most outspoken cryptocurrency enthusiasts in Bulgaria. Being one of the founders of the Bulgarian Bitcoin Association, founder of the website CoinFixer.com, and a member of the Bitcoin Foundation, he has explained and defended Bitcoin during numerous public events, and has provided an expert opinion regarding cryptocurrencies for various media. Vlad is heavily focused on the community-building and product side of blockchain technology and is passionate about decentralized finance.',
+    },
+    {
+        name: 'Martin Kuvandzhiev', 
+        img: martinImg,
+        bio: 'Martin is managing two companies - GoStartups and Assetify. He has 8 years experience in Fintech products and is in blockchain technologies since 2017. He is participating as a board member in Bitcoin Gold and also consults innovative startups from around the world.',
+    },
+    {
+        name: 'Ivan Lambov', 
+        img: ivanLambovImg,
+        bio: 'Ivan Lambov is the Chief Business Development Officer for Quanterall and the founder of Jitterbits LLC (Beijing). He is a visionary and results-driven Senior Executive with demonstrated experience and expertise in building up startup companies or turning around financially troubled companies. Effective leader and team builder, maximizing productivity through incentives, processes and performance measurement.',
     },
 ]
 
@@ -120,17 +127,52 @@ export default function ConfSpeakers() {
         });
     });
 
+    /* keeps track of which speaker to display in the modal */
+	const [activeSpeaker, setActiveSpeaker] = useState({
+		name: "",
+		tagline: "",
+		img: "",
+		bio: "",
+		social: ""
+	});
+
+	/* handles opening and closing the modal */
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = (item) => {
+		setActiveSpeaker(item);
+		setShow(true);
+	};
+
     return (
+        <>
+            <Modal className="conf-speakers-modal" size="lg" scrollable={true} background="true" show={show} onHide={handleClose}>
+				<Modal.Header closeButton></Modal.Header>
+				<Modal.Body>
+					<div className="row">
+						<div className="col-xs mx-auto align-self-center">
+							<img src={activeSpeaker.img} className="modal-img" alt=""></img>
+						</div>
+						<div className="col-lg speaker-bio text-center">
+							<div><span>{activeSpeaker.name}</span></div>
+							<div style={{marginTop:"1em"}}>{activeSpeaker.bio}</div>
+						</div>
+					</div>
+					
+				</Modal.Body>
+			</Modal>
         <div className="conf-speakers">
+            <h2 className="conf-speakers-title text-center"><span>Speakers</span></h2>
             <div className="flex-container">
             <div className="flick-carousel">
                     {speakersList.map((speaker, index) => (
-                        <div className="cell-wrapper" key={index} >
-                            <img 
+                        <div className="cell-wrapper" key={index}>
+                            <img
                                 src={speaker.img} 
                                 className="flick-carousel-cell" 
                                 alt={speaker.name} 
-                                style={{willChange:'transform'}}>
+                                style={{willChange:'transform'}}
+                                onClick={() => handleShow(speaker)} >
                             </img>
                             <div className="speaker-name">{speaker.name}</div>
                             <div className="speaker-tagline">{speaker.tagline}</div>
@@ -138,7 +180,7 @@ export default function ConfSpeakers() {
                     ))}
             </div>
             </div>
-
         </div>
+        </>
     );
 }

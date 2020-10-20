@@ -95,6 +95,10 @@ export default function NavBar(props){
           </div> 
           */}
 
+          <div className='nav-link'>
+            <RouterLink to='/conference2020' className='apply-button nav-link-en'>2020 Conference</RouterLink>
+          </div>
+
           {
             navItems.map((item, index) => (
               <Nav.Link as={Link} key={index}

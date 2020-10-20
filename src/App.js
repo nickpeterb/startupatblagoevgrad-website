@@ -68,7 +68,7 @@ function App() {
             <StartUpApp lang="bg" />
           </Route>
 
-          <Route path="/conference">
+          <Route path="/conference2020">
             <Conference /> 
           </Route>
           

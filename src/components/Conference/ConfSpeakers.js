@@ -83,11 +83,13 @@ const speakersList = [
 ]
 
 export default function ConfSpeakers() {
+    //makes sure carousel index stays in bounds
     const mod = (x, m) => {
         return (x % m + m) % m;
     }
 
     useEffect(() => {
+        //initialize carousel
         var elem = document.querySelector('.flick-carousel');
         var flkty = new Flickity(elem, {
             selectedAttraction: 0.02,
@@ -97,31 +99,40 @@ export default function ConfSpeakers() {
         });
 
         var cellElements = flkty.getCellElements();
+        //set cells to the right and left of the selected cell to medium size
         cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
         cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
 
         flkty.on('change', function (index) {
+            //set all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
                 cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
             }
+            //set cells to the right and left of the new selected cell to medium size
             cellElements[mod(index + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
             cellElements[mod(index - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(-50%)";
-            cellElements[mod(index, flkty.cells.length)].style.transform = "scale(1) translateY(0)";
+            //make selected cell full size
+            cellElements[index].style.transform = "scale(1) translateY(0)";
         });
     });
 
     return (
         <div className="conf-speakers">
+            <div className="flex-container">
             <div className="flick-carousel">
-                {speakersList.map((speaker, index) => (
-                    <img 
-                        src={speaker.img} 
-                        key={index} 
-                        className="flick-carousel-cell" 
-                        alt={speaker.name} 
-                        style={{willChange:'transform'}}>
-                    </img>
-                ))}
+                    {speakersList.map((speaker, index) => (
+                        <div className="cell-wrapper" key={index} >
+                            <img 
+                                src={speaker.img} 
+                                className="flick-carousel-cell" 
+                                alt={speaker.name} 
+                                style={{willChange:'transform'}}>
+                            </img>
+                            <div className="speaker-name">{speaker.name}</div>
+                            <div className="speaker-tagline">{speaker.tagline}</div>
+                        </div>
+                    ))}
+            </div>
             </div>
 
         </div>

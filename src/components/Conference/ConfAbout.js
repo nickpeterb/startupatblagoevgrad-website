@@ -21,7 +21,7 @@ export default function ConfAbout() {
                             </div>
                     </div>
                     {/*<div className="col-md" >
-                        <img src={pepoStage} className="pepo-img" alt="" />
+                        <img src={pepoStage} className="conf-about-img" alt="" />
                     </div>*/}
                 </div>
 

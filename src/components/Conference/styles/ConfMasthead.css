@@ -5,7 +5,8 @@
 	background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* doesn't work on ios */
-    filter: blur(2px);
+    
+    opacity: 0.75;
 }
 
 @media not all and (min-resolution:.001dpcm) { 
@@ -24,7 +25,6 @@
 
 .conf-masthead-title {
     font-size: 1.5rem;
-    text-shadow: 1px 1px 1px #0066ff;
 }
 
 .conf-masthead-title2 {

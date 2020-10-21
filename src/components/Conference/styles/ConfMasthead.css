@@ -9,6 +9,24 @@
     opacity: 0.75;
 }
 
+.conf-masthead-logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.conf-title-wrapper .arrow {
+    margin-top: 2em;
+    height: 2em;
+    fill:white;
+}
+
+.conf-title-wrapper .arrow:hover {
+    fill: #0066ff;
+    cursor: pointer;
+}
+
 @media not all and (min-resolution:.001dpcm) { 
     .conf-masthead {
         background-attachment: scroll;
@@ -17,6 +35,7 @@
 
 .conf-title-wrapper {
     top: 0;
+    margin-top: -1em;
     position: absolute;
     z-index: 2;
     text-align: center;

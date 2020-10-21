@@ -60,12 +60,12 @@ const speakersList = [
     {
         name: 'Elena Nikolova', 
         img: elenaImg,
-        bio: 'Elena is one of the three co-founders and the CMO of ESCREO - a startup which helps people be more productive and creative at the workplace. For the last four years she has been living and working the deep waters of building the company, creating a strong brand and marketing their innovative product. Elena is passionate about entrepreneurship and actively supports numerous projects and initiatives in the Bulgarian ecosystem - she is a Forbes 30 under 30 fellow and has been a \"Teeninovator\" mentor. In her free time she writes in her blog, travels, plays tennis and volunteers in various initiatives.',
+        bio: 'Elena is one of the three co-founders and the CMO of ESCREO - a startup which helps people be more productive and creative at the workplace. For the last four years she has been living and working the deep waters of building the company, creating a strong brand and marketing their innovative product. Elena is passionate about entrepreneurship and actively supports numerous projects and initiatives in the Bulgarian ecosystem - she is a Forbes 30 under 30 fellow and has been a "Teeninovator" mentor. In her free time she writes in her blog, travels, plays tennis and volunteers in various initiatives.',
     },
     {
         name: 'Miroslav Miroslavov', 
         img: miroslavImg,
-        bio: 'Miro is an experienced product manager, entrepreneur, and blogger. He is the co-founder and CEO of one of the most innovative tech startups in Bulgaria, OfficeRnD - a platform thanks to which coworking spaces around the world can fully manage their business processes and provide great service to their clients. Software engineer by vocation with a great entrepreneurial mindset and invaluable business experience, Miro vision is to make \"Flexible Working the Way of Working.\"',
+        bio: 'Miro is an experienced product manager, entrepreneur, and blogger. He is the co-founder and CEO of one of the most innovative tech startups in Bulgaria, OfficeRnD - a platform thanks to which coworking spaces around the world can fully manage their business processes and provide great service to their clients. Software engineer by vocation with a great entrepreneurial mindset and invaluable business experience, Miro vision is to make "Flexible Working the Way of Working."',
     },
     {
         name: 'Ekaterina Stambolieva', 

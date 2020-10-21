@@ -20,7 +20,7 @@ export default function ConfMasthead() {
                             <button
                                 className="btn btn-primary btn-lg reg-button"
                                 onClick={() => window.open('https://hopin.to/events/startup-blagoevgrad-online-conference-today-vs-tomorrow/', '_blank')}
-                            >Register NOW
+                            >Register Now
                             </button>
 
                             <br />

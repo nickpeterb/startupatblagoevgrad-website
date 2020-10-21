@@ -34,7 +34,7 @@ export default function Masthead() {
 
             
 
-            <RouterLink className="btn btn-primary btn-lg reg-button" to='/conference2020'>Register for 2020 Conf</RouterLink>
+            <RouterLink className="btn btn-primary btn-lg reg-button" to='/conference2020'>2020 Conference</RouterLink>
 
 
           </div>

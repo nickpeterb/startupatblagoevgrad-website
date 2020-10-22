@@ -17,6 +17,7 @@ import martinImg from './images/speakers/martin.jpg';
 import vladiImg from './images/speakers/vladi.jpg';
 import ninaImg from './images/speakers/nina.jpg';
 import elenaImg from './images/speakers/elena.jpg';
+import mikeImg from './images/speakers/mike.jpg';
 
 import './styles/Flickity.css';
 import './styles/ConfSpeakers.css';
@@ -28,6 +29,11 @@ const speakersList = [
         bio: 'Philippe is an innovation evangelist who began his career as an entrepreneur while still a PhD student in the IBM Research Center in France. Before diving into the world of startups, he has occupied C-level positions in some of the biggest international corporations among which  Apple and Sony. He dedicates a lot of his time to speaking and consulting businesses on internal and open innovation. Moreover, he is a mentor and advisor to few selected startups as well as a partner in a seed stage venture capital fund. One of his most formidable assets is combining knowledge of the ecosystem of startups and that of the corporate world. His specialties and expertise are hot news and he has given inspiring keynotes on innovation, AI, disruption. growth,change and risk management by experimentation, and futurology.',
     },
     {
+        name: 'Denitsa Simeonova', 
+        img: deniImg,
+        bio: 'As Delivery Manager at Farstar, Denitsa is involved in the creation and management of entrepreneurship programmes for some of the most talented innovators in the world. Her mission is to empower researchers turned entrepreneurs in some of the world\'s fastest-changing environments. She has experience supporting European, African, Latin American and South-East Asian founders. She has also served as the CEO of the Association of the Bulgarian Leaders and Entrepreneurs (ABLE) which unites over 300 members who have started more than 50 businesses.',
+    },
+    {
         name: 'Svetlan Stanoev', 
         img: svetlanImg,
         bio: "Svetlan is the co-founder of the Business Institute and is the author of the business tool \"Business Idea Mandala\" - an instrument for evaluation of new and innovative business ideas. His tool has received recognition and application in a number of start-ups and innovation incubators as well as in companies in Bulgaria and abroad. Being a former CFO at Orbitel, a Corporate Finance Consultant at KPMG, his specialties include strategic and financial management, corporate finance, venture capital, and start-ups.",
@@ -36,11 +42,6 @@ const speakersList = [
         name: 'Ivan Iliev', 
         img: ivanIllievImg,
         bio: 'Ivan is the founder and CEO of Eden Tech Labs - a digital product development company focused on building the next generation of mobile apps. Together with another Bulgarian tech company Imagga, his startup has developed an application which made it to the top 5 of Apple’s best paid apps in 2018. Owned by a US company, Plant Snap is a mobile app which uses AI for plant image recognition and which has generated close morethan $4M in revenues. In Eden Tech Labs Ivan has assembled a team of A players, hungry for new technologies and ready to tackle today’s challenges.',
-    },
-    {
-        name: 'Denitsa Simeonova', 
-        img: deniImg,
-        bio: 'As Delivery Manager at Farstar, Denitsa is involved in the creation and management of entrepreneurship programmes for some of the most talented innovators in the world. Her mission is to empower researchers turned entrepreneurs in some of the world\'s fastest-changing environments. She has experience supporting European, African, Latin American and South-East Asian founders. She has also served as the CEO of the Association of the Bulgarian Leaders and Entrepreneurs (ABLE) which unites over 300 members who have started more than 50 businesses.',
     },
     {
         name: 'Nina Prodanova-Iozeva', 
@@ -86,6 +87,12 @@ const speakersList = [
         name: 'Ivan Lambov', 
         img: ivanLambovImg,
         bio: 'Ivan Lambov is the Chief Business Development Officer for Quanterall and the founder of Jitterbits LLC (Beijing). He is a visionary and results-driven Senior Executive with demonstrated experience and expertise in building up startup companies or turning around financially troubled companies. Effective leader and team builder, maximizing productivity through incentives, processes and performance measurement.',
+    },
+    {
+        name: 'Mike Diamond', //style={{textDecorationLine: 'underline', color:'lightblue', cursor:'pointer'}} onClick={() => window.open('https://apexgmat.com/','_blank')}
+        img: mikeImg,
+        bio: <div> Mike Diamond is <a href="https://apexgmat.com/" target="_blank" rel="noopener noreferrer">Apex</a>’s Co-Founder and Director of Curriculum Development.  
+        He has a diverse background with deep experience in finance politics and education. Having run successful companies through inception and growth phases his agile business approach has resulted in a deep understanding of how to overcome challenges faced by businesses at any stage. Clients look to Mike for advice in the start-up world, family business succession and new leadership training. With over 20 years of experience he has helped countless clients with business growth plans, risk management and decision making heuristics.</div>
     },
 ]
 

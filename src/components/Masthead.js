@@ -2,9 +2,9 @@ import React from 'react';
 
 import './styles/Masthead.css';
 
-//import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
-import { Link as RouterLink } from "react-router-dom";
+//import { Link as RouterLink } from "react-router-dom";
 
 export default function Masthead() {
   return (

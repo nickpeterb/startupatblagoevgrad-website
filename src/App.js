@@ -10,7 +10,7 @@ import Speakers from './components/Speakers.js';
 import Sponsors from './components/Sponsors.js';
 import Team from './components/Team.js';
 import Contact from './components/Contact.js';
-import Conference from './components/Conference/Conference.js';
+import Conference from './components/Conference2020/Conference.js';
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 

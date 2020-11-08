@@ -52,7 +52,7 @@ const testimonialsList = [
 	{
 		name: 'Kiril Zhelyazkov',
 		img: kirilImg,
-		text: "Big thanks to @StartUPBlagoevgrad for organizing the StartUP Weekend. To me it was an excellent and refreshing opportunity to get away of everyday life and try out what it's like to be one of the creators of a disruptive business idea.",
+		text: "Big thanks to StartUP@Blagoevgrad for organizing the StartUP Weekend. To me it was an excellent and refreshing opportunity to get away of everyday life and try out what it's like to be one of the creators of a disruptive business idea.",
 		cite: "1st Place Winner at StartUP Weekend 2018",
 	}, 
 ]

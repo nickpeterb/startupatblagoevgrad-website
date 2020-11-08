@@ -22,19 +22,19 @@ const testimonialsList = [
 	{
 		name: 'Victor Penev',
 		img: victorImg,
-		text: "It was a pleasure working with the StartUp Conference 2020 team. The team was very responsive, willing to address challenges right away and find a solution so that the best experience is brought to the audience. I would work with them again in a heartbeat.",
+		text: "It was a pleasure working with the StartUP Conference 2020 team. The team was very responsive, willing to address challenges right away and find a solution so that the best experience is brought to the audience. I would work with them again in a heartbeat.",
 		cite: 'Speaker at StartUP Conference 2020'
 	},
 	{
 		name: 'Miroslav Miroslavov',
 		img: miroImg,
-		text: "The Startup Conference 2020 was great, very well organized, especially in such a difficult environment. The team went above and beyond to make it happen and make it really high quality.",
+		text: "The StartUP Conference 2020 was great, very well organized, especially in such a difficult environment. The team went above and beyond to make it happen and make it really high quality.",
 		cite: 'Speaker at StartUP Conference 2020'
 	},
 	{
 		name: 'Vlad Dramaliev',
 		img: vladImg,
-		text: "One of the most well-organized online conferences I have had the honor to attend. The Blagoevgrad startup community is one of the most vibrant ones in the country.",
+		text: "One of the most well-organized online conferences I have had the honor to attend. The Blagoevgrad StartUP community is one of the most vibrant ones in the country.",
 		cite: 'Speaker at StartUP Conference 2020'
 	},
 	{
@@ -46,7 +46,7 @@ const testimonialsList = [
 	{
 		name: 'Georgi Stoyanov',
 		img: georgiImg,
-		text: "Every touch with Startup@Blagoevgrad up to now has brought me much inspiration. I adore this smart and youthful team of people whose passion with entrepreneurship and knowledge is so beautiful. May this enthusiasm be never-ending, Startup Team!",
+		text: "Every touch with StartUP@Blagoevgrad up to now has brought me much inspiration. I adore this smart and youthful team of people whose passion with entrepreneurship and knowledge is so beautiful. May this enthusiasm be never-ending, StartUP Team!",
 		cite: 'Moderator at StartUP Conference 2020'
 	},
 	{

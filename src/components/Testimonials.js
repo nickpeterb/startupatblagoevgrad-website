@@ -23,25 +23,25 @@ const testimonialsList = [
 		name: 'Victor Penev',
 		img: victorImg,
 		text: "It was a pleasure working with the StartUP Conference 2020 team. The team was very responsive, willing to address challenges right away and find a solution so that the best experience is brought to the audience. I would work with them again in a heartbeat.",
-		cite: 'Speaker at StartUP Conference 2020'
+		cite: 'Founder and CEO of Edamam LLC'
 	},
 	{
 		name: 'Miroslav Miroslavov',
 		img: miroImg,
 		text: "The StartUP Conference 2020 was great, very well organized, especially in such a difficult environment. The team went above and beyond to make it happen and make it really high quality.",
-		cite: 'Speaker at StartUP Conference 2020'
+		cite: 'Co-founder and CEO of OfficeRnD'
 	},
 	{
 		name: 'Vlad Dramaliev',
 		img: vladImg,
 		text: "One of the most well-organized online conferences I have had the honor to attend. The Blagoevgrad StartUP community is one of the most vibrant ones in the country.",
-		cite: 'Speaker at StartUP Conference 2020'
+		cite: 'Director of the Bithope Foundation'
 	},
 	{
 		name: 'Denitsa Simeonova',
 		img: deniImg,
 		text: "Being part of StartUP Conference 2020 was a very positive experience for me. A startup event organised from students and for students to very high standards is an inspiration to all of us who are part of the entrepreneurial ecosystem and gives us a chance to contribute to its development.",
-		cite: 'Speaker at StartUP Conference 2020'
+		cite: 'Former CEO of the Association of the Bulgarian Leaders and Entrepreneurs'
 	},
 	{
 		name: 'Georgi Stoyanov',
@@ -57,12 +57,12 @@ const testimonialsList = [
 	}, 
 ]
 
-export default function Testimonials(props) {
+export default function Testimonials({lang}) {
 	return (
 		<div className="testimonials">
 			<div className="container">
 				<h2 className="testimonials-title text-center">
-					<span>{testimonialsText.title[props.lang]}</span>
+					<span>{testimonialsText.title[lang]}</span>
 				</h2>
 			</div>
 

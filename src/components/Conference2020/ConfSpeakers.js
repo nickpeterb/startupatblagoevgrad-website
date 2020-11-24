@@ -18,6 +18,7 @@ import vladiImg from './images/speakers/vladi.jpg';
 import ninaImg from './images/speakers/nina.jpg';
 import elenaImg from './images/speakers/elena.jpg';
 import mikeImg from './images/speakers/mike.jpg';
+import eliseImg from './images/speakers/elise.jpg';
 
 import './styles/Flickity.css';
 import './styles/ConfSpeakers.css';
@@ -87,6 +88,11 @@ const speakersList = [
         name: 'Ivan Lambov', 
         img: ivanLambovImg,
         bio: 'Ivan Lambov is the Chief Business Development Officer for Quanterall and the founder of Jitterbits LLC (Beijing). He is a visionary and results-driven Senior Executive with demonstrated experience and expertise in building up startup companies or turning around financially troubled companies. Effective leader and team builder, maximizing productivity through incentives, processes and performance measurement.',
+    },
+    {
+        name: 'Elise Mitchell',
+        img: eliseImg,
+        bio: "Elise's experience encompasses both entrepreneurial and corporate life. She is the founder of three companies -- two in leadership development, one in public relations. Most notably, she is founder of Mitchell Communications Group, one of the top 10 fastest-growing public relations firms globally and a two-time Inc. 500/5000 fastest growing company. The firm has twice been named Agency of the Year by PR Week and PRovoke. Clients include Walmart, Procter & Gamble, Marriott, Mondelez and other well-known brands."
     },
     {
         name: 'Mike Diamond', //style={{textDecorationLine: 'underline', color:'lightblue', cursor:'pointer'}} onClick={() => window.open('https://apexgmat.com/','_blank')}

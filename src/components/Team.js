@@ -11,8 +11,6 @@ import armela from '../images/team/armela.png';
 import stan from '../images/team/stan.png';
 
 //Speakers
-import aneta from '../images/team/aneta.png';
-import dari from '../images/team/dari.png';
 import fatma from '../images/team/fatma.png';
 import key from '../images/team/key.png';
 import nadiaT from '../images/team/nadia-t.png';
@@ -40,7 +38,6 @@ import teddy from '../images/team/teddy.png';
 import nick from '../images/team/nick.png';
 import mitko from '../images/team/mitko.png';
 import andi from '../images/team/andi.png';
-import vladin from '../images/team/vladin.png';
 
 const teamText = {
 	"title": {
@@ -79,11 +76,9 @@ const board = [
 const speakersDept = [
 	{ name: 'Fatma Xhafa', img: fatma, linkedIn: "https://www.linkedin.com/in/fatma-xhafa-79446114b/" },
 	{ name: 'Uerda Muca', img: uerda, linkedIn: "https://www.linkedin.com/in/uerda-muca-340140135/" },
-	{ name: 'Darina Stanoilova', img: dari, linkedIn: "" },
 	{ name: 'Alexandra Dimcheva', img: alex, linkedIn: "https://www.linkedin.com/in/alexandra-dimcheva-b18866172/" },
 	{ name: 'Nadia Traikova', img: nadiaT, linkedIn: "https://www.linkedin.com/in/nadia-traykova-124a70147/" },
-	{ name: 'Key Prifti', img: key, linkedIn: "" },
-	{ name: 'Aneta Gerginova', img: aneta, linkedIn: "" },
+	{ name: 'Key Prifti', img: key, linkedIn: "" }
 ]
 
 const sponsorsDept = [
@@ -108,8 +103,7 @@ const marketingDept = [
 const itDept = [
 	{ name: 'Dimitar Glavinkov', img: mitko, title: { "en": "Head of IT", "bg": "Ръководител на IT" }, linkedIn: "" },
 	{ name: 'Nick Bruhnev', img: nick, linkedIn: "https://www.linkedin.com/in/nick-bruhnev/" },
-	{ name: 'Andrea Shipkovensky', img: andi, linkedIn: "" },
-	{ name: 'Vladin Bonov', img: vladin, linkedIn: "" }
+	{ name: 'Andrea Shipkovensky', img: andi, linkedIn: "" }
 ]
 
 function MembersSlide(props) {

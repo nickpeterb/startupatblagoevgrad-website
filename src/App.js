@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
 
 import NavBar from './components/NavBar.js';
@@ -18,25 +18,6 @@ import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 
 
 function StartUpApp({ lang }) {
-
-  // collapse navbar by clicking outside it
-  useEffect(() => {
-    if (document.readyState !== 'loading') {
-      toggleNavBar();
-    } else {
-      document.addEventListener('DOMContentLoaded', toggleNavBar);
-    }
-    function toggleNavBar() {
-      document.addEventListener('click', function (event) {
-        var clickedElem = event.target;
-        var isOpen = document.querySelector(".navbar-collapse").classList.contains("show");
-        if (isOpen && !clickedElem.classList.contains("navbar-toggler")) {
-          document.querySelector(".navbar-toggler").click();
-        }
-      }, false);
-    }
-  });
-  
   return (
     <>
       <NavBar lang={lang}/>

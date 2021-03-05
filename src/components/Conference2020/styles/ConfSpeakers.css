@@ -126,3 +126,10 @@
 .conf-speakers-modal .modal-content .close{
   color: white !important;
 }
+
+.speaker2020-video-wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 24em;
+  width: 40em;
+}

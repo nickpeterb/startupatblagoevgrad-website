@@ -92,7 +92,8 @@ const speakersList = [
     {
         name: 'Elise Mitchell',
         img: eliseImg,
-        bio: "Elise's experience encompasses both entrepreneurial and corporate life. She is the founder of three companies -- two in leadership development, one in public relations. Most notably, she is founder of Mitchell Communications Group, one of the top 10 fastest-growing public relations firms globally and a two-time Inc. 500/5000 fastest growing company. The firm has twice been named Agency of the Year by PR Week and PRovoke. Clients include Walmart, Procter & Gamble, Marriott, Mondelez and other well-known brands."
+        bio: "Elise's experience encompasses both entrepreneurial and corporate life. She is the founder of three companies -- two in leadership development, one in public relations. Most notably, she is founder of Mitchell Communications Group, one of the top 10 fastest-growing public relations firms globally and a two-time Inc. 500/5000 fastest growing company. The firm has twice been named Agency of the Year by PR Week and PRovoke. Clients include Walmart, Procter & Gamble, Marriott, Mondelez and other well-known brands.",
+        video: "https://www.youtube.com/embed/q7S4nmzVkL8"
     },
     {
         name: 'Mike Diamond', //style={{textDecorationLine: 'underline', color:'lightblue', cursor:'pointer'}} onClick={() => window.open('https://apexgmat.com/','_blank')}
@@ -108,6 +109,14 @@ export default function ConfSpeakers() {
         return (x % m + m) % m;
     }
 
+    //keep track of which video to show below speaker
+    const [speakerVideo, setSpeakerVideo] = useState("");
+
+    //get speaker video by name & set it
+    const handleSpeakerVideo = (name) => {
+        setSpeakerVideo(speakersList.find(speaker => speaker.name === name).video);
+    }
+
     useEffect(() => {
         //initialize carousel
         var elem = document.querySelector('.flick-carousel');
@@ -115,7 +124,8 @@ export default function ConfSpeakers() {
             selectedAttraction: 0.02,
             friction: 0.2,
             wrapAround: true,
-            setGallerySize: false
+            setGallerySize: false,
+            pageDots: false
         });
 
         var cellElements = flkty.getCellElements();
@@ -126,6 +136,8 @@ export default function ConfSpeakers() {
         cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
 
         flkty.on('change', function (index) {
+            handleSpeakerVideo(cellElements[flkty.selectedIndex].innerText);
+            
             //set all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
                 cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
@@ -146,7 +158,6 @@ export default function ConfSpeakers() {
 		tagline: "",
 		img: "",
 		bio: "",
-		social: ""
 	});
 
 	/* handles opening and closing the modal */
@@ -177,22 +188,27 @@ export default function ConfSpeakers() {
         <div className="conf-speakers">
             <h2 className="conf-speakers-title text-center"><span>Speakers</span></h2>
             <div className="flex-container">
-            <div className="flick-carousel">
-                    {speakersList.map((speaker, index) => (
-                        <div className="cell-wrapper" key={index}>
-                            <img
-                                src={speaker.img} 
-                                className="flick-carousel-cell" 
-                                alt={speaker.name} 
-                                style={{willChange:'transform'}}
-                                onClick={() => handleShow(speaker)} >
-                            </img>
-                            <div className="speaker-name">{speaker.name}</div>
-                            <div className="speaker-tagline">{speaker.tagline}</div>
-                        </div>
-                    ))}
+                <div className="flick-carousel">
+                        {speakersList.map((speaker, index) => (
+                            <div className="cell-wrapper" key={index}>
+                                <img
+                                    src={speaker.img} 
+                                    className="flick-carousel-cell" 
+                                    alt={speaker.name} 
+                                    style={{willChange:'transform'}}
+                                    onClick={() => handleShow(speaker)} >
+                                </img>
+                                <div className="speaker-name">{speaker.name}</div>
+                                <div className="speaker-tagline">{speaker.tagline}</div>
+                            </div>
+                        ))}
+                </div>
             </div>
+            {speakerVideo &&
+            <div className="speaker2020-video-wrapper">
+                <iframe loading="lazy" title="speaker2020-video" className="speaker2020-video" width="100%" height="100%" src={speakerVideo} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
             </div>
+            }
         </div>
         </>
     );

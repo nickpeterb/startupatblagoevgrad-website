@@ -72,8 +72,6 @@
   border-radius: 50%;
 }
 
-
-  
 .speaker-name, .speaker-tagline {
   opacity: 0;
   text-align: center;
@@ -112,20 +110,6 @@
   display: block !important;
 }
 
-.flickity-page-dots {
-	bottom: 5em !important;
-}
-
-@media (min-width: 880px) {
-  .flickity-page-dots {
-    bottom: -10px !important;
-  }
-}
-
-.flickity-page-dots .dot{
-	background: white !important;
-}
-
 .conf-speakers-modal .modal-content {
   background-color: #222 !important;
   color: white !important;
@@ -137,8 +121,14 @@
 }
 
 .speaker2020-video-wrapper {
-  margin: 0 auto;
+  margin: -50px auto 5em auto;
   max-width: 100%;
   height: 24em;
   width: 40em;
+}
+
+@media (max-width: 880px) {
+  .speaker2020-video-wrapper {
+    margin-top: -100px;
+  }
 }

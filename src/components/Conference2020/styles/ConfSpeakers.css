@@ -72,14 +72,22 @@
   border-radius: 50%;
 }
 
-.flick-carousel-cell:hover {
-  cursor: pointer;
-}
+
   
 .speaker-name, .speaker-tagline {
   opacity: 0;
   text-align: center;
   transition: opacity 0.6s;
+}
+
+.speaker-tagline:hover{
+  cursor: pointer;
+  color: #99e6ff;
+}
+
+.speaker-tagline {
+  color: #00bfff;
+  display: none;
 }
 
 @media not all and (min-resolution:.001dpcm) { 
@@ -101,6 +109,7 @@
 
 .is-selected .speaker-tagline {
   opacity: 1 !important;
+  display: block !important;
 }
 
 .flickity-page-dots {

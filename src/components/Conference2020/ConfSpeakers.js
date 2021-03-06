@@ -109,13 +109,17 @@ export default function ConfSpeakers() {
         return (x % m + m) % m;
     }
 
-    //keep track of which video to show below speaker
-    const [speakerVideo, setSpeakerVideo] = useState("");
+    /* keeps track of which speaker to display in the modal */
+	const [activeSpeaker, setActiveSpeaker] = useState({
+		name: "",
+		tagline: "",
+		img: "",
+		bio: "",
+	});
 
-    //get speaker video by name & set it
-    const handleSpeakerVideo = (matchName) => {
+    const handleActiveSpeaker = (matchName) => {
         let speaker = speakersList.find(speaker => speaker.name === matchName);
-        setSpeakerVideo(speaker.video);
+        setActiveSpeaker(speaker);
     }
 
     useEffect(() => {
@@ -136,12 +140,10 @@ export default function ConfSpeakers() {
         cellElements[mod(flkty.selectedIndex + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
         cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
 
-       
-        //console.log(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
-        handleSpeakerVideo(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+        handleActiveSpeaker(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
         
         flkty.on('change', function (index) {
-            handleSpeakerVideo(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+            handleActiveSpeaker(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
 
             //set all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
@@ -155,27 +157,18 @@ export default function ConfSpeakers() {
             //make selected cell full size
             cellElements[index].style.transform = "translateY(35%)";
         });
-    });
 
-    /* keeps track of which speaker to display in the modal */
-	const [activeSpeaker, setActiveSpeaker] = useState({
-		name: "",
-		tagline: "",
-		img: "",
-		bio: "",
-	});
+        flkty.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
+            flkty.select(cellIndex);
+        });
+    });
 
 	/* handles opening and closing the modal */
 	const [show, setShow] = useState(false);
-	const handleClose = () => setShow(false);
-	const handleShow = (item) => {
-		setActiveSpeaker(item);
-		setShow(true);
-	};
 
     return (
         <>
-            <Modal className="conf-speakers-modal" size="lg" scrollable={true} background="true" show={show} onHide={handleClose}>
+            <Modal className="conf-speakers-modal" size="lg" scrollable={true} background="true" show={show} onHide={() => setShow(false)}>
 				<Modal.Header closeButton></Modal.Header>
 				<Modal.Body>
 					<div className="row">
@@ -187,7 +180,6 @@ export default function ConfSpeakers() {
 							<div style={{marginTop:"1em"}}>{activeSpeaker.bio}</div>
 						</div>
 					</div>
-					
 				</Modal.Body>
 			</Modal>
         <div className="conf-speakers">
@@ -201,17 +193,17 @@ export default function ConfSpeakers() {
                                     className="flick-carousel-cell" 
                                     alt={speaker.name} 
                                     style={{willChange:'transform'}}
-                                    onClick={() => handleShow(speaker)} >
+                                >
                                 </img>
                                 <div className="speaker-name">{speaker.name}</div>
-                                <div className="speaker-tagline"></div>
+                                <div className="speaker-tagline" onClick={() => setShow(speaker)}>Learn More</div>
                             </div>
                         ))}
                 </div>
             </div>
-            {speakerVideo &&
+            {activeSpeaker.video &&
             <div className="speaker2020-video-wrapper">
-                <iframe title="speaker2020-video" className="speaker2020-video" width="100%" height="100%" src={speakerVideo} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+                <iframe title="speaker2020-video" className="speaker2020-video" width="100%" height="100%" src={activeSpeaker.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
             </div>
             }
         </div>

@@ -113,8 +113,9 @@ export default function ConfSpeakers() {
     const [speakerVideo, setSpeakerVideo] = useState("");
 
     //get speaker video by name & set it
-    const handleSpeakerVideo = (name) => {
-        setSpeakerVideo(speakersList.find(speaker => speaker.name === name).video);
+    const handleSpeakerVideo = (matchName) => {
+        let speaker = speakersList.find(speaker => speaker.name === matchName);
+        setSpeakerVideo(speaker.video);
     }
 
     useEffect(() => {
@@ -135,9 +136,13 @@ export default function ConfSpeakers() {
         cellElements[mod(flkty.selectedIndex + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
         cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
 
+       
+        //console.log(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+        handleSpeakerVideo(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+        
         flkty.on('change', function (index) {
-            handleSpeakerVideo(cellElements[flkty.selectedIndex].innerText);
-            
+            handleSpeakerVideo(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+
             //set all cells to small size and push them up
             for (let i = 0; i < cellElements.length; i++) {
                 cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
@@ -199,14 +204,14 @@ export default function ConfSpeakers() {
                                     onClick={() => handleShow(speaker)} >
                                 </img>
                                 <div className="speaker-name">{speaker.name}</div>
-                                <div className="speaker-tagline">{speaker.tagline}</div>
+                                <div className="speaker-tagline"></div>
                             </div>
                         ))}
                 </div>
             </div>
             {speakerVideo &&
             <div className="speaker2020-video-wrapper">
-                <iframe loading="lazy" title="speaker2020-video" className="speaker2020-video" width="100%" height="100%" src={speakerVideo} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+                <iframe title="speaker2020-video" className="speaker2020-video" width="100%" height="100%" src={speakerVideo} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
             </div>
             }
         </div>

@@ -93,7 +93,8 @@ const speakersList = [
         name: 'Elise Mitchell',
         img: eliseImg,
         bio: "Elise's experience encompasses both entrepreneurial and corporate life. She is the founder of three companies -- two in leadership development, one in public relations. Most notably, she is founder of Mitchell Communications Group, one of the top 10 fastest-growing public relations firms globally and a two-time Inc. 500/5000 fastest growing company. The firm has twice been named Agency of the Year by PR Week and PRovoke. Clients include Walmart, Procter & Gamble, Marriott, Mondelez and other well-known brands.",
-        video: "https://www.youtube.com/embed/q7S4nmzVkL8"
+        video: "https://www.youtube.com/embed/q7S4nmzVkL8",
+        featured: true,
     },
     {
         name: 'Mike Diamond', //style={{textDecorationLine: 'underline', color:'lightblue', cursor:'pointer'}} onClick={() => window.open('https://apexgmat.com/','_blank')}
@@ -166,6 +167,10 @@ export default function ConfSpeakers() {
 	/* handles opening and closing the modal */
 	const [show, setShow] = useState(false);
 
+    const featuredFirst = (x,y) => {
+        return (x.featured === y.featured)? 0 : x.featured? -1 : 1;
+    }
+
     return (
         <>
             <Modal className="conf-speakers-modal" size="lg" scrollable={true} background="true" show={show} onHide={() => setShow(false)}>
@@ -186,7 +191,7 @@ export default function ConfSpeakers() {
             <h2 className="conf-speakers-title text-center"><span>Speakers</span></h2>
             <div className="flex-container">
                 <div className="flick-carousel">
-                        {speakersList.map((speaker, index) => (
+                        {speakersList.sort(featuredFirst).map((speaker, index) => (
                             <div className="cell-wrapper" key={index}>
                                 <img
                                     src={speaker.img} 

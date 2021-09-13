@@ -11,20 +11,20 @@ import './styles/ConfSpeakers.css';
 
 export default function ConfSpeakers() {
     const speakersRef = firestore.collection('speakers');
-    const query = speakersRef.orderBy('featured', 'desc');
+    const query = speakersRef.orderBy('updatedAt', 'desc');
     const [speakersList, loading] = useCollectionDataOnce(query);
 
     return (
         <>
-        { !loading &&
-            <Speakers speakersList={speakersList}/>
-        }
+            { !loading &&
+                <Speakers speakersList={speakersList} />
+            }
         </>
     );
 
 }
 
-function Speakers({speakersList}) {
+function Speakers({ speakersList }) {
     //makes sure carousel index stays in bounds
     const mod = (x, m) => {
         return (x % m + m) % m;
@@ -44,46 +44,45 @@ function Speakers({speakersList}) {
     }
 
     useEffect(() => {
-        
-            //initialize carousel
-            var elem = document.querySelector('.flick-carousel');
-            var flkty = new Flickity(elem, {
-                selectedAttraction: 0.02,
-                friction: 0.2,
-                wrapAround: true,
-                setGallerySize: false,
-                pageDots: false
-            });
+        //initialize carousel
+        var elem = document.querySelector('.flick-carousel');
+        var flkty = new Flickity(elem, {
+            selectedAttraction: 0.02,
+            friction: 0.2,
+            wrapAround: true,
+            setGallerySize: false,
+            pageDots: false
+        });
 
-            var cellElements = flkty.getCellElements();
-            //set the 2 cells to the right and left of the selected cell to medium sizes
-            cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
-            cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
-            cellElements[mod(flkty.selectedIndex + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
-            cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+        var cellElements = flkty.getCellElements();
+        //set the 2 cells to the right and left of the selected cell to medium sizes
+        cellElements[mod(flkty.selectedIndex + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+        cellElements[mod(flkty.selectedIndex - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+        cellElements[mod(flkty.selectedIndex + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+        cellElements[mod(flkty.selectedIndex - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
 
+        handleActiveSpeaker(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+
+        flkty.on('change', function (index) {
             handleActiveSpeaker(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
 
-            flkty.on('change', function (index) {
-                handleActiveSpeaker(cellElements[flkty.selectedIndex].querySelector('.speaker-name').innerText);
+            //set all cells to small size and push them up
+            for (let i = 0; i < cellElements.length; i++) {
+                cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
+            }
+            //set the 2 cells to the right and left of the new selected cell to medium sizes
+            cellElements[mod(index + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+            cellElements[mod(index - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
+            cellElements[mod(index + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+            cellElements[mod(index - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
+            //make selected cell full size
+            cellElements[index].style.transform = "translateY(35%)";
+        });
 
-                //set all cells to small size and push them up
-                for (let i = 0; i < cellElements.length; i++) {
-                    cellElements[mod(i, flkty.cells.length)].style.transform = "scale(0.5) translateY(-150%)";
-                }
-                //set the 2 cells to the right and left of the new selected cell to medium sizes
-                cellElements[mod(index + 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
-                cellElements[mod(index - 1, flkty.cells.length)].style.transform = "scale(0.8) translateY(0.01%)";
-                cellElements[mod(index + 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
-                cellElements[mod(index - 2, flkty.cells.length)].style.transform = "scale(0.65) translateY(-50%)";
-                //make selected cell full size
-                cellElements[index].style.transform = "translateY(35%)";
-            });
+        flkty.on('staticClick', function (event, pointer, cellElement, cellIndex) {
+            flkty.select(cellIndex);
+        });
 
-            flkty.on('staticClick', function (event, pointer, cellElement, cellIndex) {
-                flkty.select(cellIndex);
-            });
-        
     });
 
     /* handles opening and closing the modal */
@@ -91,8 +90,8 @@ function Speakers({speakersList}) {
 
     const nina = (name) => {
         // this is because nina prodanova-iozeva has a very long name
-        if(name === "Nina Prodanova-Iozeva") return {fontSize: "1.6em"};
-        else return {fontSize: "2em"};
+        if (name === "Nina Prodanova-Iozeva") return { fontSize: "1.6em" };
+        else return { fontSize: "2em" };
     }
 
     return (
@@ -111,7 +110,7 @@ function Speakers({speakersList}) {
                     </div>
                 </Modal.Body>
             </Modal>
-            
+
             <div className="conf-speakers">
                 <h2 className="conf-speakers-title text-center"><span>Speakers</span></h2>
                 <div className="flex-container">

@@ -29,7 +29,7 @@
   height: 40em;
   width: 100%;
   max-width: 100vw;
-
+  
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
 }

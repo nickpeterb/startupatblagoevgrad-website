@@ -21,6 +21,7 @@ export default function ITForm(props) {
         <div className="it-form">
             <div className="container text-center">
                 <h5 className="title py-4">IT Department</h5>
+                <p class="scroll-down">Scroll Down To Apply</p>
 
                 <div className="row">
 
@@ -28,6 +29,7 @@ export default function ITForm(props) {
                         <div className="vid-wrapper">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4OwtyvICiw8" title="it-vid" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                         </div>
+                        <p>Head of IT in 2020</p>
 
                         <div className="desc-text mt-3">
                             Numbers, codes, websites and apps, the IT department is what has brought to you this website to begin with. The people behind the computers that deal with all the technical issues and unexpected crashes without anyone even knowing that something happened to begin with. The tech wizards that solve problems before they are even problems. If this dynamic team of people is what draws you in, a try for the IT department is what would be the best for you.

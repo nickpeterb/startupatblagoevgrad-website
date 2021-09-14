@@ -30,9 +30,17 @@
     margin-top: 2em;
 }
 
+.scroll-down{
+    display: unset;
+}
+
+
 @media (min-width: 1200px){
     .form-col {
         margin-top: 0;
+    }
+    .scroll-down{
+        display: none;
     }
 }
 

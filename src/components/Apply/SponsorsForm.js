@@ -21,6 +21,7 @@ export default function SponsorsForm(props) {
         <div className="sponsors-form">
             <div className="container text-center">
                 <h5 className="title py-4">Sponsorship Department</h5>
+                <p class="scroll-down">Scroll Down To Apply</p>
 
                 <div className="row">
 
@@ -28,6 +29,7 @@ export default function SponsorsForm(props) {
                         <div className="vid-wrapper">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y4PBoVI13nk" title="sponsors-vid" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                         </div>
+                        <p>Head of Sponsorship in 2020</p>
 
                         <div className="desc-text mt-3">
                             From sending out emails, to ensuring contracts and packages, the Sponsorship departments are the ones who ensure that our events will happen. They too work without rest to provide us with the necessary sponsors that make the events a breeze. Prizes, merchandise, refreshments, the Sponsorship department do it all perfectly. They have been bitten by the money bugs and welcome with open arms those who show the resilience to succeed in their difficult task.

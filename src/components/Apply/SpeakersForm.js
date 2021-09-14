@@ -21,6 +21,7 @@ export default function SpeakersForm(props) {
         <div className="speakers-form">
             <div className="container text-center">
                 <h5 className="title py-4">Speakers Department</h5>
+                <p class="scroll-down">Scroll Down To Apply</p>
 
                 <div className="row">
 
@@ -28,6 +29,7 @@ export default function SpeakersForm(props) {
                         <div className="vid-wrapper">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NRNVsoUYoKM" title="speakers-vid" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
                         </div>
+                        <p>Head of Speakers in 2020</p>
 
                         <div className="desc-text mt-3">
                             If you are good with people and enjoy finding interesting and exceptional people, then the Speakers department is for you. The Speakers department works tirelessly to find inspiring people to come and share their experiences and their hardships. Тhe Speakers department are the ones who provide our events with the most ideal lecturers, who have achieved truly extraordinary things in their careers. Those with the confidence to reach out to people of all walks of life, the speakers’ department is a perfect option for you.

@@ -14,7 +14,7 @@ import Conference from './components/Conference2020/Conference.js';
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 
-// import Apply from './components/Apply/LandingPage.js';
+import Apply from './components/Apply/LandingPage.js';
 
 
 function StartUpApp({ lang }) {
@@ -53,7 +53,7 @@ function App() {
             <Conference /> 
           </Route>
           
-          {/* <Route path="/apply" component={Apply} /> */}
+          <Route path="/apply" component={Apply} />
 
           <Route path="/apply"> 
             <Redirect to="/en" />

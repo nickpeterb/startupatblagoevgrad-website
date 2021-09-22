@@ -53,10 +53,10 @@
 
 @media (max-width: 500px) { 
   .nav-link-en{
-    font-size: 5.7vh !important;
+    font-size: 4.7vh !important;
   }
   .nav-link-bg{
-    font-size: 9vw !important;
+    font-size: 8vw !important;
   }
 }
 

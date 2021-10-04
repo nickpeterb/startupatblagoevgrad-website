@@ -90,9 +90,9 @@ export default function NavBar(props){
         <Nav className="ml-auto">
 
            
-          <div className='nav-link'>
+          {/*<div className='nav-link'>
             <RouterLink to='/apply' className={`apply-button nav-link-${props.lang}`} >APPLY NOW</RouterLink>
-          </div> 
+          </div> */}
           
 
           <div className='nav-link'>

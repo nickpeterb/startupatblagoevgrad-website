@@ -53,7 +53,7 @@ function App() {
             <Conference /> 
           </Route>
           
-          <Route path="/apply" component={Apply} />
+          {/*<Route path="/apply" component={Apply} /> */}
 
           <Route path="/apply"> 
             <Redirect to="/en" />

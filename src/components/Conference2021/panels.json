@@ -1,0 +1,89 @@
+{
+  "panel1": [
+    {
+      "speakerName": "Georgi Manolov",
+      "company": "Nexo",
+      "businessSphere": "Blockchain, Crypto",
+      "theme": "Riding on the Crest of the Wave",
+      "duration": 20,
+      "eventType": "Speech",
+      "socialLink": "https://www.facebook.com/georgemanolov"
+    },
+    {
+      "speakerName": "Mihai Draghici",
+      "company": "PayByFace",
+      "businessSphere": "Fintech, Biometrics",
+      "theme": "",
+      "duration": 10,
+      "eventType": "Speech",
+      "socialLink": "https://www.linkedin.com/in/mihai-radu-draghici/"
+    },
+    {
+      "speakerName": "Dean Bezlov",
+      "company": "MYX",
+      "businessSphere": "DeepTech, AI",
+      "theme": "",
+      "duration": 10,
+      "eventType": "Speech",
+      "socialLink": "https://www.linkedin.com/in/dean-bezlov-myx/"
+    }
+  ],
+  "panel2": [
+    {
+      "speakerName": "Spas Kerimov",
+      "company": "Printivo",
+      "businessSphere": "Bio Tech",
+      "theme": "",
+      "duration": 15,
+      "eventType": "Interview",
+      "socialLink": "https://www.linkedin.com/in/spas-kerimov/"
+    },
+    {
+      "speakerName": "Georgi Kostadinov",
+      "company": "Kelvin Health",
+      "businessSphere": "Bio Tech",
+      "theme": "",
+      "duration": 15,
+      "eventType": "Interview",
+      "socialLink": "https://www.linkedin.com/in/georgi-kostadinov/"
+    },
+    {
+      "speakerName": "Neville Mchina",
+      "company": "Invisible Foods",
+      "businessSphere": "Sustainability",
+      "theme": "",
+      "duration": 30,
+      "eventType": "Panel Discussion",
+      "socialLink": "https://www.linkedin.com/in/neville-mchina-39203b83/"
+    },
+    {
+      "speakerName": "Xavier Marcenac",
+      "company": "Nasecomo",
+      "businessSphere": "Sustainability",
+      "theme": "",
+      "duration": 30,
+      "eventType": "Panel Discussion",
+      "socialLink": "https://www.linkedin.com/in/xaviermarcenac/"
+    }
+  ],
+  "panel3": [
+    {
+      "speakerName": "Vladimir Tabutov",
+      "company": "Hec Solar",
+      "businessSphere": "Renewable Energy",
+      "theme": "",
+      "duration": 10,
+      "eventType": "Speech",
+      "socialLink": "https://www.linkedin.com/in/vladimir-tabutov-44a6026/"
+    },
+    {
+      "speakerName": "Teodosi Teodosiev",
+      "company": "Kinetic",
+      "businessSphere": "Electric Vehicles",
+      "theme": "",
+      "duration": 15,
+      "eventType": "Interview",
+      "socialLink": "https://www.facebook.com/teodosy"
+    }
+  ]
+}

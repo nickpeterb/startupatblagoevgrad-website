@@ -11,10 +11,11 @@ import Sponsors from './components/Sponsors.js';
 import Team from './components/Team.js';
 import Contact from './components/Contact.js';
 import Conference from './components/Conference2020/Conference.js';
+import Conf2021 from './components/Conference2021/Conf2021';
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 
-import Apply from './components/Apply/LandingPage.js';
+//import Apply from './components/Apply/LandingPage.js';
 
 
 function StartUpApp({ lang }) {
@@ -51,6 +52,10 @@ function App() {
 
           <Route path="/conference2020">
             <Conference /> 
+          </Route>
+
+          <Route path="/conference2021">
+            <Conf2021 /> 
           </Route>
           
           {/*<Route path="/apply" component={Apply} /> */}

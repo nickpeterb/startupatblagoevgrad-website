@@ -96,7 +96,7 @@ export default function NavBar(props){
           
 
           <div className='nav-link'>
-            <RouterLink to='/conference2020' className='apply-button nav-link-en'>2020 Conference</RouterLink>
+            <RouterLink to='/conference2021' className='apply-button nav-link-en'>2021 Conference</RouterLink>
           </div>
 
           {

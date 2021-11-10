@@ -1,4 +1,4 @@
-{
+const panels = {
   "panel1": [
     {
       "speakerName": "Georgi Manolov",
@@ -87,3 +87,5 @@
     }
   ]
 }
+
+export default panels

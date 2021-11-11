@@ -54,28 +54,34 @@
 }
 
 .speaker .footer {
+    margin-top: 5px;
     font-size: 0.9rem;
 }
 
-.speaker .footer .businessSphere {
+.speaker .footer .chip {
     display: inline-block;
-    margin-right: 5px;
-    background-color: #008a94;
     border-radius: 20px;
     padding: 2px 10px;
     width: fit-content;
     height: fit-content;
 }
 
+.speaker .footer .chip.businessSphere {
+    background-color: #008a94;
+}
+
+.speaker .footer .chip.company {
+    background-color: #00b590;
+}
+
 .speaker .fa-linkedin-square,
 .fa-facebook-square {
     color: white;
-    font-size: 1em;
+    font-size: 1.6em;
 }
 
 .speaker .fa-linkedin-square:hover,
 .fa-facebook-square:hover {
     color: lightgray;
     cursor: pointer;
-    font-size: 1em;
 }

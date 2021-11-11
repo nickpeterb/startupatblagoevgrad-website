@@ -51,8 +51,10 @@ function Speaker({ speaker }) {
                     }
                     onClick={() => window.open(speaker.socialLink, "_blank")}
                 ></i>
-                <div>{speaker.company}</div>
-                <div className="businessSphere">{speaker.businessSphere}</div>
+                <div className="chip company">{speaker.company}</div>
+                <div className="chip businessSphere">
+                    {speaker.businessSphere}
+                </div>
             </div>
         </div>
     );

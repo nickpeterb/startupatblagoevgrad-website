@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import poster from "../media/poster.JPG";
+import poster from "../media/poster.png";
 import "./Conf2021.css";
 
 import Panels from "../PanelsComponent/Panels";

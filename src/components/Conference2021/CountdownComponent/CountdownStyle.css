@@ -2,8 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+.countdown-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-family: "Lato", sans-serif;*/
 }
 
 h1 {
@@ -18,13 +21,6 @@ h1 {
     left: 0;
     width: 100px;
     height: 100px;
-}
-
-.countdown-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .countdown-item {

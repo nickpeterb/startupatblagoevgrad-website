@@ -1,3 +1,13 @@
+import dean from '../media/speakers/Dean_Bezlov.png'
+import georgik from '../media/speakers/Georgi_Kostadinov.png'
+import georgim from '../media/speakers/Georgi_Manolov.png'
+import mihai from '../media/speakers/Mihai_Draghici.png'
+import nevil from '../media/speakers/Neville_Mchina.png'
+import spas from '../media/speakers/Spas_Kerimov.png'
+import teod from '../media/speakers/Teodosi_Teodosiev.png'
+import vlad from '../media/speakers/Vladimir_Tabutov.png'
+import xav from '../media/speakers/Xavier_Marcenac.png'
+
 const panels = {
   "panel1": [
     {
@@ -7,7 +17,8 @@ const panels = {
       "theme": "Riding on the Crest of the Wave",
       "duration": 20,
       "eventType": "Speech",
-      "socialLink": "https://www.facebook.com/georgemanolov"
+      "socialLink": "https://www.facebook.com/georgemanolov",
+      "img": georgim
     },
     {
       "speakerName": "Mihai Draghici",
@@ -16,7 +27,8 @@ const panels = {
       "theme": "",
       "duration": 10,
       "eventType": "Speech",
-      "socialLink": "https://www.linkedin.com/in/mihai-radu-draghici/"
+      "socialLink": "https://www.linkedin.com/in/mihai-radu-draghici/",
+      "img": mihai
     },
     {
       "speakerName": "Dean Bezlov",
@@ -25,7 +37,8 @@ const panels = {
       "theme": "",
       "duration": 10,
       "eventType": "Speech",
-      "socialLink": "https://www.linkedin.com/in/dean-bezlov-myx/"
+      "socialLink": "https://www.linkedin.com/in/dean-bezlov-myx/",
+      "img": dean
     }
   ],
   "panel2": [
@@ -36,7 +49,8 @@ const panels = {
       "theme": "",
       "duration": 15,
       "eventType": "Interview",
-      "socialLink": "https://www.linkedin.com/in/spas-kerimov/"
+      "socialLink": "https://www.linkedin.com/in/spas-kerimov/",
+      "img": spas
     },
     {
       "speakerName": "Georgi Kostadinov",
@@ -45,7 +59,8 @@ const panels = {
       "theme": "",
       "duration": 15,
       "eventType": "Interview",
-      "socialLink": "https://www.linkedin.com/in/georgi-kostadinov/"
+      "socialLink": "https://www.linkedin.com/in/georgi-kostadinov/",
+      "img": georgik
     },
     {
       "speakerName": "Neville Mchina",
@@ -54,7 +69,8 @@ const panels = {
       "theme": "",
       "duration": 30,
       "eventType": "Panel Discussion",
-      "socialLink": "https://www.linkedin.com/in/neville-mchina-39203b83/"
+      "socialLink": "https://www.linkedin.com/in/neville-mchina-39203b83/",
+      "img": nevil
     },
     {
       "speakerName": "Xavier Marcenac",
@@ -63,7 +79,8 @@ const panels = {
       "theme": "",
       "duration": 30,
       "eventType": "Panel Discussion",
-      "socialLink": "https://www.linkedin.com/in/xaviermarcenac/"
+      "socialLink": "https://www.linkedin.com/in/xaviermarcenac/",
+      "img": xav
     }
   ],
   "panel3": [
@@ -74,7 +91,8 @@ const panels = {
       "theme": "",
       "duration": 10,
       "eventType": "Speech",
-      "socialLink": "https://www.linkedin.com/in/vladimir-tabutov-44a6026/"
+      "socialLink": "https://www.linkedin.com/in/vladimir-tabutov-44a6026/",
+      "img": vlad
     },
     {
       "speakerName": "Teodosi Teodosiev",
@@ -83,7 +101,8 @@ const panels = {
       "theme": "",
       "duration": 15,
       "eventType": "Interview",
-      "socialLink": "https://www.facebook.com/teodosy"
+      "socialLink": "https://www.facebook.com/teodosy",
+      "img": teod
     }
   ]
 }

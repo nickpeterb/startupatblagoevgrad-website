@@ -24,9 +24,14 @@
 .speaker {
     background-color: #005f7f; /* #008a94; #f0faff;*/
     border-radius: 15px;
-    padding: 6px 12px;
+    padding: 12px 12px;
     color: whitesmoke;
     transition-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*.speaker:hover {
@@ -38,6 +43,10 @@
 .speaker .name {
     font-size: 2rem;
     line-height: 2.5rem;
+}
+
+.speaker-img {
+   
 }
 
 .speaker .header,

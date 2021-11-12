@@ -38,6 +38,8 @@ export default function Conf2021() {
 function Speaker({ speaker }) {
     return (
         <div className="speaker">
+            <img className="speaker-img" src={speaker.img} alt="" />
+            <div>
             <div className="header">
                 <div>
                     {speaker.duration} min {speaker.eventType}
@@ -55,6 +57,7 @@ function Speaker({ speaker }) {
                 <div className="chip businessSphere">
                     {speaker.businessSphere}
                 </div>
+            </div>
             </div>
         </div>
     );

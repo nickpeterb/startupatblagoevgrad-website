@@ -17,7 +17,7 @@ export default function Conf2021() {
     return (
         <div class="conf2021">
             <div>
-                <img src={poster} alt=""></img>
+                <img className="poster" src={poster} alt=""></img>
                 <div>
                     <React.Suspense fallback={<Loader />}>
                         <Countdown

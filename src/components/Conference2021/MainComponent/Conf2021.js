@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import poster from "../media/poster-header.png";
 import "./Conf2021.css";
 
@@ -14,10 +14,6 @@ const Loader = () => {
 };
 
 export default function Conf2021() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
         <div class="conf2021">
             <div>

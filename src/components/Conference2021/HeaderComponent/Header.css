@@ -1,0 +1,57 @@
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax_layer-front {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); /* scale(1) */
+}
+
+.parallax_layer-middle {
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax_layer-back {
+    -webkit-transform: translateZ(-2px);
+    transform: translateZ(-2px) scale(3);
+}
+
+/* demo styles
+    --------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* add some padding to force scrollbars */
+.parallax_layer {
+    padding: 100vh 0;
+}
+/* centre the content in the parallax layers */
+.layer {
+    position: absolute;
+    /*left: 50%;
+    top: 50%;*/
+
+    /*transform: translate(-50%, -50%);*/
+}
+
+.layer img {
+    width: 100vw;
+}
+
+.layer.front {
+    top: 0;
+}
+
+.layer.middle {
+    top: 12%;
+}
+
+.layer.back {
+    top: 20%;
+}

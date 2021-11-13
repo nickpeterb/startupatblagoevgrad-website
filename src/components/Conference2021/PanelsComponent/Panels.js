@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Panels.css";
 import panels from "./panelsData";
 
@@ -36,29 +36,56 @@ export default function Conf2021() {
 }
 
 function Speaker({ speaker }) {
+    const [showBio, setShowBio] = useState(false);
+    const showHideBio = () => {
+        setShowBio(!showBio);
+    };
+
     return (
-        <div className="speaker">
-            <img className="speaker-img" src={speaker.img} alt="" />
-            <div>
-            <div className="header">
+        <div className="speaker" onClick={showHideBio}>
+            <div className="main">
+                <img className="speaker-thumb" src={speaker.img} alt="" />
                 <div>
-                    {speaker.duration} min {speaker.eventType}
+                    <div className="header">
+                        <div>
+                            {speaker.duration} min {speaker.eventType}
+                        </div>
+                    </div>
+                    <div className="body">
+                        <div className="name">{speaker.speakerName}</div>
+                        {showBio ? (
+                            <i className="fa fa-caret-up"></i>
+                        ) : (
+                            <i className="fa fa-caret-down"></i>
+                        )}
+                    </div>
+                    <div className="footer">
+                        <i
+                            className={
+                                "fa fa-" +
+                                socialButton(speaker.socialLink) +
+                                "-square"
+                            }
+                            onClick={() =>
+                                window.open(speaker.socialLink, "_blank")
+                            }
+                        ></i>
+                        <div className="chip company">{speaker.company}</div>
+                        <div className="chip businessSphere">
+                            {speaker.businessSphere}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="name">{speaker.speakerName}</div>
-            <div className="footer">
-                <i
-                    className={
-                        "fa fa-" + socialButton(speaker.socialLink) + "-square"
-                    }
-                    onClick={() => window.open(speaker.socialLink, "_blank")}
-                ></i>
-                <div className="chip company">{speaker.company}</div>
-                <div className="chip businessSphere">
-                    {speaker.businessSphere}
+            {showBio && (
+                <div className="bio">
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used to demonstrate the visual
+                    form of a document or a typeface without relying on
+                    meaningful content. Lorem ipsum may be used as a placeholder
+                    before final copy is available.
                 </div>
-            </div>
-            </div>
+            )}
         </div>
     );
 }

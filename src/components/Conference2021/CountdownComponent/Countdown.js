@@ -1,6 +1,6 @@
-import React from 'react';
-import './CountdownStyle.css';
-import moment from 'moment';
+import React from "react";
+import "./CountdownStyle.css";
+import moment from "moment";
 //import Countdown from 'react-countdown';
 
 export default class Countdown extends React.Component {
@@ -8,7 +8,7 @@ export default class Countdown extends React.Component {
         days: undefined,
         hours: undefined,
         minutes: undefined,
-        seconds: undefined
+        seconds: undefined,
     };
 
     componentDidMount() {
@@ -17,10 +17,10 @@ export default class Countdown extends React.Component {
             const then = moment(timeTillDate, timeFormat);
             const now = moment();
             const countdown = moment(then - now);
-            const days = countdown.format('D');
-            const hours = countdown.format('HH');
-            const minutes = countdown.format('mm');
-            const seconds = countdown.format('ss');
+            const days = countdown.format("D");
+            const hours = countdown.format("HH");
+            const minutes = countdown.format("mm");
+            const seconds = countdown.format("ss");
 
             this.setState({ days, hours, minutes, seconds });
         }, 1000);
@@ -87,7 +87,7 @@ const SVGCircle = ({ radius }) => (
         <path
             fill="none"
             stroke="white"
-            stroke-width="4"
+            strokeWidth="4"
             d={describeArc(50, 50, 48, 0, radius)}
         />
     </svg>
@@ -98,7 +98,7 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 
     return {
         x: centerX + radius * Math.cos(angleInRadians),
-        y: centerY + radius * Math.sin(angleInRadians)
+        y: centerY + radius * Math.sin(angleInRadians),
     };
 }
 
@@ -106,21 +106,21 @@ function describeArc(x, y, radius, startAngle, endAngle) {
     var start = polarToCartesian(x, y, radius, endAngle);
     var end = polarToCartesian(x, y, radius, startAngle);
 
-    var largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
+    var largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
 
     var d = [
-        'M',
+        "M",
         start.x,
         start.y,
-        'A',
+        "A",
         radius,
         radius,
         0,
         largeArcFlag,
         0,
         end.x,
-        end.y
-    ].join(' ');
+        end.y,
+    ].join(" ");
 
     return d;
 }

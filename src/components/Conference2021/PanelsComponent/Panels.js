@@ -8,8 +8,8 @@ export default function Conf2021() {
             <div className="panel-wrapper">
                 <h2>Panel 1</h2>
                 <div className="panel">
-                    {panels.panel1.map((speaker) => (
-                        <Speaker speaker={speaker} />
+                    {panels.panel1.map((speaker, index) => (
+                        <Speaker speaker={speaker} key={index} />
                     ))}
                 </div>
             </div>
@@ -17,8 +17,8 @@ export default function Conf2021() {
             <div className="panel-wrapper">
                 <h2>Panel 2</h2>
                 <div className="panel">
-                    {panels.panel2.map((speaker) => (
-                        <Speaker speaker={speaker} />
+                    {panels.panel2.map((speaker, index) => (
+                        <Speaker speaker={speaker} key={index} />
                     ))}
                 </div>
             </div>
@@ -26,8 +26,8 @@ export default function Conf2021() {
             <div className="panel-wrapper">
                 <h2>Panel 3</h2>
                 <div className="panel">
-                    {panels.panel3.map((speaker) => (
-                        <Speaker speaker={speaker} />
+                    {panels.panel3.map((speaker, index) => (
+                        <Speaker speaker={speaker} key={index} />
                     ))}
                 </div>
             </div>

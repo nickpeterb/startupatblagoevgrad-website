@@ -6,12 +6,12 @@ import Titles from "../TitlesComponent/Titles";
 
 export default function Conf2021() {
     return (
-        <div class="conf2021">
+        <div className="conf2021">
             <div className="parallax-wrapper">
-                <div class="parallax">
+                <div className="parallax">
                     <Titles />
                     <Header />
-                    <div class="cover">
+                    <div className="cover">
                         <Panels />
                     </div>
                 </div>

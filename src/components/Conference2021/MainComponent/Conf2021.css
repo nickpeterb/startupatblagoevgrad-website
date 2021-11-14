@@ -29,3 +29,18 @@
     height: 300vh;
     top: max(100vw, 100vh);
 }
+
+.conf2021 .confButton {
+    background-color: #005f7f;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 100;
+}
+
+.conf2021 .confButton:hover {
+    background-color: #049aa5;
+    cursor: pointer;
+}

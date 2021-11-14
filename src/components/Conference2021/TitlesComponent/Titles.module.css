@@ -75,3 +75,16 @@
         opacity: 1;
     }
 }
+
+.confButton {
+    background-color: #005f7f;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.confButton:hover {
+    background-color: #049aa5;
+    cursor: pointer;
+}

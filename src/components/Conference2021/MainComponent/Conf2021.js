@@ -7,6 +7,12 @@ import Titles from "../TitlesComponent/Titles";
 export default function Conf2021() {
     return (
         <div className="conf2021">
+            {/*<div
+                className="confButton"
+                onClick={() => window.open("", "_blank")}
+            >
+                Register Now
+            </div>*/}
             <div className="parallax-wrapper">
                 <div className="parallax">
                     <Titles />

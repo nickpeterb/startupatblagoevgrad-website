@@ -21,6 +21,13 @@ export default function Titles() {
                         timeFormat="MM DD YYYY, h:mm a"
                     />
                 </React.Suspense>
+
+                {/*<div
+                    className={style.confButton}
+                    onClick={() => window.open("", "_blank")}
+                >
+                    Check it out
+                </div>*/}
             </div>
         </div>
     );

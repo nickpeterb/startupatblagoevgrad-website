@@ -8,49 +8,6 @@
     margin-bottom: 3rem;
 }
 
-.presents {
-    margin-top: 7rem;
-    text-align: center;
-    font-size: 2vw;
-    opacity: 0;
-    animation: fadeIn 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.glimpse {
-    opacity: 0;
-    text-align: center;
-    font-size: 6vw;
-    animation: fadeIn 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@font-face {
-    font-family: "Alexana Neue", "Montserrat";
-    src: URL("../media/AlexanaNeue.ttf");
-}
-
-.future {
-    opacity: 0;
-    font-family: "Alexana Neue";
-    text-align: center;
-    font-size: 11vw;
-    animation: fadeIn 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /* Parallax */
 
 .parallax-wrapper {
@@ -63,12 +20,6 @@
     overflow-y: auto;
     -webkit-perspective: 1px;
     perspective: 1px;
-}
-
-.parallax .titles {
-    position: absolute;
-    top: 0;
-    z-index: 100;
 }
 
 .cover {

@@ -1,31 +1,15 @@
 import React from "react";
 import "./Conf2021.css";
 import Header from "../HeaderComponent/Header";
-
 import Panels from "../PanelsComponent/Panels";
-const Countdown = React.lazy(() => import("../CountdownComponent/Countdown"));
+import Titles from "../TitlesComponent/Titles";
 
 export default function Conf2021() {
     return (
         <div class="conf2021">
             <div className="parallax-wrapper">
                 <div class="parallax">
-                    <div className="titles">
-                        <div style={{ position: "relative", width: "100vw" }}>
-                            <div className="presents">
-                                StartUP@Blagoevgrad Presents
-                            </div>
-                            <div className="glimpse">A glimpse into</div>
-                            <div className="future">The Future</div>
-
-                            <React.Suspense fallback={<></>}>
-                                <Countdown
-                                    timeTillDate="11 21 2021, 14:00 pm"
-                                    timeFormat="MM DD YYYY, h:mm a"
-                                />
-                            </React.Suspense>
-                        </div>
-                    </div>
+                    <Titles />
                     <Header />
                     <div class="cover">
                         <Panels />

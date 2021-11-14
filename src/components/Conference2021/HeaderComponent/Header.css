@@ -21,23 +21,18 @@
     transform: translateZ(-2px) scale(3);
 }
 
-/* demo styles
-    --------------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-}
-/* add some padding to force scrollbars */
 .parallax_layer {
     padding: 100vh 0;
 }
-/* centre the content in the parallax layers */
+
 .layer {
     position: absolute;
-    /*left: 50%;
-    top: 50%;*/
+}
 
-    /*transform: translate(-50%, -50%);*/
+@media (max-width: 450px) {
+    .layer {
+        left: -50vw;
+    }
 }
 
 .layer img {

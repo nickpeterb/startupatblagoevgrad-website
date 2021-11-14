@@ -24,13 +24,13 @@
 }
 
 @font-face {
-    font-family: "Alexana Neue", "Montserrat";
+    font-family: "Alexana Neue";
     src: URL("../media/AlexanaNeue.ttf");
 }
 
 .future {
     opacity: 0;
-    font-family: "Alexana Neue";
+    font-family: "Alexana Neue", "Montserrat";
     text-align: center;
     font-size: 11vw;
     animation: fadeIn 2s;

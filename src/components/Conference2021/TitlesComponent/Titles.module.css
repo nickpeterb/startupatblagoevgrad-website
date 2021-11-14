@@ -23,14 +23,24 @@
     animation-fill-mode: forwards;
 }
 
+/*@font-face {
+    font-family: "Alexana Neue";
+    src: URL("../media/AlexanaNeue.ttf") format("truetype");
+}*/
+
 @font-face {
     font-family: "Alexana Neue";
-    src: URL("../media/AlexanaNeue.ttf");
+    src: url("../media/font/subset-AlexanaNeue.woff2") format("woff2"),
+        url("../media/font/subset-AlexanaNeue.woff") format("woff"),
+        url("../media/font/subset-AlexanaNeue.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .future {
     opacity: 0;
-    font-family: "Alexana Neue", "Montserrat";
+    font-family: "Alexana Neue", "Montserrat", sans-serif;
     text-align: center;
     font-size: 11vw;
     animation: fadeIn 2s;

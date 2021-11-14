@@ -1,10 +1,10 @@
 import React from "react";
-import "./Header.css";
+import "./ParallaxPoster.css";
 import backLayer from "../media/back.svg";
 import middleLayer from "../media/middle.svg";
 import frontLayer from "../media/front.svg";
 
-export default function Header() {
+export default function ParallaxPoster() {
     return (
         <>
             <div className="parallax_layer parallax_layer-back">

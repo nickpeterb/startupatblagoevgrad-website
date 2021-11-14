@@ -76,12 +76,27 @@
     }
 }
 
+.scrollDown {
+    text-align: center;
+    margin-top: 1em;
+
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
 .confButton {
     background-color: #005f7f;
     padding: 10px;
     border-radius: 20px;
     width: fit-content;
-    margin: 0 auto;
+    margin: 1em auto;
+
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 
 .confButton:hover {

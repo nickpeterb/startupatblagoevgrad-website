@@ -22,6 +22,8 @@ export default function Titles() {
                     />
                 </React.Suspense>
 
+                <div className={style.scrollDown}>Scroll for more</div>
+
                 {/*<div
                     className={style.confButton}
                     onClick={() => window.open("", "_blank")}

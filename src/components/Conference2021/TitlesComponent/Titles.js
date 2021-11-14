@@ -5,13 +5,15 @@ const Countdown = React.lazy(() => import("../CountdownComponent/Countdown"));
 
 export default function Titles() {
     return (
-        <div className={style.titles}>
-            <div style={{ position: "relative", width: "100vw" }}>
-                <div className={style.presents}>
-                    StartUP@Blagoevgrad Presents
+        <div className={style.titlesWrapper}>
+            <div className={style.titles}>
+                <div className={style.text}>
+                    <div className={style.presents}>
+                        StartUP@Blagoevgrad Presents
+                    </div>
+                    <div className={style.glimpse}>A glimpse into</div>
+                    <div className={style.future}>The Future</div>
                 </div>
-                <div className={style.glimpse}>A glimpse into</div>
-                <div className={style.future}>The Future</div>
 
                 <React.Suspense fallback={<></>}>
                     <Countdown

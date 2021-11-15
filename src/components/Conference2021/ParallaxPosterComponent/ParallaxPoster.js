@@ -1,8 +1,8 @@
 import React from "react";
 import "./ParallaxPoster.css";
-import backLayer from "../media/back.svg";
-import middleLayer from "../media/middle.svg";
-import frontLayer from "../media/front.svg";
+import backLayer from "../media/back.png";
+import middleLayer from "../media/middle.png";
+import frontLayer from "../media/front.png";
 
 export default function ParallaxPoster() {
     return (

@@ -30,19 +30,22 @@
     }
 }
 
-@media (max-width: 500px) {
-    .titles {
-        --baseFontSize: 7vw;
-    }
-}
-
 .presents {
     text-align: center;
-    font-size: var(--baseFontSize) + 1vw;
+    font-size: 2vw;
     opacity: 0;
     animation: fadeIn 2s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+
+@media (max-width: 500px) {
+    .titles {
+        --baseFontSize: 7vw;
+    }
+    .presents {
+        font-size: 4vw;
+    }
 }
 
 .glimpse {
@@ -53,11 +56,6 @@
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
-
-/*@font-face {
-    font-family: "Alexana Neue";
-    src: URL("../media/font/subset-AlexanaNeue.ttf") format("truetype");
-}*/
 
 @font-face {
     font-family: "Alexana Neue";
@@ -71,7 +69,7 @@
 
 .future {
     opacity: 0;
-    font-family: "Alexana Neue", "Montserrat";
+    font-family: "Alexana Neue", "Montserrat", sans-serif;
     text-align: center;
     font-size: calc(var(--baseFontSize) + 9vw);
     animation: fadeIn 2s;

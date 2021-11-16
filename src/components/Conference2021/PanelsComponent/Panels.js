@@ -53,11 +53,11 @@ function Speaker({ speaker }) {
                     </div>
                     <div className="body">
                         <div className="name">{speaker.speakerName}</div>
-                        {showBio ? (
+                        {/*{showBio ? (
                             <i className="fa fa-caret-up"></i>
                         ) : (
                             <i className="fa fa-caret-down"></i>
-                        )}
+                        )}*/}
                     </div>
                     <div className="footer">
                         <i
@@ -77,7 +77,7 @@ function Speaker({ speaker }) {
                     </div>
                 </div>
             </div>
-            {showBio && (
+            {/*{showBio && (
                 <div className="bio">
                     In publishing and graphic design, Lorem ipsum is a
                     placeholder text commonly used to demonstrate the visual
@@ -85,7 +85,7 @@ function Speaker({ speaker }) {
                     meaningful content. Lorem ipsum may be used as a placeholder
                     before final copy is available.
                 </div>
-            )}
+            )}*/}
         </div>
     );
 }

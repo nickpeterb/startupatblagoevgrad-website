@@ -40,10 +40,10 @@
     align-items: center;
 }
 
-.speaker:hover {
-    background-color: #049aa5;
+/*.speaker:hover {
+    background-color: #eafeff;
     cursor: pointer;
-}
+}*/
 
 .panel .speaker .body {
     display: flex;

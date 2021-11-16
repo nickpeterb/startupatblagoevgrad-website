@@ -40,10 +40,10 @@
     align-items: center;
 }
 
-/*.speaker:hover {
-    background-color: #eafeff;
+.speaker:hover {
+    background-color: #00a59c;
     cursor: pointer;
-}*/
+}
 
 .panel .speaker .body {
     display: flex;
@@ -58,6 +58,10 @@
         font-size: 1.3rem;
         gap: 0;
     }
+}
+
+.panel .speaker .body .name.Denitza {
+    font-size: 1.5rem;
 }
 
 .panel .speaker .speaker-thumb {

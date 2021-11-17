@@ -17,11 +17,14 @@ export default function Titles() {
 
                 <React.Suspense fallback={<></>}>
                     <Countdown
-                        timeTillDate="11 21 2021, 14:00 pm"
+                        timeTillDate="11 21 2021, 11:00 am"
                         timeFormat="MM DD YYYY, h:mm a"
                     />
                 </React.Suspense>
 
+                <div className={style.scrollDown}>
+                    Sunday, November 21st @ 11:00
+                </div>
                 <div className={style.scrollDown}>Scroll for more</div>
 
                 {/*<div

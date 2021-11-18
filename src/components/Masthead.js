@@ -4,7 +4,7 @@ import './styles/Masthead.css';
 
 import { Link } from "react-scroll";
 
-//import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Masthead() {
   return (
@@ -13,14 +13,17 @@ export default function Masthead() {
         <div className="row h-100 align-items-center">
           <div className="col text-center title-wrapper">
 
-            <h1 className="masthead-title">
-              <span style={{ color: "#aa1638" }}>STARTUP.</span>
-              <br />
-              <span style={{ color: "#e45315" }}>BUILD.</span>
-              <br />
-              <span style={{ color: "#2cb3ab" }}>SUSTAIN.</span>
-            </h1>
-
+            <div>
+              <h1 className="masthead-title">
+                <span style={{ color: "#aa1638" }}>STARTUP.</span>
+                <br />
+                <span style={{ color: "#e45315" }}>BUILD.</span>
+                <br />
+                <span style={{ color: "#2cb3ab" }}>SUSTAIN.</span>
+              </h1>
+              <RouterLink to='/conference2021' class="btn" id="conferenceAlertButton">Check out the 2021 Conference page!</RouterLink>
+            </div>
+            
             <Link
                 activeClass="active"
                 to="about"

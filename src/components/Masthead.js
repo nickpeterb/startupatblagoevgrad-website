@@ -21,7 +21,7 @@ export default function Masthead() {
                 <br />
                 <span style={{ color: "#2cb3ab" }}>SUSTAIN.</span>
               </h1>
-              <RouterLink to='/conference2021' class="btn" id="conferenceAlertButton">Check out the 2021 Conference page!</RouterLink>
+              <RouterLink to='/conference2021' class="btn" id="conferenceAlertButton">Check out the 2021 Conference!</RouterLink>
             </div>
             
             <Link

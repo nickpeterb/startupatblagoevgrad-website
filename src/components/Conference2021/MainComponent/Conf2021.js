@@ -3,6 +3,7 @@ import "./Conf2021.css";
 import ParallaxPoster from "../ParallaxPosterComponent/ParallaxPoster";
 import Panels from "../PanelsComponent/Panels";
 import Titles from "../TitlesComponent/Titles";
+import MediaPartners from "../MediaPartnersComponent/MediaPartners";
 
 export default function Conf2021() {
     return (
@@ -19,6 +20,7 @@ export default function Conf2021() {
                     <ParallaxPoster />
                     <div className="cover">
                         <Panels />
+                        <MediaPartners />
                     </div>
                 </div>
             </div>

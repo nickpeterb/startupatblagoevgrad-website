@@ -1,0 +1,24 @@
+.mediaPartners {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 80vw;
+
+    /*display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.partnerImg {
+    width: 100%;
+    padding: 2rem;
+}

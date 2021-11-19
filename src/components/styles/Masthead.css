@@ -2,16 +2,16 @@
     height: 100vh;
     background-image: url("../../images/crowd.jpg");
     background-size: cover;
-	background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    color:white;
+    color: white;
     background-attachment: fixed; /* doesn't work on ios */
 }
 
 .masthead .arrow {
     margin-top: 2em;
     height: 2em;
-    fill:white;
+    fill: white;
 }
 
 .masthead .arrow:hover {
@@ -20,8 +20,14 @@
 }
 
 #conferenceAlertButton {
-    color:white;
-    background-image: linear-gradient(to right, #0f3553 0%, #00b3a9 51%, #00b3a9 100%);
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        #0f3553 0%,
+        #00b3a9 51%,
+        #00b3a9 100%
+    );
+    max-width: 100%;
 }
 
 .btn {
@@ -33,22 +39,23 @@
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
     box-shadow: 0 0 5px #eee;
     border-radius: 10px;
-   }
+}
 
 .btn:hover {
     background-position: right center; /* change the direction of the change here */
-  }
+}
 
 /* Safari 10.0+ */
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
-    .masthead {
-        background-attachment: scroll;
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        .masthead {
+            background-attachment: scroll;
+        }
     }
-}}
+}
 
 /* revert to normal background on ios */
 @supports (-webkit-touch-callout: none) {
@@ -60,35 +67,29 @@
 .masthead-title {
     font-weight: 600;
     font-size: 8vw;
-    text-shadow: 0.01em 0.01em white,
-                 0.02em 0.02em white,
-                 0.03em 0.03em white,
-                 0.04em 0.04em white;
+    text-shadow: 0.01em 0.01em white, 0.02em 0.02em white, 0.03em 0.03em white,
+        0.04em 0.04em white;
 }
 
 @media (max-width: 1000px) {
-    .masthead-title{
+    .masthead-title {
         font-size: 11vw;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .masthead-title {
-        text-shadow: 0.01em 0.01em white,
-                 0.02em 0.02em white,
-                 0.03em 0.03em white,
-                 0.04em 0.04em white,
-                 0.05em 0.05em white;
+        text-shadow: 0.01em 0.01em white, 0.02em 0.02em white,
+            0.03em 0.03em white, 0.04em 0.04em white, 0.05em 0.05em white;
     }
 }
 
 @media (max-width: 500px) {
-    .masthead-title{
+    .masthead-title {
         font-size: 13vw;
     }
 
-    .masthead{
+    .masthead {
         background-position: center;
     }
 }
-

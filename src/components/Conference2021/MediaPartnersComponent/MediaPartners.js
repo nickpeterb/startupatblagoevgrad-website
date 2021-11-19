@@ -11,7 +11,15 @@ export default function MediaPartners() {
         <>
             <div className={styles.title}>Our Media Partners</div>
             <div className={styles.mediaPartners}>
-                <div>
+                <div
+                    className={styles.recursive}
+                    onClick={() =>
+                        window.open(
+                            "https://therecursive.com/startup-aubg-gathers-the-see-community-of-tech-leaders-and-future-innovators/",
+                            "_blank"
+                        )
+                    }
+                >
                     <img className={styles.partnerImg} src={recursive} alt="" />
                 </div>
                 <div>

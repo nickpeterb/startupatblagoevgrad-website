@@ -22,3 +22,7 @@
     width: 100%;
     padding: 2rem;
 }
+
+.recursive:hover {
+    cursor: pointer;
+}

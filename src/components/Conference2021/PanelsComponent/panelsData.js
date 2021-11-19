@@ -9,7 +9,7 @@ import vlad from "../media/speakers/Vladimir_Tabutov.png";
 import xav from "../media/speakers/Xavier_Marcenac.png";
 import dent from "../media/speakers/Denitza_Tyufekchieva.png";
 import ventt from "../media/speakers/Ventsislav_Topuzov.png";
-//import vikm from "../media/speakers/Viktoriya_Markilieva.png";
+import vikm from "../media/speakers/Viktoriya_Markilieva.png";
 import yonko from "../media/speakers/Yonko_Chuklev.png";
 
 const panels = {
@@ -105,7 +105,7 @@ const panels = {
             img: xav,
             bio: "Xavier is a seasoned executive with some 25 years experience in multinational companies in consulting, finance and M&A positions. He is the co-founder of several successful companies in the BPO industry. Xavier is the founder and now vice-chaiman of TELUS International Europe Europe, a leader in the BPO services in Europe with close to 5000 employees. He holds an MBA from INSEAD and is a graduated IT engineer as well as chartered accountant.",
         },
-        /*{
+        {
             speakerName: "Viktoriya Markileva",
             company: "EnduroSat",
             businessSphere: "Space",
@@ -115,7 +115,7 @@ const panels = {
             socialLink: "https://www.linkedin.com/in/viktoriya-markileva/",
             img: vikm,
             bio: "Victoria graduated from Delft University of Technology with a BSc degree in Aerospace Engineering and continued her studies in Power and Propulsion for aerospace systems. She has gained experience and developed skills through the multiple university team projects such as designing an ADCS system for a Mars orbiter, creating an aircraft flight simulator model and designing a sustainable short range aircraft, which won the annual symposium award of the Aerospace Engineering faculty. She is experienced in creating mathematical models, using mission analysis software, writing technical reports and understanding aerospace technology on a systems level.",
-        },*/
+        },
     ],
     panel3: [
         {

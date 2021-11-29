@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Titles.module.css";
 
-const Countdown = React.lazy(() => import("../CountdownComponent/Countdown"));
+//const Countdown = React.lazy(() => import("../CountdownComponent/Countdown"));
 
 export default function Titles() {
     return (
@@ -15,12 +15,12 @@ export default function Titles() {
                     <div className={style.future}>The Future</div>
                 </div>
 
-                <React.Suspense fallback={<></>}>
+                {/*<React.Suspense fallback={<></>}>
                     <Countdown
                         timeTillDate="11 21 2021, 11:00 am"
                         timeFormat="MM DD YYYY, h:mm a"
                     />
-                </React.Suspense>
+                </React.Suspense>*/}
 
                 <div className={style.scrollDown}>
                     Sunday, November 21st @ 11:00

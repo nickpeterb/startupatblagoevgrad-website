@@ -5,7 +5,6 @@ import mihai from "../media/speakers/Mihai_Draghici.png";
 import nevil from "../media/speakers/Neville_Mchina.png";
 import spas from "../media/speakers/Spas_Kerimov.png";
 import teod from "../media/speakers/Teodosi_Teodosiev.png";
-import vlad from "../media/speakers/Vladimir_Tabutov.png";
 import xav from "../media/speakers/Xavier_Marcenac.png";
 import dent from "../media/speakers/Denitza_Tyufekchieva.png";
 import ventt from "../media/speakers/Ventsislav_Topuzov.png";
@@ -61,17 +60,6 @@ const panels = {
         },
     ],
     panel2: [
-        {
-            speakerName: "Vladimir Tabutov",
-            company: "Hec Solar",
-            businessSphere: "Renewable Energy",
-            theme: "The Future is Bright",
-            duration: 10,
-            eventType: "Speech",
-            socialLink: "https://www.linkedin.com/in/vladimir-tabutov-44a6026/",
-            img: vlad,
-            bio: "Vladimir's areas of expertise include renewable energy project development, construction, and O&M, and investment in renewable energy power generation installations (hydropower plants, photovoltaic power plants, and wood-fired power plants)",
-        },
         {
             speakerName: "Ventsislav Topuzov",
             company: "ROITI",

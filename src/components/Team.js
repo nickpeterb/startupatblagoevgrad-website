@@ -5,39 +5,46 @@ import MediaQuery from 'react-responsive';
 import './styles/Team.css';
 
 //The Board
-import velko from '../images/team/velko.png';
-import elito from '../images/team/elito.png';
-import armela from '../images/team/armela.png';
-import stan from '../images/team/stan.png';
+import nikol from '../images/team/Nikol.png';
+import martySt from '../images/team/Marty Stoilkov.png';
+import teddy from '../images/team/Teddy V.png';
+import alex from '../images/team/Alex D.png';
 
 //Speakers
-import fatma from '../images/team/fatma.png';
-import key from '../images/team/key.png';
-import nadiaT from '../images/team/nadia-t.png';
-import uerda from '../images/team/uerda.png';
-import alex from '../images/team/alex.png';
+import jordan from '../images/team/Dan4o.png';
+import martySta from '../images/team/Marty Stanchev.png';
+import nicky from '../images/team/Nicky.png';
+import ivaylo from '../images/team/Ivaylo.png';
+import alexZ from '../images/team/Alex Z.png';
+import aleksandrina from '../images/team/Aleksandrina.png';
+import toni from '../images/team/Antonia.png';
+import joana from '../images/team/Joana.png';
+import elenaz_1 from '../images/team/Elena Z 1.png';
+import armela from '../images/team/Armela.png';
 
 //Sponsorship
-import kris from '../images/team/kris.png';
-import nadiaD from '../images/team/nadia-d.png';
-import siel from '../images/team/siel.png';
-import flavia from '../images/team/flavia.png';
+import kris from '../images/team/Kris.png';
+import elenaz_2 from '../images/team/Elena Z 2.png';
+import lora from '../images/team/Lora.png';
+import tedyN from '../images/team/Tedi N.png';
+import tedyM from '../images/team/Tedi M.png';
+import sofia from '../images/team/Sofia.png';
+import tomi from '../images/team/Tomy.png';
 
 //Marketing
-import boyan from '../images/team/boyan.png';
-import deni from '../images/team/deni.png';
-import didi from '../images/team/didi.png';
-import emma from '../images/team/emma.png';
-import emily from '../images/team/emily.png';
-import ilko from '../images/team/ilko.png';
-import nikol from '../images/team/nikol.png';
-import petar from '../images/team/petar.png';
-import teddy from '../images/team/teddy.png';
+import bobi from '../images/team/Bobi.png';
+import emo from '../images/team/Emilian.png';
+import koko from '../images/team/Kaloyan.png';
+import nikolValeri from '../images/team/Nikol-Valeri.png';
+//import tony from '../images/team/Emily.png';
+import sami from '../images/team/Sami.png';
+import emily from '../images/team/Emily.png';
+import zara from '../images/team/Zara.png';
 
 //IT 
-import nick from '../images/team/nick.png';
-import mitko from '../images/team/mitko.png';
-import andi from '../images/team/andi.png';
+import nick from '../images/team/Nick.png';
+import denis from '../images/team/Denis.png';
+import lyudmil from '../images/team/Lyudmil.png';
 
 const teamText = {
 	"title": {
@@ -67,43 +74,49 @@ const teamText = {
 }
 
 const board = [
-	{ name: 'Velislav Tsenov', img: velko, title: { "en": "President", "bg": "Президент" }, linkedIn: "https://www.linkedin.com/in/velislavtsenov/" },
-	{ name: 'Elena Ivanova', img: elito, title: { "en": "Vice President, Head of Speakers", "bg": "Вицепрезидент, Ръководител на Отдел Лектори " }, linkedIn: "https://www.linkedin.com/in/elena-ivanova-636178153/" },
-	{ name: 'Armela Gjylsheni', img: armela, title: { "en": "Vice President", "bg": "Вицепрезидент" }, linkedIn: "https://www.linkedin.com/in/armela-gjylsheni-404630153/" },
-	{ name: 'Stanislav Todorov', img: stan, title: { "en": "Treasurer", "bg": "Ковчежник" }, linkedIn: "https://www.linkedin.com/in/stanislav-todorov-2a8a78198/" }
+	{ name: 'Nikol Peeva', img: nikol, title: { "en": "President", "bg": "Президент" }, linkedIn: "" },
+	{ name: 'Martin Stoilkov', img: martySt, title: { "en": "Vice President", "bg": "Вицепрезидент" }, linkedIn: "" },
+	{ name: 'Teddy Vasileva', img: teddy, title: { "en": "Vice President", "bg": "Вицепрезидент" }, linkedIn: "" },
+	{ name: 'Alexandra Dimcheva', img: alex, title: { "en": "Treasurer", "bg": "Ковчежник" }, linkedIn: "" }
 ];
 
 const speakersDept = [
-	{ name: 'Fatma Xhafa', img: fatma, linkedIn: "https://www.linkedin.com/in/fatma-xhafa-79446114b/" },
-	{ name: 'Uerda Muca', img: uerda, linkedIn: "https://www.linkedin.com/in/uerda-muca-340140135/" },
-	{ name: 'Alexandra Dimcheva', img: alex, linkedIn: "https://www.linkedin.com/in/alexandra-dimcheva-b18866172/" },
-	{ name: 'Nadia Traikova', img: nadiaT, linkedIn: "https://www.linkedin.com/in/nadia-traykova-124a70147/" },
-	{ name: 'Key Prifti', img: key, linkedIn: "" }
+	{ name: 'Jordan Rachev', img: jordan, title: { "en": "Head of Speakers", "bg": "Ръководител на отдел Лектори" }, linkedIn: "" },
+	{ name: 'Martin Stanchev', img: martySta, linkedIn: "" },
+	{ name: 'Aleksandrina Andonova', img: aleksandrina, linkedIn: "" },
+	{ name: 'Nikolay Pachev', img: nicky, linkedIn: "" },
+	{ name: 'Antionia Rusalieva', img: toni, linkedIn: "" },
+	{ name: 'Ivaylo Todorov', img: ivaylo, linkedIn: "" },
+	{ name: 'Armela Gjylsheni', img: armela, linkedIn: "" },
+	{ name: 'Aleksandar Zemlyakov', img: alexZ, linkedIn: "" },
+	{ name: 'Joana Mihova', img: joana, linkedIn: "" },
+	{ name: 'Elena Zaharieva', img: elenaz_1, linkedIn: "" }
 ]
 
 const sponsorsDept = [
-	{ name: 'Nadia Dimitrova', img: nadiaD, title: { "en": "Head of Sponsorship", "bg": "Ръководител на Спонсорството" }, linkedIn: "http://linkedin.com/in/dimitrovani/" },
 	{ name: 'Kris Petrov', img: kris, linkedIn: "" },
-	{ name: 'Siel Rien', img: siel, linkedIn: "https://www.linkedin.com/in/siel-rien-ab00a4170/" },
-	{ name: 'Flavia Gançi', img: flavia, linkedIn: "" },
+	{ name: 'Elena Petrova', img: elenaz_2, linkedIn: "" },
+	{ name: 'Lora KLassanova', img: lora, linkedIn: "" },
+	{ name: 'Teodora Nikolova', img: tedyN, linkedIn: "" },
+	{ name: 'Teodora Miteva', img: tedyM, linkedIn: "" },
+	{ name: 'Sofia Boneva', img: sofia, linkedIn: "" },
+	{ name: 'Tomislav Tomov', img: tomi, linkedIn: "" },
 ]
 
 const marketingDept = [
-	{ name: 'Emma Kerencheva', img: emma, title: { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" }, linkedIn: "https://www.linkedin.com/in/emanuela-kerencheva-1805091a5/" },
-	{ name: 'Emily Timcheva', img: emily, title: { "en": "Head of Marketing", "bg": "Ръководител на Маркетинг" }, linkedIn: "https://www.linkedin.com/in/emily-timcheva/" },
-	{ name: 'Boyan Zlatarski', img: boyan, linkedIn: "http://linkedin.com/in/boyan-zlatarski-5891261a6/" },
-	{ name: 'Denislava Angelova', img: deni, linkedIn: "https://www.linkedin.com/in/denislava-angelova/" },
-	{ name: 'Ilia Dobrev', img: ilko, linkedIn: "https://www.linkedin.com/in/ilia-dobrev/" },
-	{ name: 'Nikol Peeva', img: nikol, linkedIn: "" },
-	{ name: 'Teddy Vasileva', img: teddy, linkedIn: "" },
-	{ name: 'Petar Hristakiev', img: petar, linkedIn: "" },
-	{ name: 'Diana Radkova', img: didi, linkedIn: "" },
+	{ name: 'Boris Yotov', img: bobi, linkedIn: "" },
+	{ name: 'Emily Timcheva', img: emily, linkedIn: "" },
+	{ name: 'Emilian Pramatarov', img: emo, linkedIn: "" },
+	{ name: 'Kaloyan Todorov', img: koko, linkedIn: "" },
+	{ name: 'Nikol-Valeri Dimitrova', img: nikolValeri, linkedIn: "" },
+	{ name: 'Samuil Iliev', img: sami, linkedIn: "" },
+	{ name: 'Svetozara Staykova', img: zara, linkedIn: "" },
 ]
 
 const itDept = [
-	{ name: 'Dimitar Glavinkov', img: mitko, title: { "en": "Head of IT", "bg": "Ръководител на IT" }, linkedIn: "" },
-	{ name: 'Nick Bruhnev', img: nick, linkedIn: "https://www.linkedin.com/in/nick-bruhnev/" },
-	{ name: 'Andrea Shipkovensky', img: andi, linkedIn: "" }
+	{ name: 'Nick Bruhnev', img: nick, title: { "en": "Head of IT", "bg": "Ръководител на IT" }, linkedIn: "" },
+	{ name: 'Denis Milanov', img: denis, linkedIn: "" },
+	{ name: 'Lyudmil Nikolov', img: lyudmil, linkedIn: "" }
 ]
 
 function MembersSlide(props) {

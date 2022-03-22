@@ -3,7 +3,7 @@ import React from "react";
 import "./ppl.css";
 
 //speaker imgs must be cropped to exact squares, to keep the cards the same height
-import simeonImg from "./images/mentors2022/simeon.png";
+import simeonImg from "./images/mentors2022/simeon.jpg";
 import miroslavImg from "./images/mentors2022/miroslav.jpg";
 import desislavaImg from "./images/mentors2022/desislava.jpg";
 import theofilImg from "./images/mentors2022/theofil.jpg";
@@ -11,7 +11,7 @@ import stoyanImg from "./images/mentors2022/stoyan.jpeg";
 import hristomirImg from "./images/mentors2022/hristomir.jpg";
 import dimitarImg from "./images/mentors2022/dimitar.jpg";
 import hristinaImg from "./images/mentors2022/hristina.jpg";
-import georgiImg from "./images/mentors2022/georgi.jpeg";
+import georgiImg from "./images/mentors2022/georgi.jpg";
 
 const SimeonAdanov =
 	"Simeon has had his fair share of international influence and experience in both corporate & start-up environments, and is eager to guide future entrepreneurs! Born in Singapore, having grown up in The Netherlands, and studied in Ireland before gaining 5 years of experience in both the consulting & construction industry across Portugal, UK, Italy, Simeon is a proven trailblazer who relies on strong analytical skills and emotional intelligence to find solutions to customer-centric needs. Currently the Chief Commercial Officer at Humans in the Loop, Simeon is passionate about solving modern-day problems with innovative and practical solutions.";

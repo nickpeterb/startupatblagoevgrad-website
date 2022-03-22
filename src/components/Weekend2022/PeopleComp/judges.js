@@ -2,7 +2,7 @@ import React from "react";
 
 //speaker imgs must be cropped to exact squares, to keep the cards the same height
 import katyaImg from "./images/judges2022/katya.jpg";
-import reneImg from "./images/judges2022/rene.png";
+import reneImg from "./images/judges2022/rene.jpeg";
 import tihomirImg from "./images/judges2022/tihomir.jpg";
 
 import "./ppl.css";

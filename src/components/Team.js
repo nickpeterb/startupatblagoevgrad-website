@@ -119,6 +119,15 @@ const speakersDept = [
 ];
 
 const sponsorsDept = [
+	{
+		name: "Alexandra Dimcheva",
+		img: alex,
+		title: {
+			en: "Head of Sponsorship",
+			bg: "Ръководител на отдел Спонсори",
+		},
+		linkedIn: "",
+	},
 	{ name: "Kris Petrov", img: kris, linkedIn: "" },
 	{ name: "Elena Petrova", img: elenaz_2, linkedIn: "" },
 	{ name: "Lora KLassanova", img: lora, linkedIn: "" },
@@ -129,7 +138,15 @@ const sponsorsDept = [
 ];
 
 const marketingDept = [
-	{ name: "Boris Yotov", img: bobi, linkedIn: "" },
+	{
+		name: "Boris Yotov",
+		img: bobi,
+		linkedIn: "",
+		title: {
+			en: "Head of Marketing",
+			bg: "Ръководител на отдел Маркетинг",
+		},
+	},
 	{ name: "Emily Timcheva", img: emily, linkedIn: "" },
 	{ name: "Emilian Pramatarov", img: emo, linkedIn: "" },
 	{ name: "Kaloyan Todorov", img: koko, linkedIn: "" },

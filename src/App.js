@@ -14,72 +14,79 @@ import Conference from "./components/Conference2020/Conference.js";
 import Conf2021 from "./components/Conference2021/MainComponent/Conf2021";
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
+import Weekend2022 from "./components/Weekend2022/weekend2022";
 
 //import Apply from './components/Apply/LandingPage.js';
 
 function StartUpApp({ lang }) {
-  return (
-    <>
-      <NavBar lang={lang} />
-      <Masthead lang={lang} />
-      <About lang={lang} />
-      <Events lang={lang} />
-      <Speakers lang={lang} />
-      <Sponsors lang={lang} />
-      <Team lang={lang} />
-      <Testimonials lang={lang} />
-      <Contact lang={lang} />
-    </>
-  );
+	return (
+		<>
+			<NavBar lang={lang} />
+			<Masthead lang={lang} />
+			<About lang={lang} />
+			<Events lang={lang} />
+			<Speakers lang={lang} />
+			<Sponsors lang={lang} />
+			<Team lang={lang} />
+			<Testimonials lang={lang} />
+			<Contact lang={lang} />
+		</>
+	);
 }
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route path="/en">
-            <StartUpApp lang="en" />
-          </Route>
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Switch>
+					<Route path="/en">
+						<StartUpApp lang="en" />
+					</Route>
 
-          <Route path="/bg">
-            <StartUpApp lang="bg" />
-          </Route>
+					<Route path="/bg">
+						<StartUpApp lang="bg" />
+					</Route>
 
-          <Route path="/conference2020">
-            <Conference />
-          </Route>
+					<Route path="/conference2020">
+						<Conference />
+					</Route>
 
-          <Route path="/conference2021">
-            <Conf2021 />
-          </Route>
+					<Route path="/conference2021">
+						<Conf2021 />
+					</Route>
 
-          {/*<Route path="/apply" component={Apply} /> */}
+					<Route path="/weekend2022">
+						<Weekend2022 />
+					</Route>
 
-          <Route path="/apply">
-            <Redirect to="/en" />
-          </Route>
+					{/*<Route path="/apply" component={Apply} /> */}
 
-          <Route exact path="/">
-            <Redirect to={"/" + (localStorage.getItem("lang") ?? "en")} />
-          </Route>
+					<Route path="/apply">
+						<Redirect to="/en" />
+					</Route>
 
-          <Route>
-            <div className="container text-center">
-              <div className="row" style={{ height: "100vh" }}>
-                <div className="col-sm my-auto">
-                  <h1>Page Not Found :(</h1>
-                  <Link to="/en">
-                    <h2>Back To Home</h2>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Route>
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+					<Route exact path="/">
+						<Redirect
+							to={"/" + (localStorage.getItem("lang") ?? "en")}
+						/>
+					</Route>
+
+					<Route>
+						<div className="container text-center">
+							<div className="row" style={{ height: "100vh" }}>
+								<div className="col-sm my-auto">
+									<h1>Page Not Found :(</h1>
+									<Link to="/en">
+										<h2>Back To Home</h2>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</Route>
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

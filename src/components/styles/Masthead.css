@@ -1,95 +1,97 @@
 .masthead {
-    height: 100vh;
-    background-image: url("../../images/crowd.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    background-attachment: fixed; /* doesn't work on ios */
+	height: 100vh;
+	background-image: url("../../images/crowd.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	background-attachment: fixed; /* doesn't work on ios */
 }
 
 .masthead .arrow {
-    margin-top: 2em;
-    height: 2em;
-    fill: white;
+	margin-top: 2em;
+	height: 2em;
+	fill: white;
 }
 
 .masthead .arrow:hover {
-    fill: #2cb3ab;
-    cursor: pointer;
+	fill: #2cb3ab;
+	cursor: pointer;
 }
 
 #conferenceAlertButton {
-    color: white;
-    background-image: linear-gradient(
-        to right,
-        #0f3553 0%,
-        #00b3a9 51%,
-        #00b3a9 100%
-    );
-    max-width: 100%;
+	color: black;
+	background: linear-gradient(
+		to right,
+		#bf953f,
+		#fcf6ba,
+		#b38728,
+		#fbf5b7,
+		#aa771c
+	);
+	max-width: 100%;
 }
 
 .btn {
-    flex: 1 1 auto;
-    margin: 10px;
-    /*padding: 30px;*/
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-    box-shadow: 0 0 5px #eee;
-    border-radius: 10px;
+	flex: 1 1 auto;
+	margin: 10px;
+	/*padding: 30px;*/
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+	box-shadow: 0 0 5px #eee;
+	border-radius: 10px;
 }
 
 .btn:hover {
-    background-position: right center; /* change the direction of the change here */
+	background-position: right center; /* change the direction of the change here */
 }
 
 /* Safari 10.0+ */
 @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .masthead {
-            background-attachment: scroll;
-        }
-    }
+	@supports (-webkit-appearance: none) {
+		.masthead {
+			background-attachment: scroll;
+		}
+	}
 }
 
 /* revert to normal background on ios */
 @supports (-webkit-touch-callout: none) {
-    .masthead {
-        background-attachment: scroll;
-    }
+	.masthead {
+		background-attachment: scroll;
+	}
 }
 
 .masthead-title {
-    font-weight: 600;
-    font-size: 8vw;
-    text-shadow: 0.01em 0.01em white, 0.02em 0.02em white, 0.03em 0.03em white,
-        0.04em 0.04em white;
+	font-weight: 600;
+	font-size: 8vw;
+	text-shadow: 0.01em 0.01em white, 0.02em 0.02em white, 0.03em 0.03em white,
+		0.04em 0.04em white;
 }
 
 @media (max-width: 1000px) {
-    .masthead-title {
-        font-size: 11vw;
-    }
+	.masthead-title {
+		font-size: 11vw;
+	}
 }
 
 @media (max-width: 576px) {
-    .masthead-title {
-        text-shadow: 0.01em 0.01em white, 0.02em 0.02em white,
-            0.03em 0.03em white, 0.04em 0.04em white, 0.05em 0.05em white;
-    }
+	.masthead-title {
+		text-shadow: 0.01em 0.01em white, 0.02em 0.02em white,
+			0.03em 0.03em white, 0.04em 0.04em white, 0.05em 0.05em white;
+	}
 }
 
 @media (max-width: 500px) {
-    .masthead-title {
-        font-size: 13vw;
-    }
+	.masthead-title {
+		font-size: 13vw;
+	}
 
-    .masthead {
-        background-position: center;
-    }
+	.masthead {
+		background-position: center;
+	}
 }

@@ -139,6 +139,15 @@ const sponsorsDept = [
 
 const marketingDept = [
 	{
+		name: "Teddy Vasileva",
+		img: teddy,
+		title: {
+			en: "Head of Marketing",
+			bg: "Ръководител на отдел Маркетинг",
+		},
+		linkedIn: "",
+	},
+	{
 		name: "Boris Yotov",
 		img: bobi,
 		linkedIn: "",
@@ -162,6 +171,7 @@ const itDept = [
 		title: { en: "Head of IT", bg: "Ръководител на IT" },
 		linkedIn: "",
 	},
+	{ name: "Lora KLassanova", img: lora, linkedIn: "" },
 	{ name: "Denis Milanov", img: denis, linkedIn: "" },
 	{ name: "Lyudmil Nikolov", img: lyudmil, linkedIn: "" },
 ];

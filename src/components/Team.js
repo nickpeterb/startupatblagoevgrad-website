@@ -143,7 +143,7 @@ const marketingDept = [
 		img: bobi,
 		linkedIn: "",
 		title: {
-			en: "Head of Marketing",
+			en: "Co-head of Marketing",
 			bg: "Ръководител на отдел Маркетинг",
 		},
 	},

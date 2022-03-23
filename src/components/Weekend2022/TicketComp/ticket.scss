@@ -23,6 +23,8 @@ body {
 }
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
 $text-color: #2e2205;
 $bg-color: #dbad4b;
 
@@ -121,8 +123,9 @@ $bg-color: #dbad4b;
 	}
 
 	&__heading {
-		font-family: "Anton", Impact, sans-serif;
+		font-family: Impact, "Teko", sans-serif;
 		font-size: 5.2rem;
+		white-space: nowrap;
 		color: $text-color;
 		letter-spacing: -0.8px;
 		position: relative;

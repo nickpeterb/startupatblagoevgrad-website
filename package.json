@@ -13,7 +13,7 @@
         "firebase": "^8.2.10",
         "flickity": "^2.2.1",
         "google-spreadsheet": "^3.3.0",
-        "moment": "^2.29.1",
+        "moment": "^2.29.4",
         "react": "^16.13.1",
         "react-bootstrap": "^1.2.2",
         "react-dom": "^16.13.1",

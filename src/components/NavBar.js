@@ -88,10 +88,10 @@ export default function NavBar(props) {
 
 						<div className="nav-link">
 							<RouterLink
-								to="/weekend2022"
+								to="/Weekend2022"
 								className="apply-button nav-link-en"
 							>
-								Weekend 2022
+								Weekend2022
 							</RouterLink>
 						</div>
 

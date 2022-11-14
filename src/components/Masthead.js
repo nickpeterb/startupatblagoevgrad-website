@@ -24,13 +24,6 @@ export default function Masthead() {
 									SUSTAIN.
 								</span>
 							</h1>
-							<RouterLink
-								to="/weekend2022"
-								class="btn"
-								id="conferenceAlertButton"
-							>
-								StartUP Weekend 2022 !
-							</RouterLink>
 						</div>
 
 						<Link

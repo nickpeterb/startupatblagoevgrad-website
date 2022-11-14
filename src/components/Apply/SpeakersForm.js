@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 import useHubspotForm from "@aaronhayes/react-use-hubspot-form";
 
-import "./styles/apply.css";
-import "./styles/SpeakersForm.css";
+//import "./styles/apply.css";
+//import "./styles/SpeakersForm.css";
 
 export default function SpeakersForm(props) {
     const { error } = useHubspotForm({

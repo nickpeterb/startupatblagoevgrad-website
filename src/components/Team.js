@@ -5,46 +5,41 @@ import MediaQuery from "react-responsive";
 import "./styles/Team.css";
 
 //The Board
-import nikol from "../images/team/nikol.png";
-import martySt from "../images/team/Marty Stoilkov.png";
-import teddy from "../images/team/Teddy V.png";
-import alex from "../images/team/Alex D.png";
+import martySta from "../images/team/Marty Stanchev.png";
+import elenaz_1 from "../images/team/Elena Z 1.png";
+import toni from "../images/team/Antonia.png";
+import kris from "../images/team/kris.png";
 
 //Speakers
 import jordan from "../images/team/Dan4o.png";
-import martySta from "../images/team/Marty Stanchev.png";
+import martST from "../images/team/Marty Stoilkov.png"
 import nicky from "../images/team/Nicky.png";
-import ivaylo from "../images/team/Ivaylo.png";
 import alexZ from "../images/team/Alex Z.png";
 import aleksandrina from "../images/team/Aleksandrina.png";
-import toni from "../images/team/Antonia.png";
-import joana from "../images/team/Joana.png";
-import elenaz_1 from "../images/team/Elena Z 1.png";
-import armela from "../images/team/armela.png";
+import yoana from "../images/team/Yoanna.png";
 
 //Sponsorship
-import kris from "../images/team/kris.png";
 import elenaz_2 from "../images/team/Elena Z 2.png";
 import lora from "../images/team/Lora.png";
 import tedyN from "../images/team/Tedi N.png";
+import ivaylo from "../images/team/Ivaylo.png";
 import tedyM from "../images/team/Tedi M.png";
 import sofia from "../images/team/Sofia.png";
 import tomi from "../images/team/Tomy.png";
 
 //Marketing
 import bobi from "../images/team/Bobi.png";
+import teddy from "../images/team/Teddy V.png";
 import emo from "../images/team/Emilian.png";
 import koko from "../images/team/Kaloyan.png";
 import nikolValeri from "../images/team/Nikol-Valeri.png";
 //import tony from '../images/team/Emily.png';
 import sami from "../images/team/Sami.png";
-import emily from "../images/team/emily.png";
-import zara from "../images/team/Zara.png";
+
 
 //IT
-import nick from "../images/team/nick.png";
 import denis from "../images/team/Denis.png";
-import lyudmil from "../images/team/Lyudmil.png";
+import nick from "../images/team/nick.png";
 
 const teamText = {
 	title: {
@@ -75,26 +70,26 @@ const teamText = {
 
 const board = [
 	{
-		name: "Nikol Peeva",
-		img: nikol,
+		name: "Martin Stanchev",
+		img: martySta,
 		title: { en: "President", bg: "Президент" },
 		linkedIn: "",
 	},
 	{
-		name: "Martin Stoilkov",
-		img: martySt,
+		name: "Elena Zaharieva",
+		img: elenaz_1,
 		title: { en: "Vice President", bg: "Вицепрезидент" },
 		linkedIn: "",
 	},
 	{
-		name: "Teddy Vasileva",
-		img: teddy,
+		name: "Antonia Rusalieva",
+		img: toni,
 		title: { en: "Vice President", bg: "Вицепрезидент" },
 		linkedIn: "",
 	},
 	{
-		name: "Alexandra Dimcheva",
-		img: alex,
+		name: "Kristian Petrov",
+		img: kris,
 		title: { en: "Treasurer", bg: "Ковчежник" },
 		linkedIn: "",
 	},
@@ -102,36 +97,41 @@ const board = [
 
 const speakersDept = [
 	{
-		name: "Jordan Rachev",
-		img: jordan,
+		name: "Antonia Rusalieva",
+		img: toni,
 		title: { en: "Head of Speakers", bg: "Ръководител на отдел Лектори" },
 		linkedIn: "",
 	},
 	{ name: "Martin Stanchev", img: martySta, linkedIn: "" },
 	{ name: "Aleksandrina Andonova", img: aleksandrina, linkedIn: "" },
-	{ name: "Nikolay Pachev", img: nicky, linkedIn: "" },
-	{ name: "Antionia Rusalieva", img: toni, linkedIn: "" },
-	{ name: "Ivaylo Todorov", img: ivaylo, linkedIn: "" },
-	{ name: "Armela Gjylsheni", img: armela, linkedIn: "" },
 	{ name: "Aleksandar Zemlyakov", img: alexZ, linkedIn: "" },
-	{ name: "Joana Mihova", img: joana, linkedIn: "" },
+	{ name: "Yoana Stoimenova", img: yoana, linkedIn: "" },
 	{ name: "Elena Zaharieva", img: elenaz_1, linkedIn: "" },
 ];
 
 const sponsorsDept = [
 	{
-		name: "Alexandra Dimcheva",
-		img: alex,
+		name: "Teodora Nikolova",
+		img: tedyN,
 		title: {
-			en: "Head of Sponsorship",
+			en: "Co-Head of Sponsorship",
 			bg: "Ръководител на отдел Спонсори",
 		},
 		linkedIn: "",
 	},
-	{ name: "Kris Petrov", img: kris, linkedIn: "" },
+	{
+		name: "Kris Petrov",
+		img: kris,
+		title: {
+			en: "Co-Head of Sponsorship",
+			bg: "Ръководител на отдел Спонсори",
+		},
+		linkedIn: "",
+	},
+	{ name: "Martin Stoilkov", img: martST, linkedIn: "" },
 	{ name: "Elena Petrova", img: elenaz_2, linkedIn: "" },
+	{ name: "Ivaylo Todorov", img: ivaylo, linkedIn: "" },
 	{ name: "Lora KLassanova", img: lora, linkedIn: "" },
-	{ name: "Teodora Nikolova", img: tedyN, linkedIn: "" },
 	{ name: "Teodora Miteva", img: tedyM, linkedIn: "" },
 	{ name: "Sofia Boneva", img: sofia, linkedIn: "" },
 	{ name: "Tomislav Tomov", img: tomi, linkedIn: "" },
@@ -139,8 +139,8 @@ const sponsorsDept = [
 
 const marketingDept = [
 	{
-		name: "Teddy Vasileva",
-		img: teddy,
+		name: "Emilian Pramatarov",
+		img: emo,
 		title: {
 			en: "Head of Marketing",
 			bg: "Ръководител на отдел Маркетинг",
@@ -148,32 +148,28 @@ const marketingDept = [
 		linkedIn: "",
 	},
 	{
-		name: "Boris Yotov",
-		img: bobi,
+		name: "Nikol-Valeri Dimitrova",
+		img: nikolValeri,
 		linkedIn: "",
 		title: {
 			en: "Co-head of Marketing",
 			bg: "Ръководител на отдел Маркетинг",
 		},
 	},
-	{ name: "Emily Timcheva", img: emily, linkedIn: "" },
-	{ name: "Emilian Pramatarov", img: emo, linkedIn: "" },
+	{ name: "Teodora Vasileva", img: teddy, linkedIn: "" },
 	{ name: "Kaloyan Todorov", img: koko, linkedIn: "" },
-	{ name: "Nikol-Valeri Dimitrova", img: nikolValeri, linkedIn: "" },
-	{ name: "Samuil Iliev", img: sami, linkedIn: "" },
-	{ name: "Svetozara Staykova", img: zara, linkedIn: "" },
+	{ name: "Boris Yotov", img: bobi, linkedIn: "" },
 ];
 
 const itDept = [
 	{
-		name: "Nick Bruhnev",
-		img: nick,
+		name: "Denis Milanov",
+		img: denis,
 		title: { en: "Head of IT", bg: "Ръководител на IT" },
 		linkedIn: "",
 	},
 	{ name: "Lora KLassanova", img: lora, linkedIn: "" },
-	{ name: "Denis Milanov", img: denis, linkedIn: "" },
-	{ name: "Lyudmil Nikolov", img: lyudmil, linkedIn: "" },
+	{ name: "Nick Bruhnev", img: nick, linkedIn: "" },
 ];
 
 function MembersSlide(props) {

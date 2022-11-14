@@ -15,8 +15,11 @@ import Conf2021 from "./components/Conference2021/MainComponent/Conf2021";
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import Weekend2022 from "./components/Weekend2022/weekend2022";
-
-//import Apply from './components/Apply/LandingPage.js';
+import ITDep from "./components/ITDep"
+import MarketingDep from "./components/MarketingDep"
+import SpeakersDep from "./components/SpeakersDep"
+import SponsorshipDep from "./components/SponsorshipDep"
+import LandingPage from "./components/LandingPage"
 
 function StartUpApp({ lang }) {
 	return (
@@ -59,7 +62,27 @@ function App() {
 						<Weekend2022 />
 					</Route>
 
-					{/*<Route path="/apply" component={Apply} /> */}
+					<Route path="/it">
+						<ITDep />
+					</Route>
+
+					<Route path="/marketing">
+						<MarketingDep />
+					</Route>
+
+					<Route path="/speakers">
+						<SpeakersDep />
+					</Route>
+
+					<Route path="/sponsorship">
+						<SponsorshipDep />
+					</Route>
+
+					<Route path="/recruitment2022">
+						<LandingPage />
+					</Route>
+
+					{/*<Route path="/apply" component={Apply} />*/}
 
 					<Route path="/apply">
 						<Redirect to="/en" />

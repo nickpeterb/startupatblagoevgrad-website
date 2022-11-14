@@ -6,7 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import './styles/Speakers.css';
 
 //speaker imgs must be cropped to exact squares, to keep the cards the same height
-import kirilImg from '../images/speakers/justine.jpg';
+import kirilImg from '../images/speakers/kiril.jpg';
 import justineImg from '../images/speakers/justine.png';
 import cliffordImg from '../images/speakers/clifford.jpg';
 import omarImg from '../images/speakers/omar.jpg';

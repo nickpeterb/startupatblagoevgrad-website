@@ -8,20 +8,25 @@
     },
     "dependencies": {
         "@aaronhayes/react-use-hubspot-form": "^1.1.0",
-        "bootstrap": "^4.5.2",
+        "axios": "^0.27.2",
+        "bootstrap": "^4.6.2",
         "firebase": "^8.2.10",
         "flickity": "^2.2.1",
+        "google-spreadsheet": "^3.3.0",
         "moment": "^2.29.1",
         "react": "^16.13.1",
         "react-bootstrap": "^1.2.2",
         "react-dom": "^16.13.1",
         "react-firebase-hooks": "^3.0.1",
         "react-on-images-loaded": "^2.2.5",
+        "react-player": "^2.11.0",
         "react-responsive": "^8.1.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "^4.0.3",
         "react-scroll": "^1.8.0",
-        "sass": "^1.49.9"
+        "react-youtube": "^10.0.0",
+        "sass": "^1.49.9",
+        "styled-components": "^5.3.5"
     },
     "scripts": {
         "start": "react-scripts start",

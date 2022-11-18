@@ -12,6 +12,7 @@ import Team from "./components/Team.js";
 import Contact from "./components/Contact.js";
 import Conference from "./components/Conference2020/Conference.js";
 import Conf2021 from "./components/Conference2021/MainComponent/Conf2021";
+import Conf2022 from "./components/Conference2022/Conf22.js";
 
 import { BrowserRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import Weekend2022 from "./components/Weekend2022/weekend2022";
@@ -81,6 +82,11 @@ function App() {
 					<Route path="/recruitment2022">
 						<LandingPage />
 					</Route>
+
+					<Route path="/conference2022">
+						<Conf2022 />
+					</Route>
+
 
 					{/*<Route path="/apply" component={Apply} />*/}
 

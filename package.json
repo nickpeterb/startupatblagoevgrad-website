@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "@aaronhayes/react-use-hubspot-form": "^1.1.0",
-        "axios": "^0.27.2",
+        "axios": "^1.6.0",
         "bootstrap": "^4.6.2",
         "firebase": "^8.2.10",
         "flickity": "^2.2.1",
